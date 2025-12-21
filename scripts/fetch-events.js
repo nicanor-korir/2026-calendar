@@ -196,26 +196,56 @@ async function fetchAIDeadlines() {
   const events = [];
   try {
     console.log('Fetching from AI Conference Deadlines...');
-    // aideadlin.es provides a JSON API
-    const response = await fetch('https://aideadlin.es/data/ai-deadlines.json');
-    const data = await response.json();
+    // Try the GitHub raw URL for aideadlin.es data
+    const response = await fetch('https://raw.githubusercontent.com/paperswithcode/ai-deadlines/main/_data/conferences.yml', {
+      headers: { 'Accept': 'text/plain' }
+    });
 
-    for (const conf of data || []) {
-      if (conf.deadline && new Date(conf.deadline) > new Date()) {
-        const id = 'aiconf-' + (conf.id || conf.title).toLowerCase().replace(/[^a-z0-9]/g, '-');
-        events.push({
-          id,
-          title: conf.title,
-          source: 'aideadlin.es',
-          url: conf.link,
-          deadline: conf.deadline,
-          startDate: conf.start,
-          endDate: conf.end,
-          location: conf.place,
-          page: 'cfp',
-          category: ['cfp'],
-          type: conf.sub?.includes('ML') ? ['ml'] : conf.sub?.includes('CV') ? ['cv'] : ['ml'],
-        });
+    if (!response.ok) {
+      console.log('AI Deadlines: Could not fetch data, skipping...');
+      return events;
+    }
+
+    const text = await response.text();
+
+    // Check if we got HTML instead of YAML
+    if (text.startsWith('<!DOCTYPE') || text.startsWith('<html')) {
+      console.log('AI Deadlines: Got HTML response, skipping...');
+      return events;
+    }
+
+    // Simple YAML parsing for conference entries
+    const confBlocks = text.split(/^- /m).filter(block => block.trim());
+
+    for (const block of confBlocks) {
+      try {
+        const getField = (name) => {
+          const match = block.match(new RegExp(`${name}:\\s*["']?([^"'\n]+)["']?`));
+          return match ? match[1].trim() : null;
+        };
+
+        const title = getField('title');
+        const deadline = getField('deadline');
+        const link = getField('link');
+
+        if (title && deadline && new Date(deadline) > new Date()) {
+          const id = 'aiconf-' + title.toLowerCase().replace(/[^a-z0-9]/g, '-').slice(0, 50);
+          events.push({
+            id,
+            title,
+            source: 'aideadlin.es',
+            url: link || 'https://aideadlin.es',
+            deadline,
+            startDate: getField('start'),
+            endDate: getField('end'),
+            location: getField('place'),
+            page: 'cfp',
+            category: ['cfp'],
+            type: ['ml'],
+          });
+        }
+      } catch (e) {
+        // Skip malformed entries
       }
     }
 
@@ -227,45 +257,66 @@ async function fetchAIDeadlines() {
 }
 
 /**
+ * Safely parse a date string, returning null if invalid
+ */
+function safeParseDate(dateStr) {
+  if (!dateStr) return null;
+  const date = new Date(dateStr);
+  // Check if date is valid
+  if (isNaN(date.getTime())) return null;
+  return date;
+}
+
+/**
  * Convert a raw scraped event to the full event format
+ * Returns null if the event has invalid data
  */
 function convertToFullEvent(rawEvent) {
-  const now = new Date();
-  const addedDate = now.toISOString().split('T')[0];
+  try {
+    const now = new Date();
+    const addedDate = now.toISOString().split('T')[0];
+    const defaultDate = new Date(now.getFullYear() + 1, 0, 1); // Jan 1 next year
 
-  // Parse dates if available
-  let startDate = rawEvent.startDate ? new Date(rawEvent.startDate) : new Date(now.getFullYear() + 1, 0, 1);
-  let endDate = rawEvent.endDate ? new Date(rawEvent.endDate) : startDate;
-  let deadline = rawEvent.deadline ? new Date(rawEvent.deadline) : null;
+    // Parse dates safely
+    let startDate = safeParseDate(rawEvent.startDate) || defaultDate;
+    let endDate = safeParseDate(rawEvent.endDate) || startDate;
+    let deadline = safeParseDate(rawEvent.deadline);
 
-  // Create tags including NEW tag
-  const tags = [
-    { text: 'NEW', color: 'gold' },
-  ];
+    // Validate dates are not in the past (except for testing)
+    const cutoffDate = new Date(now.getFullYear(), 0, 1); // Jan 1 of current year
+    if (startDate < cutoffDate && !rawEvent.startDate) {
+      startDate = defaultDate;
+      endDate = defaultDate;
+    }
 
-  if (rawEvent.source) {
-    tags.push({ text: rawEvent.source, color: 'default' });
-  }
+    // Create tags including NEW tag
+    const tags = [
+      { text: 'NEW', color: 'gold' },
+    ];
 
-  return {
-    id: rawEvent.id,
-    title: rawEvent.title,
-    organizer: rawEvent.source || 'TBA',
-    icon: rawEvent.page === 'hackathons' ? '💻' : rawEvent.page === 'cfp' ? '📄' : '🎯',
-    page: rawEvent.page,
-    category: rawEvent.category || [],
-    type: rawEvent.type || [],
-    tags,
-    dates: {
-      start: startDate.toISOString(),
-      end: endDate.toISOString(),
-      deadline: deadline ? deadline.toISOString() : null,
-      countdownTarget: deadline ? 'deadline' : 'start',
-    },
-    dateDisplay: {
-      month: startDate.toLocaleString('en', { month: 'short' }),
-      day: startDate.getDate().toString(),
-    },
+    if (rawEvent.source) {
+      tags.push({ text: rawEvent.source, color: 'default' });
+    }
+
+    return {
+      id: rawEvent.id,
+      title: rawEvent.title,
+      organizer: rawEvent.source || 'TBA',
+      icon: rawEvent.page === 'hackathons' ? '💻' : rawEvent.page === 'cfp' ? '📄' : '🎯',
+      page: rawEvent.page,
+      category: rawEvent.category || [],
+      type: rawEvent.type || [],
+      tags,
+      dates: {
+        start: startDate.toISOString(),
+        end: endDate.toISOString(),
+        deadline: deadline ? deadline.toISOString() : null,
+        countdownTarget: deadline ? 'deadline' : 'start',
+      },
+      dateDisplay: {
+        month: startDate.toLocaleString('en', { month: 'short' }),
+        day: startDate.getDate().toString(),
+      },
     eventType: rawEvent.page === 'hackathons' ? 'Hackathon' : rawEvent.page === 'cfp' ? 'CFP' : 'Event',
     isUrgent: false,
     isFeatured: false,
@@ -289,6 +340,10 @@ function convertToFullEvent(rawEvent) {
       website: rawEvent.url,
     },
   };
+  } catch (error) {
+    console.error(`Error converting event "${rawEvent.title}":`, error.message);
+    return null;
+  }
 }
 
 /**
@@ -371,8 +426,15 @@ async function main() {
     return;
   }
 
-  // Convert to full format
-  const convertedEvents = newEvents.map(convertToFullEvent);
+  // Convert to full format, filtering out any that failed conversion
+  const convertedEvents = newEvents
+    .map(convertToFullEvent)
+    .filter(event => event !== null);
+
+  if (convertedEvents.length === 0) {
+    console.log('No valid events to add after conversion.');
+    return;
+  }
 
   // Add new events
   data.events.push(...convertedEvents);
