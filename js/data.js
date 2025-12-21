@@ -2360,46 +2360,6 @@ const EVENTS_DATA = {
       }
     },
     {
-      id: "devpost-26494",
-      title: "BellaBella's Hackathon",
-      organizer: "devpost",
-      icon: "💻",
-      page: "hackathons",
-      category: ["hackathon"],
-      type: [],
-      tags: [
-        { text: "NEW", color: "gold" },
-        { text: "devpost", color: "default" }
-      ],
-      dates: {
-        start: "2025-12-27T00:00:00.000Z",
-        end: "2025-12-27T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
-      },
-      dateDisplay: { month: "Dec", day: "27" },
-      eventType: "Hackathon",
-      isUrgent: false,
-      isFeatured: false,
-      isNew: true,
-      addedDate: "2025-12-21",
-      prize: { amount: "$CAD 0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
-      modal: {
-        overview: "New hackathons found from devpost. Click to learn more.",
-        requirements: null,
-        keyDates: null,
-        topics: null,
-        resources: [
-          { icon: "🌐", label: "Official Website", url: "https://bellabella-s-hackathon-26494.devpost.com/" }
-        ]
-      },
-      links: {
-        register: "https://bellabella-s-hackathon-26494.devpost.com/",
-        website: "https://bellabella-s-hackathon-26494.devpost.com/"
-      }
-    },
-    {
       id: "devpost-27613",
       title: "STEMpower Hacks",
       organizer: "devpost",
