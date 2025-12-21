@@ -15,6 +15,7 @@ const EVENTS_DATA = {
   filters: {
     events: [
       { id: "all", label: "All Events", icon: null },
+      { id: "saved", label: "My Events", icon: "⭐", showCount: true },
       { id: "new", label: "New", icon: "✨" },
       { id: "berlin", label: "Berlin", icon: "🇩🇪" },
       { id: "mega-conference", label: "Mega Conferences", icon: "🌐" },
@@ -25,6 +26,7 @@ const EVENTS_DATA = {
     ],
     hackathons: [
       { id: "all", label: "All", icon: null },
+      { id: "saved", label: "My Events", icon: "⭐", showCount: true },
       { id: "new", label: "New", icon: "✨" },
       { id: "hackathon", label: "Hackathons", icon: "💻" },
       { id: "startup", label: "Startup", icon: "🚀" },
@@ -33,6 +35,7 @@ const EVENTS_DATA = {
     ],
     cfp: [
       { id: "all", label: "All CFPs", icon: null },
+      { id: "saved", label: "My Events", icon: "⭐", showCount: true },
       { id: "new", label: "New", icon: "✨" },
       { id: "ml", label: "Machine Learning", icon: "🤖" },
       { id: "cv", label: "Computer Vision", icon: "👁️" },

@@ -70,12 +70,19 @@ const Templates = {
 
     return `
       <nav class="nav-tabs secondary-tabs">
-        ${filters.map((filter, idx) => `
-          <button class="nav-tab-secondary ${idx === 0 ? 'active' : ''}"
-                  data-filter="${filter.id}">
-            ${filter.icon ? filter.icon + ' ' : ''}${filter.label}
-          </button>
-        `).join('')}
+        ${filters.map((filter, idx) => {
+          let countBadge = '';
+          if (filter.showCount && typeof SavedEvents !== 'undefined') {
+            const count = SavedEvents.getCountForPage(pageName);
+            countBadge = `<span class="filter-count" style="${count > 0 ? '' : 'display:none'}">${count}</span>`;
+          }
+          return `
+            <button class="nav-tab-secondary ${idx === 0 ? 'active' : ''}"
+                    data-filter="${filter.id}">
+              ${filter.icon ? filter.icon + ' ' : ''}${filter.label}${countBadge}
+            </button>
+          `;
+        }).join('')}
       </nav>
     `;
   },
@@ -85,9 +92,11 @@ const Templates = {
     const urgentClass = event.isUrgent ? 'urgent' : '';
     const categoryAttr = event.category.join(' ');
     const typeAttr = event.type.join(' ');
+    const isSaved = typeof SavedEvents !== 'undefined' && SavedEvents.isSaved(event.id);
+    const savedClass = isSaved ? 'is-saved' : '';
 
     return `
-      <div class="event-card ${urgentClass}"
+      <div class="event-card ${urgentClass} ${savedClass}"
            data-category="${categoryAttr}"
            data-type="${typeAttr}"
            data-id="${event.id}"
@@ -97,7 +106,12 @@ const Templates = {
             <div class="month">${event.dateDisplay.month}</div>
             <div class="day">${event.dateDisplay.day}</div>
           </div>
-          <span class="event-type">${event.eventType}</span>
+          <button class="save-btn ${isSaved ? 'saved' : ''}"
+                  data-save-id="${event.id}"
+                  onclick="toggleSaveEvent('${event.id}', event)"
+                  title="${isSaved ? 'Click to remove from your list' : 'Save to your list'}">
+            ${isSaved ? '✓ Attending' : '+ Save'}
+          </button>
         </div>
         <h3 class="event-title">${event.title}</h3>
         <div class="event-organizer">${event.organizer}</div>
@@ -210,6 +224,7 @@ const Templates = {
     const targetDate = event.dates.countdownTarget === 'deadline'
       ? event.dates.deadline
       : event.dates.start;
+    const isSaved = typeof SavedEvents !== 'undefined' && SavedEvents.isSaved(event.id);
 
     return `
       <div class="modal-overlay" id="modal-${event.id}">
@@ -232,6 +247,12 @@ const Templates = {
             ${this.modalResources(event)}
           </div>
           <div class="modal-footer">
+            <button class="save-btn-modal ${isSaved ? 'saved' : ''}"
+                    data-save-id="${event.id}"
+                    onclick="toggleSaveEvent('${event.id}', event)"
+                    title="${isSaved ? 'Click to remove from your list' : 'Save to your list'}">
+              ${isSaved ? '✓ Attending' : '+ Save to My List'}
+            </button>
             <a href="${event.links.register}" target="_blank" class="btn-primary">
               ${isCFP ? 'View CFP →' : 'Register Now →'}
             </a>
@@ -349,6 +370,17 @@ const Templates = {
       <div class="empty-state">
         <h3>No events match your filter</h3>
         <p>Try selecting a different category</p>
+      </div>
+    `;
+  },
+
+  // Empty state for saved events
+  emptyStateSaved() {
+    return `
+      <div class="empty-state empty-state-saved">
+        <div class="empty-state-icon">⭐</div>
+        <h3>No saved events yet</h3>
+        <p>Click the "+ Save" button on any event to add it to your list</p>
       </div>
     `;
   }

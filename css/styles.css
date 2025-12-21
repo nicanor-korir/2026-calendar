@@ -972,3 +972,109 @@ body {
     margin-bottom: 0.5rem;
     color: var(--text-secondary);
 }
+
+.empty-state-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   SAVE BUTTON STYLES
+   ======================================== */
+
+/* Save button on event cards */
+.save-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.save-btn:hover {
+    background: rgba(0, 212, 170, 0.1);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.save-btn.saved {
+    background: rgba(0, 212, 170, 0.15);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.save-btn.saved:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--accent-danger);
+    color: var(--accent-danger);
+}
+
+/* Save button in modal footer */
+.save-btn-modal {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.save-btn-modal:hover {
+    background: rgba(0, 212, 170, 0.1);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.save-btn-modal.saved {
+    background: rgba(0, 212, 170, 0.15);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.save-btn-modal.saved:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--accent-danger);
+    color: var(--accent-danger);
+}
+
+/* Saved indicator on event card */
+.event-card.is-saved {
+    border-color: rgba(0, 212, 170, 0.4);
+    box-shadow: 0 0 0 1px rgba(0, 212, 170, 0.1);
+}
+
+.event-card.is-saved::after {
+    content: '⭐';
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Filter count badge */
+.filter-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    padding: 0 0.35rem;
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.4rem;
+}
