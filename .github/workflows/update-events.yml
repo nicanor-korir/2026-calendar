@@ -26,17 +26,58 @@ jobs:
           cd scripts
           npm install
 
+      - name: Backup data.js
+        run: cp js/data.js js/data.js.backup
+
       - name: Fetch new events
+        id: fetch
         run: |
           cd scripts
           node fetch-events.js
         env:
           DEVPOST_API_KEY: ${{ secrets.DEVPOST_API_KEY }}
 
+      - name: Validate data.js syntax
+        id: validate
+        run: |
+          node -e "
+            const fs = require('fs');
+            const content = fs.readFileSync('js/data.js', 'utf-8');
+            try {
+              new Function(content + '; return EVENTS_DATA;');
+              console.log('Syntax validation passed');
+            } catch (e) {
+              console.error('Syntax validation FAILED:', e.message);
+              process.exit(1);
+            }
+          "
+
+      - name: Restore backup if validation failed
+        if: failure()
+        run: |
+          echo "Restoring backup due to validation failure"
+          cp js/data.js.backup js/data.js
+
       - name: Check for changes
         id: git-check
         run: |
           git diff --quiet js/data.js || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Validate event counts
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          node -e "
+            const fs = require('fs');
+            const content = fs.readFileSync('js/data.js', 'utf-8');
+            const func = new Function(content + '; return EVENTS_DATA;');
+            const data = func();
+            console.log('Event counts:');
+            console.log('  Total:', data.events.length);
+            console.log('  Events page:', data.events.filter(e => e.page === 'events').length);
+            console.log('  Hackathons page:', data.events.filter(e => e.page === 'hackathons').length);
+            console.log('  CFP page:', data.events.filter(e => e.page === 'cfp').length);
+            console.log('  New events:', data.events.filter(e => e.isNew).length);
+          "
 
       - name: Commit and push if changed
         if: steps.git-check.outputs.changes == 'true'
@@ -46,3 +87,7 @@ jobs:
           git add js/data.js
           git commit -m "Auto-update: New events found $(date +'%Y-%m-%d')"
           git push
+
+      - name: Cleanup backup
+        if: always()
+        run: rm -f js/data.js.backup

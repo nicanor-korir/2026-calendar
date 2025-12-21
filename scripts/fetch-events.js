@@ -86,6 +86,65 @@ async function fetchLablabEvents() {
 }
 
 /**
+ * Parse DevPost date strings like "Dec 25, 2025", "Dec 26 - 27, 2025", or "Jan 1, 2026"
+ */
+function parseDevPostDate(dateStr, fallbackYear = null) {
+  if (!dateStr) return null;
+  try {
+    let cleanDate = dateStr.trim();
+
+    // If it's a range like "Dec 26 - 27, 2025", extract the first date
+    if (cleanDate.includes(' - ')) {
+      cleanDate = cleanDate.split(' - ')[0].trim();
+    }
+
+    // Try to parse the date
+    let date = new Date(cleanDate);
+
+    // If the date is invalid or the year is before 2024, try adding a year
+    if (isNaN(date.getTime()) || date.getFullYear() < 2024) {
+      // Check if there's a year in the original string
+      const yearMatch = dateStr.match(/\b(202[4-9]|203[0-9])\b/);
+      if (yearMatch) {
+        // Month and day without year - add the found year
+        date = new Date(cleanDate + ', ' + yearMatch[1]);
+      } else if (fallbackYear) {
+        date = new Date(cleanDate + ', ' + fallbackYear);
+      } else {
+        // Default to current or next year
+        const currentYear = new Date().getFullYear();
+        date = new Date(cleanDate + ', ' + currentYear);
+        // If the date is in the past, use next year
+        if (date < new Date()) {
+          date = new Date(cleanDate + ', ' + (currentYear + 1));
+        }
+      }
+    }
+
+    if (!isNaN(date.getTime())) {
+      return date.toISOString();
+    }
+  } catch (e) {
+    // Fall through
+  }
+  return null;
+}
+
+/**
+ * Clean HTML from prize strings
+ */
+function cleanPrize(prizeStr) {
+  if (!prizeStr) return null;
+  // Strip HTML tags and decode entities
+  return prizeStr
+    .replace(/<[^>]*>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .trim();
+}
+
+/**
  * Fetch hackathons from DevPost
  */
 async function fetchDevPostEvents() {
@@ -97,14 +156,37 @@ async function fetchDevPostEvents() {
 
     for (const hack of data.hackathons || []) {
       const id = 'devpost-' + hack.id;
+
+      // Parse dates from the submission_period_dates string
+      // Format is like "Dec 26 - 27, 2025" or "Jan 1 - Feb 1, 2026"
+      const fullDateStr = hack.submission_period_dates || '';
+      const startDateStr = parseDevPostDate(fullDateStr);
+
+      // For end date, try to parse the second part if it exists
+      let endDateStr = startDateStr;
+      if (fullDateStr.includes(' - ')) {
+        const parts = fullDateStr.split(' - ');
+        if (parts[1]) {
+          endDateStr = parseDevPostDate(parts[1]) || startDateStr;
+        }
+      }
+
+      // Skip events with invalid dates
+      if (!startDateStr) {
+        continue;
+      }
+
+      // Clean up prize (remove HTML)
+      const cleanedPrize = cleanPrize(hack.prize_amount);
+
       events.push({
         id,
         title: hack.title,
         source: 'devpost',
         url: hack.url,
-        startDate: hack.submission_period_dates?.split(' - ')[0],
-        endDate: hack.submission_period_dates?.split(' - ')[1],
-        prize: hack.prize_amount,
+        startDate: startDateStr,
+        endDate: endDateStr,
+        prize: cleanedPrize,
         page: 'hackathons',
         category: ['hackathon'],
         themes: hack.themes || [],
@@ -368,27 +450,132 @@ function cleanupNewTags(events) {
 
 /**
  * Write updated data back to data.js
+ *
+ * IMPORTANT: This function appends new events to the existing file
+ * rather than rewriting the entire file to preserve formatting.
  */
-function saveData(data) {
-  // Read the original file to preserve the EventsAPI code
+function saveData(data, newEvents) {
+  // Read the original file
   const originalContent = fs.readFileSync(DATA_FILE, 'utf-8');
-  const apiMatch = originalContent.match(/(\/\/ Helper API for accessing event data[\s\S]*$)/);
-  const apiCode = apiMatch ? apiMatch[1] : '';
 
-  // Format the events data
-  const jsonStr = JSON.stringify(data, null, 2)
-    .replace(/"([^"]+)":/g, '$1:') // Remove quotes from keys
-    .replace(/"/g, "'"); // Use single quotes for strings
+  // Find the position to insert new events (before the last ] of events array)
+  // Look for the pattern: closing of last event object followed by events array close
+  const insertionMatch = originalContent.match(/(\n  \]\n\};\n\n\/\/ Helper API)/);
 
-  const newContent = `// 2026 Tech Events Calendar - Data Layer
-// Single source of truth for all events
-// Last auto-updated: ${new Date().toISOString()}
+  if (!insertionMatch) {
+    console.error('Could not find insertion point in data.js');
+    return false;
+  }
 
-const EVENTS_DATA = ${jsonStr};
+  // Format each new event as a string
+  const newEventsStr = newEvents.map(event => {
+    return formatEventAsJS(event);
+  }).join(',\n');
 
-${apiCode}`;
+  // Insert the new events before the closing bracket
+  const insertPosition = originalContent.indexOf(insertionMatch[0]);
+  const beforeInsert = originalContent.substring(0, insertPosition);
+  const afterInsert = originalContent.substring(insertPosition);
 
-  fs.writeFileSync(DATA_FILE, newContent, 'utf-8');
+  // Add comma after last existing event and insert new events
+  const today = new Date().toISOString().split('T')[0];
+  const sectionHeader = `    // ========================================\n    // AUTO-ADDED EVENTS (${today})\n    // ========================================\n`;
+  const newContent = beforeInsert + ',\n\n' + sectionHeader + newEventsStr + afterInsert;
+
+  // Update the totalEvents count in meta
+  const updatedContent = newContent.replace(
+    /totalEvents: \d+/,
+    `totalEvents: ${data.meta.totalEvents}`
+  );
+
+  fs.writeFileSync(DATA_FILE, updatedContent, 'utf-8');
+  return true;
+}
+
+/**
+ * Format a single event object as JavaScript code string
+ */
+function formatEventAsJS(event) {
+  const indent = '    ';
+  const lines = [];
+
+  lines.push(`${indent}{`);
+  lines.push(`${indent}  id: "${event.id}",`);
+  lines.push(`${indent}  title: "${escapeString(event.title)}",`);
+  lines.push(`${indent}  organizer: "${escapeString(event.organizer)}",`);
+  lines.push(`${indent}  icon: "${event.icon}",`);
+  lines.push(`${indent}  page: "${event.page}",`);
+  lines.push(`${indent}  category: ${JSON.stringify(event.category)},`);
+  lines.push(`${indent}  type: ${JSON.stringify(event.type)},`);
+  lines.push(`${indent}  tags: [`);
+  event.tags.forEach((tag, i) => {
+    const comma = i < event.tags.length - 1 ? ',' : '';
+    lines.push(`${indent}    { text: "${escapeString(tag.text)}", color: "${tag.color}" }${comma}`);
+  });
+  lines.push(`${indent}  ],`);
+  lines.push(`${indent}  dates: {`);
+  lines.push(`${indent}    start: "${event.dates.start}",`);
+  lines.push(`${indent}    end: "${event.dates.end}",`);
+  lines.push(`${indent}    deadline: ${event.dates.deadline ? `"${event.dates.deadline}"` : 'null'},`);
+  lines.push(`${indent}    countdownTarget: "${event.dates.countdownTarget}"`);
+  lines.push(`${indent}  },`);
+  lines.push(`${indent}  dateDisplay: { month: "${event.dateDisplay.month}", day: "${event.dateDisplay.day}" },`);
+  lines.push(`${indent}  eventType: "${event.eventType}",`);
+  lines.push(`${indent}  isUrgent: ${event.isUrgent},`);
+  lines.push(`${indent}  isFeatured: ${event.isFeatured},`);
+  lines.push(`${indent}  isNew: ${event.isNew},`);
+  lines.push(`${indent}  addedDate: "${event.addedDate}",`);
+  lines.push(`${indent}  prize: ${event.prize ? `{ amount: "${escapeString(event.prize.amount)}", icon: "${event.prize.icon}" }` : 'null'},`);
+  lines.push(`${indent}  location: { type: "${event.location.type}", city: ${event.location.city ? `"${event.location.city}"` : 'null'}, country: ${event.location.country ? `"${event.location.country}"` : 'null'}, display: "${escapeString(event.location.display)}" },`);
+  lines.push(`${indent}  modal: {`);
+  lines.push(`${indent}    overview: "${escapeString(event.modal.overview)}",`);
+  lines.push(`${indent}    requirements: null,`);
+  lines.push(`${indent}    keyDates: null,`);
+  lines.push(`${indent}    topics: null,`);
+  lines.push(`${indent}    resources: [`);
+  event.modal.resources.forEach((res, i) => {
+    const comma = i < event.modal.resources.length - 1 ? ',' : '';
+    lines.push(`${indent}      { icon: "${res.icon}", label: "${escapeString(res.label)}", url: "${res.url}" }${comma}`);
+  });
+  lines.push(`${indent}    ]`);
+  lines.push(`${indent}  },`);
+  lines.push(`${indent}  links: {`);
+  lines.push(`${indent}    register: "${event.links.register}",`);
+  lines.push(`${indent}    website: "${event.links.website}"`);
+  lines.push(`${indent}  }`);
+  lines.push(`${indent}}`);
+
+  return lines.join('\n');
+}
+
+/**
+ * Escape special characters in strings for JavaScript
+ */
+function escapeString(str) {
+  if (!str) return '';
+  return str
+    .replace(/\\/g, '\\\\')
+    .replace(/"/g, '\\"')
+    .replace(/\n/g, '\\n')
+    .replace(/\r/g, '\\r')
+    .replace(/\t/g, '\\t');
+}
+
+/**
+ * Validate that data.js is still valid JavaScript after modification
+ */
+function validateDataFile() {
+  try {
+    const content = fs.readFileSync(DATA_FILE, 'utf-8');
+    // Use Function constructor to validate syntax
+    new Function(content + '; return EVENTS_DATA;');
+    console.log('Validation: data.js syntax is valid');
+    return true;
+  } catch (error) {
+    console.error('Validation FAILED: data.js has syntax errors!');
+    console.error(error.message);
+    return false;
+  }
 }
 
 /**
@@ -405,14 +592,25 @@ async function main() {
   console.log(`Existing events: ${data.events.length}`);
   console.log('');
 
-  // Fetch from all sources
-  const allRawEvents = [
-    ...(await fetchLablabEvents()),
-    ...(await fetchDevPostEvents()),
-    ...(await fetchMLHEvents()),
-    ...(await fetchWikiCFP()),
-    ...(await fetchAIDeadlines()),
+  // Fetch from all sources (with error handling per source)
+  console.log('Fetching events from sources...');
+  const sources = [
+    { name: 'Lablab.ai', fn: fetchLablabEvents },
+    { name: 'DevPost', fn: fetchDevPostEvents },
+    { name: 'MLH', fn: fetchMLHEvents },
+    { name: 'WikiCFP', fn: fetchWikiCFP },
+    { name: 'AI Deadlines', fn: fetchAIDeadlines },
   ];
+
+  const allRawEvents = [];
+  for (const source of sources) {
+    try {
+      const events = await source.fn();
+      allRawEvents.push(...events);
+    } catch (error) {
+      console.error(`Error fetching from ${source.name}:`, error.message);
+    }
+  }
 
   console.log('');
   console.log(`Total raw events found: ${allRawEvents.length}`);
@@ -436,17 +634,11 @@ async function main() {
     return;
   }
 
-  // Add new events
-  data.events.push(...convertedEvents);
-
-  // Cleanup expired NEW tags
-  data.events = cleanupNewTags(data.events);
-
-  // Update meta
-  data.meta.totalEvents = data.events.length;
+  // Update meta count
+  data.meta.totalEvents = data.events.length + convertedEvents.length;
 
   console.log('');
-  console.log('New events to add:');
+  console.log(`New events to add (${convertedEvents.length}):`);
   convertedEvents.forEach(e => {
     console.log(`  - [${e.page}] ${e.title}`);
   });
@@ -454,14 +646,35 @@ async function main() {
   if (DRY_RUN) {
     console.log('');
     console.log('DRY RUN - not saving changes');
-  } else {
-    saveData(data);
     console.log('');
-    console.log('Data saved to data.js');
+    console.log('Sample formatted event:');
+    console.log(formatEventAsJS(convertedEvents[0]));
+  } else {
+    // Save the new events
+    const success = saveData(data, convertedEvents);
+
+    if (success) {
+      console.log('');
+      console.log('Data saved to data.js');
+
+      // Validate the file is still valid
+      console.log('');
+      if (!validateDataFile()) {
+        console.error('ERROR: File validation failed! Restoring backup...');
+        // The git workflow will not commit if validation fails
+        process.exit(1);
+      }
+    } else {
+      console.error('ERROR: Failed to save data');
+      process.exit(1);
+    }
   }
 
   console.log('');
   console.log('=== Event Fetcher Complete ===');
 }
 
-main().catch(console.error);
+main().catch(error => {
+  console.error('Fatal error:', error);
+  process.exit(1);
+});
