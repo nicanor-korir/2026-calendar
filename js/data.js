@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 49,
+    totalEvents: 50,
     totalPrizes: "$2M+",
     berlinEvents: 9,
     cfpCount: 6
@@ -2313,6 +2313,58 @@ const EVENTS_DATA = {
       links: {
         register: "https://gemini3.devpost.com/",
         website: "https://gemini3.devpost.com/"
+      }
+    },
+    {
+      id: "aws-ai-league-2026",
+      title: "AWS AI League 2026 Championship",
+      organizer: "Amazon Web Services",
+      icon: "🏆",
+      page: "hackathons",
+      category: ["hackathon", "competition"],
+      type: [],
+      tags: [
+        { text: "AI", color: "default" },
+        { text: "AWS", color: "purple" },
+        { text: "$50K Prizes", color: "gold" },
+        { text: "NEW", color: "new" }
+      ],
+      dates: {
+        start: "2026-01-01T00:00:00",
+        end: "2026-12-31T23:59:59",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "2026", day: "TBD" },
+      eventType: "Competition",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2025-12-21",
+      prize: { amount: "$50,000 Prize Pool", icon: "💰" },
+      location: { type: "hybrid", city: null, country: null, display: "AWS Summits + Online" },
+      modal: {
+        overview: "AWS AI League 2026 Championship is AWS's flagship AI tournament with doubled prize pool. Compete in gamified tournaments to solve real-world business challenges using AWS AI services. Two tracks: Model Customization with Amazon SageMaker AI and Agentic AI with Amazon Bedrock AgentCore.",
+        requirements: [
+          "Build AI solutions using AWS services",
+          "Choose: Model Customization or Agentic AI track",
+          "Enterprises can host internal tournaments",
+          "Individual developers compete at AWS Summits",
+          "Receive AWS credits for participation"
+        ],
+        keyDates: [
+          { label: "Competition Year", value: "2026" },
+          { label: "Format", value: "Ongoing tournaments throughout 2026" }
+        ],
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "AWS AI League", url: "https://aws.amazon.com/ai/aileague" },
+          { icon: "📄", label: "Announcement", url: "https://aws.amazon.com/about-aws/whats-new/2025/11/ai-league-2026-championship/" }
+        ]
+      },
+      links: {
+        register: "https://aws.amazon.com/ai/aileague",
+        website: "https://aws.amazon.com/ai/aileague"
       }
     }
   ]
