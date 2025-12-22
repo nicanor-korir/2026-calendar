@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 50,
+    totalEvents: 51,
     totalPrizes: "$2M+",
     berlinEvents: 9,
     cfpCount: 6
@@ -2365,6 +2365,57 @@ const EVENTS_DATA = {
       links: {
         register: "https://aws.amazon.com/ai/aileague",
         website: "https://aws.amazon.com/ai/aileague"
+      }
+    },
+    {
+      id: "algolia-agent-studio",
+      title: "Algolia Agent Studio Challenge",
+      organizer: "DEV Community × Algolia",
+      icon: "🔍",
+      page: "hackathons",
+      category: ["hackathon", "competition"],
+      type: [],
+      tags: [
+        { text: "AI Search", color: "default" },
+        { text: "Algolia", color: "purple" },
+        { text: "NEW", color: "new" }
+      ],
+      dates: {
+        start: "2026-01-07T00:00:00",
+        end: "2026-02-01T23:59:00",
+        deadline: "2026-02-01T23:59:00",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Jan", day: "7" },
+      eventType: "Challenge",
+      isUrgent: true,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2025-12-22",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online" },
+      modal: {
+        overview: "Build with Algolia Agent Studio and manage your entire search infrastructure using natural language. Create AI-driven search solutions leveraging Algolia's instant search technology. Winners announced February 19, 2026.",
+        requirements: [
+          "DEV Community account required",
+          "Build solution using Algolia Agent Studio",
+          "Submit by February 1, 2026 at 23:59 PT",
+          "Follow #algoliachallenge tag for updates"
+        ],
+        keyDates: [
+          { label: "Contest Start", value: "January 7, 2026" },
+          { label: "Submissions Due", value: "February 1, 2026 at 23:59 PT" },
+          { label: "Winners Announced", value: "February 19, 2026" }
+        ],
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Challenge Page", url: "https://dev.to/challenges/algolia-2026-01-07" },
+          { icon: "📚", label: "Algolia Docs", url: "https://www.algolia.com/doc/" }
+        ]
+      },
+      links: {
+        register: "https://dev.to/challenges/algolia-2026-01-07",
+        website: "https://dev.to/challenges/algolia-2026-01-07"
       }
     }
   ]
