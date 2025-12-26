@@ -21,6 +21,19 @@ const Templates = {
         <h1>2026 Tech Events Calendar</h1>
         <p class="header-subtitle">${meta.subtitle}</p>
 
+        <div class="global-search">
+          <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text"
+                   id="global-search"
+                   class="search-input"
+                   placeholder="Search events, hackathons, CFPs..."
+                   autocomplete="off">
+            <button class="search-clear hidden" id="search-clear" title="Clear search">×</button>
+          </div>
+          <div class="search-results hidden" id="search-results"></div>
+        </div>
+
         <div class="stats-bar">
           <div class="stat-item">
             <div class="stat-value">${meta.totalEvents}</div>
@@ -41,6 +54,73 @@ const Templates = {
         </div>
       </header>
     `;
+  },
+
+  // Search result item
+  searchResultItem(event) {
+    const pageLabels = { events: 'Conference', hackathons: 'Hackathon', cfp: 'CFP' };
+    const pageColors = { events: 'blue', hackathons: 'purple', cfp: 'gold' };
+    return `
+      <a href="${event.page}.html#${event.id}" class="search-result-item" data-event-id="${event.id}">
+        <div class="search-result-icon">${event.icon}</div>
+        <div class="search-result-info">
+          <div class="search-result-title">${event.title}</div>
+          <div class="search-result-meta">
+            <span class="search-result-organizer">${event.organizer}</span>
+            <span class="search-result-date">${event.dateDisplay.month} ${event.dateDisplay.day}</span>
+          </div>
+        </div>
+        <span class="search-result-type ${pageColors[event.page]}">${pageLabels[event.page]}</span>
+      </a>
+    `;
+  },
+
+  // Search results container content
+  searchResults(results, query) {
+    if (!query || query.length < 2) {
+      return '';
+    }
+
+    if (results.length === 0) {
+      return `
+        <div class="search-no-results">
+          <span>No results found for "${query}"</span>
+        </div>
+      `;
+    }
+
+    const grouped = {
+      hackathons: results.filter(e => e.page === 'hackathons'),
+      events: results.filter(e => e.page === 'events'),
+      cfp: results.filter(e => e.page === 'cfp')
+    };
+
+    let html = '';
+
+    if (grouped.hackathons.length > 0) {
+      html += `<div class="search-group">
+        <div class="search-group-title">💻 Hackathons (${grouped.hackathons.length})</div>
+        ${grouped.hackathons.map(e => this.searchResultItem(e)).join('')}
+      </div>`;
+    }
+
+    if (grouped.events.length > 0) {
+      html += `<div class="search-group">
+        <div class="search-group-title">🎯 Conferences (${grouped.events.length})</div>
+        ${grouped.events.map(e => this.searchResultItem(e)).join('')}
+      </div>`;
+    }
+
+    if (grouped.cfp.length > 0) {
+      html += `<div class="search-group">
+        <div class="search-group-title">📄 Call for Papers (${grouped.cfp.length})</div>
+        ${grouped.cfp.map(e => this.searchResultItem(e)).join('')}
+      </div>`;
+    }
+
+    html += `<div class="search-footer">${results.length} result${results.length !== 1 ? 's' : ''} found</div>`;
+
+    return html;
   },
 
   // Page navigation (3 main pages)

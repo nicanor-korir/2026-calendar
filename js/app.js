@@ -110,6 +110,151 @@ function updateSavedCount() {
   }
 }
 
+// ========================================
+// GLOBAL SEARCH
+// ========================================
+const GlobalSearch = {
+  searchInput: null,
+  searchResults: null,
+  searchClear: null,
+  debounceTimer: null,
+
+  init() {
+    this.searchInput = document.getElementById('global-search');
+    this.searchResults = document.getElementById('search-results');
+    this.searchClear = document.getElementById('search-clear');
+
+    if (!this.searchInput) return;
+
+    // Input event with debounce
+    this.searchInput.addEventListener('input', (e) => {
+      clearTimeout(this.debounceTimer);
+      this.debounceTimer = setTimeout(() => {
+        this.performSearch(e.target.value);
+      }, 200);
+    });
+
+    // Clear button
+    this.searchClear.addEventListener('click', () => {
+      this.clearSearch();
+    });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.hideResults();
+      }
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.global-search')) {
+        this.hideResults();
+      }
+    });
+
+    // Handle result clicks
+    this.searchResults.addEventListener('click', (e) => {
+      const resultItem = e.target.closest('.search-result-item');
+      if (resultItem) {
+        const eventId = resultItem.dataset.eventId;
+        const href = resultItem.getAttribute('href');
+
+        // If on the same page, open modal instead of navigating
+        if (href.startsWith(PAGE_NAME + '.html')) {
+          e.preventDefault();
+          this.hideResults();
+          this.clearSearch();
+          openModal(eventId);
+        }
+      }
+    });
+
+    // Keyboard navigation
+    this.searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        this.navigateResults(e.key === 'ArrowDown' ? 1 : -1);
+      } else if (e.key === 'Enter') {
+        const focused = this.searchResults.querySelector('.search-result-item.focused');
+        if (focused) {
+          focused.click();
+        }
+      }
+    });
+  },
+
+  performSearch(query) {
+    const trimmedQuery = query.trim().toLowerCase();
+
+    // Show/hide clear button
+    this.searchClear.classList.toggle('hidden', trimmedQuery.length === 0);
+
+    if (trimmedQuery.length < 2) {
+      this.hideResults();
+      return;
+    }
+
+    const results = this.searchEvents(trimmedQuery);
+    this.showResults(results, trimmedQuery);
+  },
+
+  searchEvents(query) {
+    const allEvents = EventsAPI.getAll();
+
+    return allEvents.filter(event => {
+      const searchableText = [
+        event.title,
+        event.organizer,
+        event.location?.display || '',
+        event.location?.city || '',
+        event.modal?.overview || '',
+        ...event.tags.map(t => t.text),
+        ...(event.modal?.topics || [])
+      ].join(' ').toLowerCase();
+
+      return searchableText.includes(query);
+    });
+  },
+
+  showResults(results, query) {
+    this.searchResults.innerHTML = Templates.searchResults(results, query);
+    this.searchResults.classList.remove('hidden');
+  },
+
+  hideResults() {
+    this.searchResults.classList.add('hidden');
+  },
+
+  clearSearch() {
+    this.searchInput.value = '';
+    this.searchClear.classList.add('hidden');
+    this.hideResults();
+  },
+
+  navigateResults(direction) {
+    const items = Array.from(this.searchResults.querySelectorAll('.search-result-item'));
+    if (items.length === 0) return;
+
+    const currentFocused = this.searchResults.querySelector('.search-result-item.focused');
+    let currentIndex = currentFocused ? items.indexOf(currentFocused) : -1;
+
+    // Remove current focus
+    if (currentFocused) {
+      currentFocused.classList.remove('focused');
+    }
+
+    // Calculate new index
+    let newIndex = currentIndex + direction;
+    if (newIndex < 0) newIndex = items.length - 1;
+    if (newIndex >= items.length) newIndex = 0;
+
+    // Apply new focus
+    items[newIndex].classList.add('focused');
+    items[newIndex].scrollIntoView({ block: 'nearest' });
+  }
+};
+
 class CalendarApp {
   constructor(pageName) {
     this.pageName = pageName;
@@ -121,6 +266,7 @@ class CalendarApp {
     this.renderPage();
     this.bindFilters();
     this.bindModalEvents();
+    GlobalSearch.init();
     Countdown.initAll();
   }
 
