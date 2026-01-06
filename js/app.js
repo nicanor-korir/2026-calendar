@@ -259,7 +259,8 @@ class CalendarApp {
   constructor(pageName) {
     this.pageName = pageName;
     this.currentFilter = 'all';
-    this.events = EventsAPI.getByPage(pageName);
+    // Load all events including archived so archive filter works
+    this.events = EventsAPI.getByPage(pageName, true);
   }
 
   init() {
@@ -331,18 +332,26 @@ class CalendarApp {
 
       let matches = false;
 
-      if (this.currentFilter === 'all') {
-        matches = true;
+      const event = this.events.find(e => e.id === eventId);
+      const isArchived = event?.isArchived === true;
+
+      if (this.currentFilter === 'archive') {
+        // Archive filter shows only archived events
+        matches = isArchived;
+      } else if (this.currentFilter === 'all') {
+        // All filter excludes archived events
+        matches = !isArchived;
       } else if (this.currentFilter === 'saved') {
-        // Check if this event is in the saved list
-        matches = SavedEvents.isSaved(eventId);
+        // Check if this event is in the saved list (exclude archived)
+        matches = SavedEvents.isSaved(eventId) && !isArchived;
       } else if (this.currentFilter === 'new') {
-        // Check if this event has isNew flag
-        matches = card.classList.contains('is-new') ||
-          this.events.find(e => e.id === eventId)?.isNew === true;
+        // Check if this event has isNew flag (exclude archived)
+        matches = (card.classList.contains('is-new') ||
+          event?.isNew === true) && !isArchived;
       } else {
-        matches = category.includes(this.currentFilter) ||
-          type.includes(this.currentFilter);
+        // Category/type filters exclude archived events
+        matches = !isArchived && (category.includes(this.currentFilter) ||
+          type.includes(this.currentFilter));
       }
 
       if (matches) {
@@ -371,6 +380,13 @@ class CalendarApp {
       }
 
       featuredSection.classList.toggle('hidden', !showFeatured);
+
+      // Only show "Featured Event" title on All Events tab
+      const featuredTitle = featuredSection.querySelector('.section-title');
+      if (featuredTitle) {
+        featuredTitle.classList.toggle('hidden', this.currentFilter !== 'all');
+      }
+
       if (showFeatured && this.currentFilter !== 'all') {
         visibleCount++;
       }

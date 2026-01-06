@@ -22,7 +22,8 @@ const EVENTS_DATA = {
       { id: "robotics-ai", label: "Robotics & AI", icon: "🤖" },
       { id: "frontend", label: "Frontend/JS", icon: "⚛️" },
       { id: "devops", label: "DevOps/Cloud", icon: "☁️" },
-      { id: "security", label: "Security", icon: "🔐" }
+      { id: "security", label: "Security", icon: "🔐" },
+      { id: "archive", label: "Archive", icon: "📦" }
     ],
     hackathons: [
       { id: "all", label: "All", icon: null },
@@ -31,7 +32,8 @@ const EVENTS_DATA = {
       { id: "hackathon", label: "Hackathons", icon: "💻" },
       { id: "startup", label: "Startup", icon: "🚀" },
       { id: "competition", label: "Competitions", icon: "🏆" },
-      { id: "africa", label: "Africa Focus", icon: "🌍" }
+      { id: "africa", label: "Africa Focus", icon: "🌍" },
+      { id: "archive", label: "Archive", icon: "📦" }
     ],
     cfp: [
       { id: "all", label: "All CFPs", icon: null },
@@ -39,7 +41,8 @@ const EVENTS_DATA = {
       { id: "new", label: "New", icon: "✨" },
       { id: "ml", label: "Machine Learning", icon: "🤖" },
       { id: "cv", label: "Computer Vision", icon: "👁️" },
-      { id: "robotics", label: "Robotics", icon: "🦾" }
+      { id: "robotics", label: "Robotics", icon: "🦾" },
+      { id: "archive", label: "Archive", icon: "📦" }
     ]
   },
 
@@ -900,7 +903,7 @@ const EVENTS_DATA = {
       dateDisplay: { month: "Jul", day: "8-10" },
       eventType: "Mega Conference",
       isUrgent: false,
-      isFeatured: true,
+      isFeatured: false,
       prize: null,
       location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
       modal: {
@@ -2432,12 +2435,17 @@ const EventsAPI = {
     });
   },
 
-  getAll() {
-    return this._sortByDate(EVENTS_DATA.events);
+  getAll(includeArchived = false) {
+    const events = includeArchived
+      ? EVENTS_DATA.events
+      : EVENTS_DATA.events.filter(e => !e.isArchived);
+    return this._sortByDate(events);
   },
 
-  getByPage(pageName) {
-    const filtered = EVENTS_DATA.events.filter(e => e.page === pageName);
+  getByPage(pageName, includeArchived = false) {
+    const filtered = EVENTS_DATA.events.filter(e =>
+      e.page === pageName && (includeArchived || !e.isArchived)
+    );
     return this._sortByDate(filtered);
   },
 
@@ -2446,7 +2454,7 @@ const EventsAPI = {
   },
 
   getFeatured(pageName) {
-    return EVENTS_DATA.events.find(e => e.isFeatured && e.page === pageName);
+    return EVENTS_DATA.events.find(e => e.isFeatured && e.page === pageName && !e.isArchived);
   },
 
   getFiltersForPage(pageName) {
@@ -2458,22 +2466,36 @@ const EventsAPI = {
   },
 
   filterEvents(events, filterValue) {
-    if (filterValue === 'all') return events;
+    // Archive filter shows only archived events
+    if (filterValue === 'archive') {
+      return events.filter(event => event.isArchived === true);
+    }
+
+    // All other filters exclude archived events
+    if (filterValue === 'all') {
+      return events.filter(event => !event.isArchived);
+    }
 
     // Special handling for "new" filter
     if (filterValue === 'new') {
-      return events.filter(event => event.isNew === true);
+      return events.filter(event => event.isNew === true && !event.isArchived);
     }
 
     return events.filter(event => {
+      if (event.isArchived) return false;
       const matchesCategory = event.category.includes(filterValue);
       const matchesType = event.type.includes(filterValue);
       return matchesCategory || matchesType;
     });
   },
 
-  // Get count of new events
+  // Get count of new events (excludes archived)
   getNewEventsCount() {
-    return EVENTS_DATA.events.filter(e => e.isNew === true).length;
+    return EVENTS_DATA.events.filter(e => e.isNew === true && !e.isArchived).length;
+  },
+
+  // Get count of archived events for a page
+  getArchivedCount(pageName) {
+    return EVENTS_DATA.events.filter(e => e.page === pageName && e.isArchived === true).length;
   }
 };
