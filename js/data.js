@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 80,
+    totalEvents: 82,
     totalPrizes: "$2M+",
     berlinEvents: 9,
     cfpCount: 6
@@ -3583,6 +3583,90 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191252&copyownerid=196290",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191252&copyownerid=196290"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-01-08)
+    // ========================================
+    {
+      id: "devpost-27796",
+      title: "The Developer's Connect",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-12T00:00:00.000Z",
+        end: "2026-01-12T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "12" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-08",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://the-developer-s-connect.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://the-developer-s-connect.devpost.com/",
+        website: "https://the-developer-s-connect.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-mliob-2026---7th-international-conference-on-machi",
+      title: "MLIOB 2026 : 7th International Conference on Machine Learning, IOT and Blockchain",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-08",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "7th International Conference on Machine Learning, IOT and Blockchain [Copenhagen, Denmark] [Jan 24, 2026 - Jan 25, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167"
       }
     }
   ]
