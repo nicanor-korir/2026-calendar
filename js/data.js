@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 80,
+    totalEvents: 85,
     totalPrizes: "$2M+",
     berlinEvents: 9,
     cfpCount: 6
@@ -3583,6 +3583,210 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191252&copyownerid=196290",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191252&copyownerid=196290"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-01-09)
+    // ========================================
+    {
+      id: "devpost-28029",
+      title: "Iterate Designathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-09T00:00:00.000Z",
+        end: "2026-01-09T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "9" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-09",
+      prize: { amount: "$CAD 0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://iterate-designathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://iterate-designathon.devpost.com/",
+        website: "https://iterate-designathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-26996",
+      title: "SB Hacks XII",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-10T00:00:00.000Z",
+        end: "2026-01-10T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "10" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-09",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://sb-hacks-xii.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://sb-hacks-xii.devpost.com/",
+        website: "https://sb-hacks-xii.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-aibd-2026---7th-international-conference-on-artifi",
+      title: "AIBD 2026 : 7th International Conference on Artificial Intelligence and Big Data",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-09",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "7th International Conference on Artificial Intelligence and Big Data [Vancouver, Canada] [Feb 27, 2026 - Feb 28, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191554&copyownerid=46167" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191554&copyownerid=46167",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191554&copyownerid=46167"
+      }
+    },
+    {
+      id: "wikicfp-mliob-2026---7th-international-conference-on-machi",
+      title: "MLIOB 2026 : 7th International Conference on Machine Learning, IOT and Blockchain",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-09",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "7th International Conference on Machine Learning, IOT and Blockchain [Copenhagen, Denmark] [Jan 24, 2026 - Jan 25, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167"
+      }
+    },
+    {
+      id: "wikicfp-mlann--2026---2026-4th-asia-conference-on-machine-",
+      title: "MLANN  2026 : 2026 4th Asia Conference on Machine Learning, Algorithms and Neural Networks (MLANN 2026)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-09",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 4th Asia Conference on Machine Learning, Algorithms and Neural Networks (MLANN 2026) [Shanghai, China] [May 22, 2026 - May 24, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191487&copyownerid=163993" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191487&copyownerid=163993",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191487&copyownerid=163993"
       }
     }
   ]
