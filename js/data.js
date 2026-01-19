@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 101,
+    totalEvents: 112,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 26
@@ -4803,6 +4803,450 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191487&copyownerid=163993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191487&copyownerid=163993"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-01-19)
+    // ========================================
+    {
+      id: "devpost-27976",
+      title: "HackDay2026 - CEV",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-20T00:00:00.000Z",
+        end: "2026-01-20T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "20" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hackday2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hackday2026.devpost.com/",
+        website: "https://hackday2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-27848",
+      title: "Hackrush - 16Hour Innovation Sprint",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-23T00:00:00.000Z",
+        end: "2026-01-23T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "23" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "₹ 10,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hackrush.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hackrush.devpost.com/",
+        website: "https://hackrush.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-26478",
+      title: "Stang Hacks",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-24T00:00:00.000Z",
+        end: "2026-01-24T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "24" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "$800", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://stang-hacks-26.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://stang-hacks-26.devpost.com/",
+        website: "https://stang-hacks-26.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-28187",
+      title: "SWEeyam",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-22T00:00:00.000Z",
+        end: "2026-01-22T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "22" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "₹ 100,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://sweeyam-28187.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://sweeyam-28187.devpost.com/",
+        website: "https://sweeyam-28187.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-27678",
+      title: "StartupMed",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-23T00:00:00.000Z",
+        end: "2026-01-23T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "23" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://startupmed.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://startupmed.devpost.com/",
+        website: "https://startupmed.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-27564",
+      title: "....",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-24T00:00:00.000Z",
+        end: "2026-01-24T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "24" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "₹ 80,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hacksmart321.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hacksmart321.devpost.com/",
+        website: "https://hacksmart321.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-26854",
+      title: "SwampHacks XI",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-23T00:00:00.000Z",
+        end: "2026-01-23T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "23" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "$8,500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://swamphacks-xi.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://swamphacks-xi.devpost.com/",
+        website: "https://swamphacks-xi.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-26868",
+      title: "HackHive 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-23T00:00:00.000Z",
+        end: "2026-01-23T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "23" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "$CAD 0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hackhive-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hackhive-2026.devpost.com/",
+        website: "https://hackhive-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-23743",
+      title: "Hoya Hacks 2026 Powered By Cisco",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-23T00:00:00.000Z",
+        end: "2026-01-23T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "23" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: { amount: "$100", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hoya-hacks-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hoya-hacks-2026.devpost.com/",
+        website: "https://hoya-hacks-2026.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-cisa-2026---2026-ieee-conference-on-computational-",
+      title: "CISA 2026 : 2026 IEEE Conference on Computational Imaging Using Synthetic Apertures (CISA)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 IEEE Conference on Computational Imaging Using Synthetic Apertures (CISA) [Albany, New York, USA] [May 26, 2026 - May 29, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191708&copyownerid=13358" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191708&copyownerid=13358",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191708&copyownerid=13358"
+      }
+    },
+    {
+      id: "wikicfp-icics-2026---international-conference-on-informati",
+      title: "ICICS 2026 : International Conference on Informatics and Computer Science",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-19",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Informatics and Computer Science  [77a, Kostava ave, Tbilisi, 0171, Georgia] [Jun 18, 2026 - Jun 20, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191696&copyownerid=196785" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191696&copyownerid=196785",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191696&copyownerid=196785"
       }
     }
   ]
