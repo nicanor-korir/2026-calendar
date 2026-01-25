@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 101,
+    totalEvents: 82,
     totalPrizes: "$2M+",
     berlinEvents: 0,
-    cfpCount: 26
+    cfpCount: 38
   },
 
   // Filter definitions for each page
@@ -550,7 +550,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://ijcai.org/",
         website: "https://ijcai.org/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "icml",
@@ -3961,11 +3962,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191252&copyownerid=196290"
       }
     },
-
-    // ========================================
-    // AUTO-ADDED EVENTS (2026-01-17)
-    // ========================================
-    {
+{
       id: "devpost-27778",
       title: "Paris Innov'Hack",
       organizer: "devpost",
@@ -3983,14 +3980,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4003,9 +4011,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://paris-innov-hack.devpost.com/",
         website: "https://paris-innov-hack.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-25401",
       title: "BrébeufHx 9.0",
       organizer: "devpost",
@@ -4023,14 +4032,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$CAD 7,500", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$CAD 7,500",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4043,9 +4063,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://brebeufhx-9-0.devpost.com/",
         website: "https://brebeufhx-9-0.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-28019",
       title: "Film + AI Video Hackathon @ GMI Studio x PixVerse ",
       organizer: "devpost",
@@ -4063,14 +4084,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4083,9 +4115,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://signal26.devpost.com/",
         website: "https://signal26.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-27477",
       title: "HackFRee 2026",
       organizer: "devpost",
@@ -4103,14 +4136,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4123,9 +4167,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://hackfree-2026.devpost.com/",
         website: "https://hackfree-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-28062",
       title: "McHacks 13",
       organizer: "devpost",
@@ -4143,14 +4188,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$8,600", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$8,600",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4163,9 +4219,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://mchacks13.devpost.com/",
         website: "https://mchacks13.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-28022",
       title: "Winter Pitchfest | High School Startup Pitch | $1800+ prizes | THIS WEEKEND",
       organizer: "devpost",
@@ -4183,14 +4240,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$200", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$200",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4203,9 +4271,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://winter-pitchfest.devpost.com/",
         website: "https://winter-pitchfest.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-27898",
       title: "Hackville 2026",
       organizer: "devpost",
@@ -4223,14 +4292,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$CAD 0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$CAD 0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4243,9 +4323,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://hackville-2026.devpost.com/",
         website: "https://hackville-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-25450",
       title: "nwHacks 2026",
       organizer: "devpost",
@@ -4263,14 +4344,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "17" },
+      dateDisplay: {
+        month: "Jan",
+        day: "17"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
-      prize: { amount: "$CAD 1,125", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$CAD 1,125",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -4283,9 +4375,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://nwhacks-2026.devpost.com/",
         website: "https://nwhacks-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "wikicfp-aspai-2026---8th-international-conference-on-advan",
       title: "ASPAI 2026 : 8th International Conference on Advances in Signal Processing and Artificial Intelligence",
       organizer: "wikicfp",
@@ -4303,14 +4396,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "8th International Conference on Advances in Signal Processing and Artificial Intelligence [ Melia Palma Marina Hotel] [Jun 24, 2026 - Jun 26, 2026]",
         requirements: null,
@@ -4325,7 +4426,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191666&copyownerid=93289"
       }
     },
-    {
+{
       id: "wikicfp-icomv-2026---2026-5th-international-conference-on-",
       title: "ICOMV 2026 : 2026 5th International Conference on Optics and Machine Vision",
       organizer: "wikicfp",
@@ -4343,14 +4444,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 5th International Conference on Optics and Machine Vision [Zhengzhou, China] [Apr 10, 2026 - Apr 12, 2026]",
         requirements: null,
@@ -4365,7 +4474,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191663&copyownerid=182680"
       }
     },
-    {
+{
       id: "wikicfp-claramas-2026---causal-learning-and-reasoning-in-a",
       title: "CLaRAMAS 2026 : Causal Learning and Reasoning in Agents and Multiagent Systems",
       organizer: "wikicfp",
@@ -4383,14 +4492,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "Causal Learning and Reasoning in Agents and Multiagent Systems [Paphos, Cyprus] [May 25, 2026 - May 26, 2026]",
         requirements: null,
@@ -4405,7 +4522,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191653&copyownerid=176795"
       }
     },
-    {
+{
       id: "wikicfp-nldml-2026---5th-international-conference-on-nlp--",
       title: "NLDML 2026 : 5th International Conference on NLP, Data Mining and Machine Learning",
       organizer: "wikicfp",
@@ -4423,14 +4540,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "5th International Conference on NLP, Data Mining and Machine Learning [Virtual Conference] [Jan 27, 2026 - Jan 28, 2026]",
         requirements: null,
@@ -4445,7 +4570,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191647&copyownerid=46167"
       }
     },
-    {
+{
       id: "wikicfp-mlnn-2026---2026-3rd-international-conference-on-m",
       title: "MLNN 2026 : 2026 3rd International Conference on Machine Learning and Neural Networks",
       organizer: "wikicfp",
@@ -4463,14 +4588,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 3rd International Conference on Machine Learning and Neural Networks [Chengdu, China] [Apr 10, 2026 - Apr 12, 2026]",
         requirements: null,
@@ -4485,7 +4618,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191641&copyownerid=163220"
       }
     },
-    {
+{
       id: "wikicfp-dmls-2026---2026-international-conference-on-decis",
       title: "DMLS 2026 : 2026 International Conference on Decision, Management, and Learning Systems",
       organizer: "wikicfp",
@@ -4503,14 +4636,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 International Conference on Decision, Management, and Learning Systems [Kuala Lumpur, Malaysia] [Apr 10, 2026 - Apr 12, 2026]",
         requirements: null,
@@ -4525,7 +4666,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191605&copyownerid=182680"
       }
     },
-    {
+{
       id: "wikicfp-cbc-2026---call-for-chapters--center-based-cluster",
       title: "CBC 2026 : Call for Chapters: Center-Based Clustering (Springer Nature, 2026)",
       organizer: "wikicfp",
@@ -4543,14 +4684,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "Call for Chapters: Center-Based Clustering (Springer Nature, 2026) [Mar 1, 2026 - Dec 31, 2026]",
         requirements: null,
@@ -4565,7 +4714,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191599&copyownerid=3780"
       }
     },
-    {
+{
       id: "wikicfp-svc-2026---7th-international-conference-on-signal-",
       title: "SVC 2026 : 7th International Conference on Signal Processing, VLSI Design &amp; Communication Systems",
       organizer: "wikicfp",
@@ -4583,14 +4732,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "7th International Conference on Signal Processing, VLSI Design & Communication Systems [Vancouver, Canada] [Feb 27, 2026 - Feb 28, 2026]",
         requirements: null,
@@ -4605,7 +4762,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191585&copyownerid=46167"
       }
     },
-    {
+{
       id: "wikicfp-aiap-2026---13th-international-conference-on-artif",
       title: "AIAP 2026 : 13th International Conference on Artificial Intelligence and Applications",
       organizer: "wikicfp",
@@ -4623,14 +4780,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "13th International Conference on Artificial Intelligence and Applications [Vienna, Austria] [Mar 14, 2026 - Mar 15, 2026]",
         requirements: null,
@@ -4645,7 +4810,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191584&copyownerid=46167"
       }
     },
-    {
+{
       id: "wikicfp-psd-2026---privacy-in-statistical-databases-2026",
       title: "PSD 2026 : PRIVACY IN STATISTICAL DATABASES 2026",
       organizer: "wikicfp",
@@ -4663,14 +4828,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "PRIVACY IN STATISTICAL DATABASES 2026 [Cadiz, Spain] [Sep 30, 2026 - Oct 2, 2025]",
         requirements: null,
@@ -4685,7 +4858,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191564&copyownerid=196674"
       }
     },
-    {
+{
       id: "wikicfp-aibd-2026---7th-international-conference-on-artifi",
       title: "AIBD 2026 : 7th International Conference on Artificial Intelligence and Big Data",
       organizer: "wikicfp",
@@ -4703,14 +4876,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "7th International Conference on Artificial Intelligence and Big Data [Vancouver, Canada] [Feb 27, 2026 - Feb 28, 2026]",
         requirements: null,
@@ -4725,7 +4906,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191554&copyownerid=46167"
       }
     },
-    {
+{
       id: "wikicfp-mliob-2026---7th-international-conference-on-machi",
       title: "MLIOB 2026 : 7th International Conference on Machine Learning, IOT and Blockchain",
       organizer: "wikicfp",
@@ -4743,14 +4924,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "7th International Conference on Machine Learning, IOT and Blockchain [Copenhagen, Denmark] [Jan 24, 2026 - Jan 25, 2026]",
         requirements: null,
@@ -4765,7 +4954,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191506&copyownerid=46167"
       }
     },
-    {
+{
       id: "wikicfp-mlann--2026---2026-4th-asia-conference-on-machine-",
       title: "MLANN  2026 : 2026 4th Asia Conference on Machine Learning, Algorithms and Neural Networks (MLANN 2026)",
       organizer: "wikicfp",
@@ -4783,14 +4972,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-01-17",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 4th Asia Conference on Machine Learning, Algorithms and Neural Networks (MLANN 2026) [Shanghai, China] [May 22, 2026 - May 24, 2026]",
         requirements: null,
