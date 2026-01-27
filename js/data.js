@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 125,
+    totalEvents: 134,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 38
@@ -5964,6 +5964,370 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191647&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191647&copyownerid=46167"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-01-27)
+    // ========================================
+    {
+      id: "devpost-28246",
+      title: "ElleHacks 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-01-30T00:00:00.000Z",
+        end: "2026-02-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "30" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: { amount: "$CAD 0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://ellehacks-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://ellehacks-2026.devpost.com/",
+        website: "https://ellehacks-2026.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-amlc-2026---2026-applied-machine-learning-conferen",
+      title: "AMLC 2026 : 2026 Applied Machine Learning Conference",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 Applied Machine Learning Conference [Charlottesville, Virginia] [Apr 17, 2026 - Apr 18, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191930&copyownerid=196954" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191930&copyownerid=196954",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191930&copyownerid=196954"
+      }
+    },
+    {
+      id: "wikicfp-call-for-phd-forum-contributions---ecml--2026---ca",
+      title: "Call for PhD Forum Contributions - ECML  2026 : Call for PhD Forum Contributions - ECML PKDD 2026 - ICORE Rank A",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Call for PhD Forum Contributions - ECML PKDD 2026 - ICORE Rank A [Naples] [Sep 7, 2026 - Sep 11, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191920&copyownerid=196945" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191920&copyownerid=196945",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191920&copyownerid=196945"
+      }
+    },
+    {
+      id: "wikicfp-call-for-workshop-proposals---ecml-pkdd-2026---cal",
+      title: "Call for Workshop Proposals - ECML PKDD 2026 : Call for Workshop Proposals - ECML PKDD 2026 - ICORE Rank A",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Call for Workshop Proposals - ECML PKDD 2026 - ICORE Rank A [Naples] [Sep 7, 2026 - Sep 11, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191919&copyownerid=196945" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191919&copyownerid=196945",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191919&copyownerid=196945"
+      }
+    },
+    {
+      id: "wikicfp-ecml-pkdd-2026---ecml-pkdd-2026---european-confere",
+      title: "ECML PKDD 2026 : ECML PKDD 2026 : European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "ECML PKDD 2026 : European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases [Naples] [Sep 7, 2026 - Sep 11, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191917&copyownerid=175190" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191917&copyownerid=175190",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191917&copyownerid=175190"
+      }
+    },
+    {
+      id: "wikicfp-ddm-genai-2026---data-driven-decision-making--unce",
+      title: "DDM-GenAI 2026 : Data-Driven Decision-Making: Uncertainty and Reliable Decision-Making by Generative AI",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Data-Driven Decision-Making: Uncertainty and Reliable Decision-Making by Generative AI [MECC Maastricht (Netherlands)] [Jun 21, 2026 - Jun 26, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191904&copyownerid=196928" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191904&copyownerid=196928",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191904&copyownerid=196928"
+      }
+    },
+    {
+      id: "wikicfp-icmr-2026---international-conference-on-multimedia",
+      title: "ICMR 2026 : International Conference on Multimedia Retrieval",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Multimedia Retrieval [Amsterdam] [Jun 16, 2026 - Jun 19, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191893&copyownerid=196922" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191893&copyownerid=196922",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191893&copyownerid=196922"
+      }
+    },
+    {
+      id: "wikicfp-icmr-2026---international-conference-on-multimedia",
+      title: "ICMR 2026 : International Conference on Multimedia Retrieval",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Multimedia Retrieval [Amsterdam] [Jun 16, 2026 - Jun 19, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191892&copyownerid=196922" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191892&copyownerid=196922",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191892&copyownerid=196922"
+      }
+    },
+    {
+      id: "wikicfp-taima-2026---traitement-et-analyse-de-l-informatio",
+      title: "TAIMA 2026 : Traitement et Analyse de l'Information : Méthodes et Applications",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-01-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Traitement et Analyse de l'Information : Méthodes et Applications [Tunsia] [May 19, 2026 - May 23, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191891&copyownerid=196920" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191891&copyownerid=196920",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191891&copyownerid=196920"
       }
     }
   ]
