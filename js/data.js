@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 51,
+    totalEvents: 105,
     totalPrizes: "$2M+",
-    berlinEvents: 9,
-    cfpCount: 6
+    berlinEvents: 0,
+    cfpCount: 54
   },
 
   // Filter definitions for each page
@@ -64,10 +64,7 @@ const EVENTS_DATA = {
 
   // All events
   events: [
-    // ========================================
-    // HACKATHONS & COMPETITIONS PAGE
-    // ========================================
-    {
+{
       id: "surge-hack",
       title: "Launch & Fund: AI Meets Robotics",
       organizer: "Lablab.ai × Surge",
@@ -87,21 +84,26 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Feb", day: "6-15" },
+      dateDisplay: {
+        month: "Feb",
+        day: "6-15"
+      },
       eventType: "Hackathon",
       isUrgent: false,
-      isFeatured: false,
-      prize: { amount: "Part of $1M Prize Pool", icon: "💰" },
-      location: { type: "hybrid", city: null, country: null, display: "Online + On-site" },
+      isFeatured: true,
+      prize: {
+        amount: "Part of $1M Prize Pool",
+        icon: "💰"
+      },
+      location: {
+        type: "hybrid",
+        city: null,
+        country: null,
+        display: "Online + On-site"
+      },
       modal: {
         overview: "Part of the $1,000,000 startup challenge series. Build AI + Robotics solutions, compete in hybrid format (online + on-site), and launch your own startup with potential funding.",
-        requirements: [
-          "Build a solution combining AI and Robotics",
-          "Team formation allowed during hackathon",
-          "Working prototype/MVP by submission deadline",
-          "Pitch presentation for on-site phase",
-          "Open to developers, founders, and innovators globally"
-        ],
+        requirements: ["Build a solution combining AI and Robotics", "Team formation allowed during hackathon", "Working prototype/MVP by submission deadline", "Pitch presentation for on-site phase", "Open to developers, founders, and innovators globally"],
         keyDates: null,
         topics: null,
         resources: [
@@ -114,7 +116,7 @@ const EVENTS_DATA = {
         website: "https://lablab.ai/event/launch-fund-ai-meets-robotics"
       }
     },
-    {
+{
       id: "ms-ai-agents",
       title: "AI Agents Hackathon",
       organizer: "Microsoft Reactor",
@@ -132,21 +134,26 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "22" },
+      dateDisplay: {
+        month: "Jan",
+        day: "22"
+      },
       eventType: "Hackathon",
       isUrgent: true,
       isFeatured: false,
-      prize: { amount: "Cash Prizes", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Virtual" },
+      prize: {
+        amount: "Cash Prizes",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Virtual"
+      },
       modal: {
         overview: "A FREE three-week virtual hackathon to dive deep into AI agent development. Build powerful AI agents using cutting-edge tools and compete for cash prizes. Perfect for developers wanting hands-on experience with AI agents.",
-        requirements: [
-          "Build an AI agent or agentic workflow",
-          "Agents should be autonomous, adaptive, and impactful",
-          "Can focus on workflow automation, digital companions, sustainability, industry solutions, or education",
-          "Low-code/no-code applications accepted",
-          "Submit your hack for judging"
-        ],
+        requirements: ["Build an AI agent or agentic workflow", "Agents should be autonomous, adaptive, and impactful", "Can focus on workflow automation, digital companions, sustainability, industry solutions, or education", "Low-code/no-code applications accepted", "Submit your hack for judging"],
         keyDates: null,
         topics: null,
         resources: [
@@ -159,7 +166,7 @@ const EVENTS_DATA = {
         website: "https://microsoft.github.io/AI_Agents_Hackathon/"
       }
     },
-    {
+{
       id: "rice-bpc",
       title: "Rice Business Plan Competition",
       organizer: "Rice University",
@@ -177,20 +184,26 @@ const EVENTS_DATA = {
         deadline: "2026-01-31T23:59:00",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Jan", day: "31" },
+      dateDisplay: {
+        month: "Jan",
+        day: "31"
+      },
       eventType: "Competition",
       isUrgent: true,
       isFeatured: false,
-      prize: { amount: "$1M+ in Prizes", icon: "💰" },
-      location: { type: "onsite", city: "Houston", country: "USA", display: "Houston, TX" },
+      prize: {
+        amount: "$1M+ in Prizes",
+        icon: "💰"
+      },
+      location: {
+        type: "onsite",
+        city: "Houston",
+        country: "USA",
+        display: "Houston, TX"
+      },
       modal: {
         overview: "The Rice Business Plan Competition is the world's largest and richest graduate-level student startup competition. It provides student entrepreneurs with real-world feedback and exposure to investors while competing for over $1 million in prizes.",
-        requirements: [
-          "At least one graduate student must be on the founding team",
-          "Must have a viable technology-based startup concept",
-          "Submit a detailed business plan",
-          "Present to panels of investors and executives"
-        ],
+        requirements: ["At least one graduate student must be on the founding team", "Must have a viable technology-based startup concept", "Submit a detailed business plan", "Present to panels of investors and executives"],
         keyDates: null,
         topics: null,
         resources: [
@@ -203,7 +216,7 @@ const EVENTS_DATA = {
         website: "https://rbpc.rice.edu/"
       }
     },
-    {
+{
       id: "hult-prize",
       title: "Hult Prize 2026",
       organizer: "Hult Prize Foundation",
@@ -222,20 +235,26 @@ const EVENTS_DATA = {
         deadline: "2026-02-28T23:59:59",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Feb", day: "28" },
+      dateDisplay: {
+        month: "Feb",
+        day: "28"
+      },
       eventType: "Competition",
       isUrgent: false,
       isFeatured: false,
-      prize: { amount: "$1M USD Grand Prize", icon: "💰" },
-      location: { type: "hybrid", city: null, country: null, display: "Global" },
+      prize: {
+        amount: "$1M USD Grand Prize",
+        icon: "💰"
+      },
+      location: {
+        type: "hybrid",
+        city: null,
+        country: null,
+        display: "Global"
+      },
       modal: {
         overview: "The Hult Prize challenges students to solve the world's most pressing social issues. Teams compete for $1 million in startup funding to launch sustainable social enterprises.",
-        requirements: [
-          "Teams of 3-4 university students",
-          "Address the annual challenge theme",
-          "Progress through campus, regional, and global rounds",
-          "Develop a viable, scalable social enterprise"
-        ],
+        requirements: ["Teams of 3-4 university students", "Address the annual challenge theme", "Progress through campus, regional, and global rounds", "Develop a viable, scalable social enterprise"],
         keyDates: null,
         topics: null,
         resources: [
@@ -248,7 +267,7 @@ const EVENTS_DATA = {
         website: "https://www.hultprize.org/"
       }
     },
-    {
+{
       id: "gdsc-solution",
       title: "Google Solution Challenge",
       organizer: "Google Developer Student Clubs",
@@ -267,20 +286,26 @@ const EVENTS_DATA = {
         deadline: "2026-02-22T23:59:59",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Feb", day: "22" },
+      dateDisplay: {
+        month: "Feb",
+        day: "22"
+      },
       eventType: "Challenge",
       isUrgent: false,
       isFeatured: false,
-      prize: { amount: "$3,000/member (Top 3)", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Virtual" },
+      prize: {
+        amount: "$3,000/member (Top 3)",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Virtual"
+      },
       modal: {
         overview: "The Google Solution Challenge invites university students to build solutions using Google technologies to address one or more of the United Nations' 17 Sustainable Development Goals.",
-        requirements: [
-          "Must be a GDSC member or university student",
-          "Use one or more Google products/platforms",
-          "Address at least one UN SDG",
-          "Submit a working demo and video"
-        ],
+        requirements: ["Must be a GDSC member or university student", "Use one or more Google products/platforms", "Address at least one UN SDG", "Submit a working demo and video"],
         keyDates: null,
         topics: null,
         resources: [
@@ -293,7 +318,7 @@ const EVENTS_DATA = {
         website: "https://developers.google.com/community/gdsc-solution-challenge"
       }
     },
-    {
+{
       id: "hello-tomorrow",
       title: "Hello Tomorrow Challenge",
       organizer: "Hello Tomorrow",
@@ -312,19 +337,26 @@ const EVENTS_DATA = {
         deadline: "2026-03-15T23:59:59",
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "11" },
+      dateDisplay: {
+        month: "Jun",
+        day: "11"
+      },
       eventType: "Deep Tech",
       isUrgent: false,
       isFeatured: false,
-      prize: { amount: "€100K+ Prizes", icon: "💰" },
-      location: { type: "onsite", city: "Paris", country: "France", display: "Paris, France" },
+      prize: {
+        amount: "€100K+ Prizes",
+        icon: "💰"
+      },
+      location: {
+        type: "onsite",
+        city: "Paris",
+        country: "France",
+        display: "Paris, France"
+      },
       modal: {
         overview: "The Hello Tomorrow Global Challenge is the world's leading deep tech startup competition. It connects science entrepreneurs with investors, corporates, and mentors to transform breakthrough technologies into global solutions.",
-        requirements: [
-          "Deep tech startup with proprietary technology",
-          "Technology ready for commercialization (TRL 3+)",
-          "Focus on AI, Energy, Health, Industry, or Space tracks"
-        ],
+        requirements: ["Deep tech startup with proprietary technology", "Technology ready for commercialization (TRL 3+)", "Focus on AI, Energy, Health, Industry, or Space tracks"],
         keyDates: null,
         topics: null,
         resources: [
@@ -336,7 +368,7 @@ const EVENTS_DATA = {
         website: "https://hello-tomorrow.org/"
       }
     },
-    {
+{
       id: "abcc",
       title: "Africa Business Concept Challenge",
       organizer: "GBSN",
@@ -355,19 +387,26 @@ const EVENTS_DATA = {
         deadline: "2026-02-15T23:59:59",
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Mar", day: "TBA" },
+      dateDisplay: {
+        month: "Mar",
+        day: "TBA"
+      },
       eventType: "Challenge",
       isUrgent: false,
       isFeatured: false,
-      prize: { amount: "Prizes + Mentorship", icon: "🏆" },
-      location: { type: "hybrid", city: null, country: null, display: "Africa-wide" },
+      prize: {
+        amount: "Prizes + Mentorship",
+        icon: "🏆"
+      },
+      location: {
+        type: "hybrid",
+        city: null,
+        country: null,
+        display: "Africa-wide"
+      },
       modal: {
         overview: "The Africa Business Concept Challenge empowers African students to develop innovative business ideas addressing local and regional challenges.",
-        requirements: [
-          "African university students",
-          "Business concept addressing African challenges",
-          "Team of 2-5 members"
-        ],
+        requirements: ["African university students", "Business concept addressing African challenges", "Team of 2-5 members"],
         keyDates: null,
         topics: null,
         resources: [
@@ -379,7 +418,7 @@ const EVENTS_DATA = {
         website: "https://gbsn.org/"
       }
     },
-    {
+{
       id: "ats-awards",
       title: "Africa Tech Summit Awards 2026",
       organizer: "Africa Tech Summit",
@@ -398,19 +437,26 @@ const EVENTS_DATA = {
         deadline: "2026-01-15T23:59:59",
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Feb", day: "TBA" },
+      dateDisplay: {
+        month: "Feb",
+        day: "TBA"
+      },
       eventType: "Awards",
       isUrgent: false,
       isFeatured: false,
-      prize: { amount: "Recognition + Prizes", icon: "🏆" },
-      location: { type: "onsite", city: "Nairobi", country: "Kenya", display: "Nairobi, Kenya" },
+      prize: {
+        amount: "Recognition + Prizes",
+        icon: "🏆"
+      },
+      location: {
+        type: "onsite",
+        city: "Nairobi",
+        country: "Kenya",
+        display: "Nairobi, Kenya"
+      },
       modal: {
         overview: "The Africa Tech Summit Awards celebrate the most innovative tech companies and leaders transforming Africa's digital economy.",
-        requirements: [
-          "African tech company or founder",
-          "Demonstrated innovation and impact",
-          "Operating in Africa"
-        ],
+        requirements: ["African tech company or founder", "Demonstrated innovation and impact", "Operating in Africa"],
         keyDates: null,
         topics: null,
         resources: [
@@ -422,7 +468,7 @@ const EVENTS_DATA = {
         website: "https://africatechsummit.com/"
       }
     },
-    {
+{
       id: "developpp",
       title: "develoPPP Ventures 2026",
       organizer: "German Federal Ministry (BMZ)",
@@ -441,19 +487,26 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Open", day: "2026" },
+      dateDisplay: {
+        month: "Open",
+        day: "2026"
+      },
       eventType: "Funding",
       isUrgent: false,
       isFeatured: false,
-      prize: { amount: "Up to €200K Funding", icon: "💰" },
-      location: { type: "hybrid", city: null, country: null, display: "Global" },
+      prize: {
+        amount: "Up to €200K Funding",
+        icon: "💰"
+      },
+      location: {
+        type: "hybrid",
+        city: null,
+        country: null,
+        display: "Global"
+      },
       modal: {
         overview: "develoPPP Ventures provides funding and support for startups working on development challenges in emerging markets, with a focus on Africa.",
-        requirements: [
-          "Startup with development impact focus",
-          "Working in emerging markets",
-          "Scalable business model"
-        ],
+        requirements: ["Startup with development impact focus", "Working in emerging markets", "Scalable business model"],
         keyDates: null,
         topics: null,
         resources: [
@@ -465,11 +518,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       }
     },
-
-    // ========================================
-    // CALL FOR PAPERS PAGE
-    // ========================================
-    {
+{
       id: "ijcai",
       title: "IJCAI-ECAI 2026",
       organizer: "International Joint Conference on AI",
@@ -487,12 +536,20 @@ const EVENTS_DATA = {
         deadline: "2026-01-19T23:59:59",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Jan", day: "19" },
+      dateDisplay: {
+        month: "Jan",
+        day: "19"
+      },
       eventType: "CFP",
       isUrgent: true,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Montreal", country: "Canada", display: "Montreal, Canada" },
+      location: {
+        type: "onsite",
+        city: "Montreal",
+        country: "Canada",
+        display: "Montreal, Canada"
+      },
       modal: {
         overview: "IJCAI is the premier international gathering of researchers in Artificial Intelligence. The conference covers all areas of AI research.",
         requirements: null,
@@ -501,13 +558,7 @@ const EVENTS_DATA = {
           { label: "Paper Deadline", value: "January 19, 2026" },
           { label: "Conference", value: "August 1-7, 2026" }
         ],
-        topics: [
-          "Machine Learning",
-          "Natural Language Processing",
-          "Computer Vision",
-          "Robotics & Autonomous Systems",
-          "Knowledge Representation"
-        ],
+        topics: ["Machine Learning", "Natural Language Processing", "Computer Vision", "Robotics & Autonomous Systems", "Knowledge Representation"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://ijcai.org/" }
         ]
@@ -515,9 +566,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://ijcai.org/",
         website: "https://ijcai.org/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "icml",
       title: "ICML 2026",
       organizer: "International Conference on Machine Learning",
@@ -536,12 +588,20 @@ const EVENTS_DATA = {
         abstractDeadline: "2026-01-24T12:00:00Z",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Jan", day: "29" },
+      dateDisplay: {
+        month: "Jan",
+        day: "29"
+      },
       eventType: "CFP",
       isUrgent: true,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Vienna", country: "Austria", display: "Vienna, Austria" },
+      location: {
+        type: "onsite",
+        city: "Vienna",
+        country: "Austria",
+        display: "Vienna, Austria"
+      },
       modal: {
         overview: "ICML is the premier gathering of professionals dedicated to the advancement of the branch of artificial intelligence known as machine learning.",
         requirements: null,
@@ -550,13 +610,7 @@ const EVENTS_DATA = {
           { label: "Paper Deadline", value: "January 29, 2026 (12:00 PM UTC)" },
           { label: "Conference", value: "July 7-11, 2026" }
         ],
-        topics: [
-          "Deep Learning & Neural Networks",
-          "Reinforcement Learning",
-          "Optimization & Theory",
-          "Probabilistic Methods",
-          "Applications of ML"
-        ],
+        topics: ["Deep Learning & Neural Networks", "Reinforcement Learning", "Optimization & Theory", "Probabilistic Methods", "Applications of ML"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://icml.cc/" }
         ]
@@ -566,7 +620,7 @@ const EVENTS_DATA = {
         website: "https://icml.cc/"
       }
     },
-    {
+{
       id: "eccv",
       title: "ECCV 2026",
       organizer: "European Conference on Computer Vision",
@@ -584,12 +638,20 @@ const EVENTS_DATA = {
         deadline: "2026-03-06T23:59:59",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Mar", day: "6" },
+      dateDisplay: {
+        month: "Mar",
+        day: "6"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Zurich", country: "Switzerland", display: "Zurich, Switzerland" },
+      location: {
+        type: "onsite",
+        city: "Zurich",
+        country: "Switzerland",
+        display: "Zurich, Switzerland"
+      },
       modal: {
         overview: "ECCV is a biennial research conference on computer vision, held in Europe. It is one of the top conferences in computer vision.",
         requirements: null,
@@ -597,13 +659,7 @@ const EVENTS_DATA = {
           { label: "Paper Deadline", value: "March 6, 2026" },
           { label: "Conference", value: "September 28 - October 3, 2026" }
         ],
-        topics: [
-          "3D Vision",
-          "Image Recognition",
-          "Video Understanding",
-          "Deep Learning for Vision",
-          "Medical Imaging"
-        ],
+        topics: ["3D Vision", "Image Recognition", "Video Understanding", "Deep Learning for Vision", "Medical Imaging"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://eccv.ecva.net/" }
         ]
@@ -613,7 +669,7 @@ const EVENTS_DATA = {
         website: "https://eccv.ecva.net/"
       }
     },
-    {
+{
       id: "cvpr",
       title: "CVPR 2026",
       organizer: "Computer Vision & Pattern Recognition",
@@ -632,12 +688,20 @@ const EVENTS_DATA = {
         deadline: "2026-11-15T23:59:59",
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "14" },
+      dateDisplay: {
+        month: "Jun",
+        day: "14"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Nashville", country: "USA", display: "Nashville, USA" },
+      location: {
+        type: "onsite",
+        city: "Nashville",
+        country: "USA",
+        display: "Nashville, USA"
+      },
       modal: {
         overview: "CVPR is the premier annual computer vision event comprising the main conference and several co-located workshops and tutorials.",
         requirements: null,
@@ -645,13 +709,7 @@ const EVENTS_DATA = {
           { label: "Paper Deadline", value: "November 2025 (for 2026)" },
           { label: "Conference", value: "June 14-20, 2026" }
         ],
-        topics: [
-          "Computer Vision",
-          "Pattern Recognition",
-          "Deep Learning",
-          "3D Vision",
-          "Autonomous Systems"
-        ],
+        topics: ["Computer Vision", "Pattern Recognition", "Deep Learning", "3D Vision", "Autonomous Systems"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://cvpr.thecvf.com/" }
         ]
@@ -661,7 +719,7 @@ const EVENTS_DATA = {
         website: "https://cvpr.thecvf.com/"
       }
     },
-    {
+{
       id: "icra",
       title: "ICRA 2026",
       organizer: "IEEE Robotics and Automation",
@@ -680,12 +738,20 @@ const EVENTS_DATA = {
         deadline: "2026-09-15T23:59:59",
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "1" },
+      dateDisplay: {
+        month: "Jun",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Vienna", country: "Austria", display: "Vienna, Austria" },
+      location: {
+        type: "onsite",
+        city: "Vienna",
+        country: "Austria",
+        display: "Vienna, Austria"
+      },
       modal: {
         overview: "ICRA is the IEEE flagship conference on robotics and automation. It brings together the world's top researchers in robotics.",
         requirements: null,
@@ -693,13 +759,7 @@ const EVENTS_DATA = {
           { label: "Paper Deadline", value: "September 15, 2025 (for 2026)" },
           { label: "Conference", value: "June 1-5, 2026" }
         ],
-        topics: [
-          "Robot Manipulation",
-          "Autonomous Navigation",
-          "Human-Robot Interaction",
-          "Robot Learning",
-          "Swarm Robotics"
-        ],
+        topics: ["Robot Manipulation", "Autonomous Navigation", "Human-Robot Interaction", "Robot Learning", "Swarm Robotics"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra" }
         ]
@@ -709,7 +769,7 @@ const EVENTS_DATA = {
         website: "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra"
       }
     },
-    {
+{
       id: "neurips",
       title: "NeurIPS 2026",
       organizer: "Neural Information Processing Systems",
@@ -728,12 +788,20 @@ const EVENTS_DATA = {
         deadline: "2026-05-15T23:59:59",
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Dec", day: "6" },
+      dateDisplay: {
+        month: "Dec",
+        day: "6"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Sydney", country: "Australia", display: "Sydney, Australia" },
+      location: {
+        type: "onsite",
+        city: "Sydney",
+        country: "Australia",
+        display: "Sydney, Australia"
+      },
       modal: {
         overview: "NeurIPS is one of the most prestigious conferences in machine learning and computational neuroscience. It features cutting-edge research in neural networks and deep learning.",
         requirements: null,
@@ -741,13 +809,7 @@ const EVENTS_DATA = {
           { label: "Paper Deadline", value: "May 15, 2026" },
           { label: "Conference", value: "December 6-12, 2026" }
         ],
-        topics: [
-          "Deep Learning",
-          "Reinforcement Learning",
-          "Generative Models",
-          "Optimization",
-          "Neuroscience"
-        ],
+        topics: ["Deep Learning", "Reinforcement Learning", "Generative Models", "Optimization", "Neuroscience"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://neurips.cc/" }
         ]
@@ -757,11 +819,7 @@ const EVENTS_DATA = {
         website: "https://neurips.cc/"
       }
     },
-
-    // ========================================
-    // EVENTS PAGE (Conferences & Summits)
-    // ========================================
-    {
+{
       id: "rethink-iam",
       title: "Rethink! IAM Berlin",
       organizer: "Rethink! IT Events",
@@ -780,23 +838,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Mar", day: "19" },
+      dateDisplay: {
+        month: "Mar",
+        day: "19"
+      },
       eventType: "Security",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "Rethink! IAM is a premier conference focused on Identity and Access Management, cybersecurity, and digital identity solutions. Network with security professionals and learn about the latest trends.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Zero Trust Architecture",
-          "Identity Governance & Administration",
-          "Privileged Access Management",
-          "Customer Identity & Access Management (CIAM)",
-          "Multi-Factor Authentication"
-        ],
+        topics: ["Zero Trust Architecture", "Identity Governance & Administration", "Privileged Access Management", "Customer Identity & Access Management (CIAM)", "Multi-Factor Authentication"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://rethink-iam.de/" }
         ]
@@ -806,7 +866,7 @@ const EVENTS_DATA = {
         website: "https://rethink-iam.de/"
       }
     },
-    {
+{
       id: "rise-of-ai",
       title: "Rise of AI Conference",
       organizer: "Rise of AI",
@@ -825,22 +885,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "May", day: "TBA" },
+      dateDisplay: {
+        month: "May",
+        day: "TBA"
+      },
       eventType: "AI",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "Rise of AI is Germany's leading AI conference bringing together the German and European AI ecosystem. Features talks from top researchers, practitioners, and industry leaders.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Network with German AI ecosystem leaders",
-          "Learn about AI applications in European industries",
-          "Discover AI startups and investment opportunities",
-          "Understand EU AI regulations"
-        ],
+        topics: ["Network with German AI ecosystem leaders", "Learn about AI applications in European industries", "Discover AI startups and investment opportunities", "Understand EU AI regulations"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://riseof.ai/" }
         ]
@@ -850,7 +913,7 @@ const EVENTS_DATA = {
         website: "https://riseof.ai/"
       }
     },
-    {
+{
       id: "open-hardware",
       title: "Open Hardware Summit 2026",
       organizer: "Open Source Hardware Association",
@@ -869,23 +932,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "May", day: "22-23" },
+      dateDisplay: {
+        month: "May",
+        day: "22-23"
+      },
       eventType: "Hardware",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "The Open Hardware Summit is the annual conference organized by OSHWA. It brings together makers, engineers, and enthusiasts to discuss and showcase open source hardware projects.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Open source hardware design and manufacturing",
-          "DIY electronics and maker culture",
-          "Hardware documentation best practices",
-          "Business models for open hardware",
-          "Community building and collaboration"
-        ],
+        topics: ["Open source hardware design and manufacturing", "DIY electronics and maker culture", "Hardware documentation best practices", "Business models for open hardware", "Community building and collaboration"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://2026.oshwa.org/" },
           { icon: "🏛️", label: "OSHWA", url: "https://www.oshwa.org/" }
@@ -896,7 +961,7 @@ const EVENTS_DATA = {
         website: "https://2026.oshwa.org/"
       }
     },
-    {
+{
       id: "wearedev",
       title: "WeAreDevelopers World Congress",
       organizer: "WeAreDevelopers",
@@ -916,23 +981,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "8-10" },
+      dateDisplay: {
+        month: "Jul",
+        day: "8-10"
+      },
       eventType: "Mega Conference",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "WeAreDevelopers World Congress is the world's largest developer conference, held annually in Berlin. With 15,000+ attendees from around the globe, it covers all aspects of software development.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Artificial Intelligence & Machine Learning",
-          "Cloud & DevOps",
-          "Frontend & JavaScript",
-          "Security & Privacy",
-          "Leadership & Soft Skills"
-        ],
+        topics: ["Artificial Intelligence & Machine Learning", "Cloud & DevOps", "Frontend & JavaScript", "Security & Privacy", "Leadership & Soft Skills"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.wearedevelopers.com/world-congress" },
           { icon: "🎟️", label: "Get Tickets", url: "https://www.wearedevelopers.com/world-congress/tickets" }
@@ -943,7 +1010,7 @@ const EVENTS_DATA = {
         website: "https://www.wearedevelopers.com/world-congress"
       }
     },
-    {
+{
       id: "ifa-berlin",
       title: "IFA Berlin 2026",
       organizer: "Messe Berlin",
@@ -963,23 +1030,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Sep", day: "4-8" },
+      dateDisplay: {
+        month: "Sep",
+        day: "4-8"
+      },
       eventType: "Tech Expo",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "IFA Berlin is the world's largest consumer electronics trade show, featuring the latest innovations in consumer electronics, home appliances, and information technology.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "AI-powered consumer devices and robots",
-          "Smart home and IoT innovations",
-          "Wearables and health tech",
-          "Entertainment and display technology",
-          "Major brand announcements"
-        ],
+        topics: ["AI-powered consumer devices and robots", "Smart home and IoT innovations", "Wearables and health tech", "Entertainment and display technology", "Major brand announcements"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.ifa-berlin.com/" }
         ]
@@ -989,7 +1058,7 @@ const EVENTS_DATA = {
         website: "https://www.ifa-berlin.com/"
       }
     },
-    {
+{
       id: "genai-summit",
       title: "Generative AI Summit Berlin",
       organizer: "Generative AI Summit",
@@ -1009,23 +1078,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Sep", day: "10" },
+      dateDisplay: {
+        month: "Sep",
+        day: "10"
+      },
       eventType: "AI",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "The Generative AI Summit Berlin focuses on practical applications of LLMs, AI agents, and generative AI in enterprise settings.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Large Language Models (LLMs) in production",
-          "Building AI Agents and agentic workflows",
-          "RAG (Retrieval Augmented Generation)",
-          "Fine-tuning and prompt engineering",
-          "Enterprise GenAI use cases"
-        ],
+        topics: ["Large Language Models (LLMs) in production", "Building AI Agents and agentic workflows", "RAG (Retrieval Augmented Generation)", "Fine-tuning and prompt engineering", "Enterprise GenAI use cases"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://generativeaisummit.de/" }
         ]
@@ -1035,7 +1106,7 @@ const EVENTS_DATA = {
         website: "https://generativeaisummit.de/"
       }
     },
-    {
+{
       id: "ai-data-quantum",
       title: "AI & Data Summit + Quantum Summit",
       organizer: "Big Data & AI World",
@@ -1055,23 +1126,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Sep", day: "22" },
+      dateDisplay: {
+        month: "Sep",
+        day: "22"
+      },
       eventType: "AI / Quantum",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "This combined summit covers AI, big data, and quantum computing. Learn about the intersection of these technologies and how they're transforming industries.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "AI and Machine Learning applications",
-          "Big Data infrastructure and analytics",
-          "Quantum computing fundamentals",
-          "Quantum machine learning",
-          "Data governance and ethics"
-        ],
+        topics: ["AI and Machine Learning applications", "Big Data infrastructure and analytics", "Quantum computing fundamentals", "Quantum machine learning", "Data governance and ethics"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.bigdataworld.de/" }
         ]
@@ -1081,7 +1154,7 @@ const EVENTS_DATA = {
         website: "https://www.bigdataworld.de/"
       }
     },
-    {
+{
       id: "devopscon",
       title: "DevOpsCon Berlin 2026",
       organizer: "Software & Support Media",
@@ -1101,24 +1174,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "TBD", day: "2026" },
+      dateDisplay: {
+        month: "TBD",
+        day: "2026"
+      },
       eventType: "DevOps",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "DevOpsCon is a conference focused on continuous delivery, microservices, containers, and cloud-native architectures.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Kubernetes and container orchestration",
-          "CI/CD pipelines and automation",
-          "Microservices architecture",
-          "Infrastructure as Code",
-          "Site Reliability Engineering (SRE)",
-          "Platform engineering"
-        ],
+        topics: ["Kubernetes and container orchestration", "CI/CD pipelines and automation", "Microservices architecture", "Infrastructure as Code", "Site Reliability Engineering (SRE)", "Platform engineering"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://devopscon.io/" }
         ]
@@ -1128,7 +1202,7 @@ const EVENTS_DATA = {
         website: "https://devopscon.io/"
       }
     },
-    {
+{
       id: "react-day-berlin",
       title: "React Day Berlin 2026",
       organizer: "GitNation",
@@ -1147,23 +1221,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Dec", day: "TBA" },
+      dateDisplay: {
+        month: "Dec",
+        day: "TBA"
+      },
       eventType: "Frontend",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Berlin", country: "Germany", display: "Berlin, Germany" },
+      location: {
+        type: "onsite",
+        city: "Berlin",
+        country: "Germany",
+        display: "Berlin, Germany"
+      },
       modal: {
         overview: "React Day Berlin is part of the GitNation conference series, focusing on the React ecosystem. Hear from React core team members and community leaders.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "React 19+ features and Server Components",
-          "Next.js and modern React frameworks",
-          "State management patterns",
-          "Performance optimization",
-          "Testing and tooling"
-        ],
+        topics: ["React 19+ features and Server Components", "Next.js and modern React frameworks", "State management patterns", "Performance optimization", "Testing and tooling"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://reactday.berlin/" },
           { icon: "🎪", label: "GitNation", url: "https://gitnation.com/" }
@@ -1174,11 +1250,7 @@ const EVENTS_DATA = {
         website: "https://reactday.berlin/"
       }
     },
-
-    // ========================================
-    // GITNATION CONFERENCES
-    // ========================================
-    {
+{
       id: "jsnation",
       title: "JSNation 2026",
       organizer: "GitNation",
@@ -1197,23 +1269,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "11-15" },
+      dateDisplay: {
+        month: "Jun",
+        day: "11-15"
+      },
       eventType: "JavaScript",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "hybrid", city: "Amsterdam", country: "Netherlands", display: "Amsterdam + Online" },
+      location: {
+        type: "hybrid",
+        city: "Amsterdam",
+        country: "Netherlands",
+        display: "Amsterdam + Online"
+      },
       modal: {
         overview: "JSNation is the main annual JavaScript conference organized by GitNation. It brings together JavaScript developers from around the world for talks, workshops, and networking.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "JavaScript ecosystem and tooling",
-          "Node.js and server-side JS",
-          "TypeScript best practices",
-          "Web APIs and browser features",
-          "Performance optimization"
-        ],
+        topics: ["JavaScript ecosystem and tooling", "Node.js and server-side JS", "TypeScript best practices", "Web APIs and browser features", "Performance optimization"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://jsnation.com/" },
           { icon: "🎪", label: "GitNation", url: "https://gitnation.com/" }
@@ -1224,7 +1298,7 @@ const EVENTS_DATA = {
         website: "https://jsnation.com/"
       }
     },
-    {
+{
       id: "react-summit",
       title: "React Summit 2026",
       organizer: "GitNation",
@@ -1243,23 +1317,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "11-15" },
+      dateDisplay: {
+        month: "Jun",
+        day: "11-15"
+      },
       eventType: "React",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "hybrid", city: "Amsterdam", country: "Netherlands", display: "Amsterdam + Online" },
+      location: {
+        type: "hybrid",
+        city: "Amsterdam",
+        country: "Netherlands",
+        display: "Amsterdam + Online"
+      },
       modal: {
         overview: "React Summit is the biggest React conference worldwide, co-located with JSNation in Amsterdam. Features talks from React core team and top community contributors.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "React 19+ and Server Components",
-          "Next.js and React frameworks",
-          "State management (Zustand, Jotai, Redux)",
-          "React Native and cross-platform",
-          "Testing and performance"
-        ],
+        topics: ["React 19+ and Server Components", "Next.js and React frameworks", "State management (Zustand, Jotai, Redux)", "React Native and cross-platform", "Testing and performance"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://reactsummit.com/" },
           { icon: "🎪", label: "GitNation", url: "https://gitnation.com/" }
@@ -1270,7 +1346,7 @@ const EVENTS_DATA = {
         website: "https://reactsummit.com/"
       }
     },
-    {
+{
       id: "node-congress",
       title: "Node Congress 2026",
       organizer: "GitNation",
@@ -1289,23 +1365,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Apr", day: "23-24" },
+      dateDisplay: {
+        month: "Apr",
+        day: "23-24"
+      },
       eventType: "Node.js",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online"
+      },
       modal: {
         overview: "Node Congress is GitNation's dedicated Node.js conference. It covers everything from backend development to serverless, microservices, and DevOps with Node.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Node.js core and runtime updates",
-          "API development and GraphQL",
-          "Serverless and edge computing",
-          "Microservices architecture",
-          "Database and ORM patterns"
-        ],
+        topics: ["Node.js core and runtime updates", "API development and GraphQL", "Serverless and edge computing", "Microservices architecture", "Database and ORM patterns"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://nodecongress.com/" },
           { icon: "🎪", label: "GitNation", url: "https://gitnation.com/" }
@@ -1316,7 +1394,7 @@ const EVENTS_DATA = {
         website: "https://nodecongress.com/"
       }
     },
-    {
+{
       id: "react-advanced",
       title: "React Advanced 2026",
       organizer: "GitNation",
@@ -1335,23 +1413,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Oct", day: "23-25" },
+      dateDisplay: {
+        month: "Oct",
+        day: "23-25"
+      },
       eventType: "React",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "hybrid", city: "London", country: "UK", display: "London + Online" },
+      location: {
+        type: "hybrid",
+        city: "London",
+        country: "UK",
+        display: "London + Online"
+      },
       modal: {
         overview: "React Advanced is an in-depth React conference focusing on advanced patterns, architecture, and performance. Designed for experienced React developers.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Advanced React patterns",
-          "Performance optimization",
-          "Large-scale application architecture",
-          "Testing strategies",
-          "React internals and debugging"
-        ],
+        topics: ["Advanced React patterns", "Performance optimization", "Large-scale application architecture", "Testing strategies", "React internals and debugging"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://reactadvanced.com/" },
           { icon: "🎪", label: "GitNation", url: "https://gitnation.com/" }
@@ -1362,11 +1442,7 @@ const EVENTS_DATA = {
         website: "https://reactadvanced.com/"
       }
     },
-
-    // ========================================
-    // AI & ML CONFERENCES
-    // ========================================
-    {
+{
       id: "humanx-emea",
       title: "HumanX EMEA 2026",
       organizer: "HumanX",
@@ -1385,23 +1461,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Sep", day: "22-24" },
+      dateDisplay: {
+        month: "Sep",
+        day: "22-24"
+      },
       eventType: "AI",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Amsterdam", country: "Netherlands", display: "Amsterdam, Netherlands" },
+      location: {
+        type: "onsite",
+        city: "Amsterdam",
+        country: "Netherlands",
+        display: "Amsterdam, Netherlands"
+      },
       modal: {
         overview: "HumanX EMEA is a premier AI conference bringing together enterprise AI leaders, researchers, and practitioners to discuss the future of AI in business.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Enterprise AI adoption",
-          "AI governance and ethics",
-          "Large Language Models in business",
-          "AI infrastructure and MLOps",
-          "Human-AI collaboration"
-        ],
+        topics: ["Enterprise AI adoption", "AI governance and ethics", "Large Language Models in business", "AI infrastructure and MLOps", "Human-AI collaboration"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://humanx.co/europe/" }
         ]
@@ -1411,7 +1489,7 @@ const EVENTS_DATA = {
         website: "https://humanx.co/europe/"
       }
     },
-    {
+{
       id: "ml-conference-munich",
       title: "ML Conference Munich 2026",
       organizer: "Software & Support Media",
@@ -1430,23 +1508,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "22-26" },
+      dateDisplay: {
+        month: "Jun",
+        day: "22-26"
+      },
       eventType: "ML",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Munich", country: "Germany", display: "Munich, Germany" },
+      location: {
+        type: "onsite",
+        city: "Munich",
+        country: "Germany",
+        display: "Munich, Germany"
+      },
       modal: {
         overview: "ML Conference is a practitioner-focused event covering the full ML lifecycle from research to production. Features workshops and deep-dive sessions.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "MLOps and ML engineering",
-          "Deep learning frameworks",
-          "NLP and LLMs in production",
-          "Computer vision applications",
-          "AutoML and model optimization"
-        ],
+        topics: ["MLOps and ML engineering", "Deep learning frameworks", "NLP and LLMs in production", "Computer vision applications", "AutoML and model optimization"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://mlconference.ai/munich/" }
         ]
@@ -1456,11 +1536,7 @@ const EVENTS_DATA = {
         website: "https://mlconference.ai/munich/"
       }
     },
-
-    // ========================================
-    // CLOUD & DEVOPS CONFERENCES
-    // ========================================
-    {
+{
       id: "kubecon-europe",
       title: "KubeCon + CloudNativeCon Europe 2026",
       organizer: "CNCF",
@@ -1479,23 +1555,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Mar", day: "23-26" },
+      dateDisplay: {
+        month: "Mar",
+        day: "23-26"
+      },
       eventType: "Cloud Native",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Amsterdam", country: "Netherlands", display: "Amsterdam, Netherlands" },
+      location: {
+        type: "onsite",
+        city: "Amsterdam",
+        country: "Netherlands",
+        display: "Amsterdam, Netherlands"
+      },
       modal: {
         overview: "KubeCon + CloudNativeCon is the flagship conference of the Cloud Native Computing Foundation. It brings together adopters and technologists from leading open source and cloud native communities.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Kubernetes and container orchestration",
-          "Service mesh and networking",
-          "Observability and monitoring",
-          "Security in cloud native environments",
-          "Platform engineering"
-        ],
+        topics: ["Kubernetes and container orchestration", "Service mesh and networking", "Observability and monitoring", "Security in cloud native environments", "Platform engineering"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/" }
         ]
@@ -1505,7 +1583,7 @@ const EVENTS_DATA = {
         website: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/"
       }
     },
-    {
+{
       id: "google-cloud-next",
       title: "Google Cloud Next 2026",
       organizer: "Google Cloud",
@@ -1524,23 +1602,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Apr", day: "22-24" },
+      dateDisplay: {
+        month: "Apr",
+        day: "22-24"
+      },
       eventType: "Cloud",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Las Vegas", country: "USA", display: "Las Vegas, USA" },
+      location: {
+        type: "onsite",
+        city: "Las Vegas",
+        country: "USA",
+        display: "Las Vegas, USA"
+      },
       modal: {
         overview: "Google Cloud Next is Google's annual cloud conference featuring product announcements, technical sessions, and hands-on learning opportunities.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Google Cloud Platform services",
-          "AI and ML with Vertex AI",
-          "Data analytics with BigQuery",
-          "Cloud infrastructure and security",
-          "Developer tools and DevOps"
-        ],
+        topics: ["Google Cloud Platform services", "AI and ML with Vertex AI", "Data analytics with BigQuery", "Cloud infrastructure and security", "Developer tools and DevOps"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://cloud.withgoogle.com/next" }
         ]
@@ -1550,7 +1630,7 @@ const EVENTS_DATA = {
         website: "https://cloud.withgoogle.com/next"
       }
     },
-    {
+{
       id: "aws-reinvent",
       title: "AWS re:Invent 2026",
       organizer: "Amazon Web Services",
@@ -1569,23 +1649,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Dec", day: "1-5" },
+      dateDisplay: {
+        month: "Dec",
+        day: "1-5"
+      },
       eventType: "Cloud",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Las Vegas", country: "USA", display: "Las Vegas, USA" },
+      location: {
+        type: "onsite",
+        city: "Las Vegas",
+        country: "USA",
+        display: "Las Vegas, USA"
+      },
       modal: {
         overview: "AWS re:Invent is Amazon Web Services' annual conference featuring keynotes, training, certification opportunities, and access to thousands of technical sessions.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "AWS services and announcements",
-          "Serverless and containers",
-          "AI/ML with SageMaker and Bedrock",
-          "Security and compliance",
-          "Database and analytics"
-        ],
+        topics: ["AWS services and announcements", "Serverless and containers", "AI/ML with SageMaker and Bedrock", "Security and compliance", "Database and analytics"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://reinvent.awsevents.com/" }
         ]
@@ -1595,11 +1677,7 @@ const EVENTS_DATA = {
         website: "https://reinvent.awsevents.com/"
       }
     },
-
-    // ========================================
-    // SECURITY CONFERENCES
-    // ========================================
-    {
+{
       id: "rsa-conference",
       title: "RSA Conference 2026",
       organizer: "RSA",
@@ -1618,23 +1696,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Apr", day: "27-30" },
+      dateDisplay: {
+        month: "Apr",
+        day: "27-30"
+      },
       eventType: "Security",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "San Francisco", country: "USA", display: "San Francisco, USA" },
+      location: {
+        type: "onsite",
+        city: "San Francisco",
+        country: "USA",
+        display: "San Francisco, USA"
+      },
       modal: {
         overview: "RSA Conference is the world's leading information security conference. It brings together security professionals, researchers, and vendors.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Threat intelligence and response",
-          "Zero trust architecture",
-          "Cloud security",
-          "Identity and access management",
-          "AI in cybersecurity"
-        ],
+        topics: ["Threat intelligence and response", "Zero trust architecture", "Cloud security", "Identity and access management", "AI in cybersecurity"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.rsaconference.com/" }
         ]
@@ -1644,7 +1724,7 @@ const EVENTS_DATA = {
         website: "https://www.rsaconference.com/"
       }
     },
-    {
+{
       id: "blackhat-usa",
       title: "Black Hat USA 2026",
       organizer: "Black Hat",
@@ -1663,23 +1743,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Aug", day: "1-6" },
+      dateDisplay: {
+        month: "Aug",
+        day: "1-6"
+      },
       eventType: "Security",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Las Vegas", country: "USA", display: "Las Vegas, USA" },
+      location: {
+        type: "onsite",
+        city: "Las Vegas",
+        country: "USA",
+        display: "Las Vegas, USA"
+      },
       modal: {
         overview: "Black Hat USA is the world's leading information security event, providing attendees with the latest security research, development, and trends.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Vulnerability research and exploitation",
-          "Reverse engineering",
-          "Applied security and cryptography",
-          "Hardware and embedded security",
-          "AI/ML security"
-        ],
+        topics: ["Vulnerability research and exploitation", "Reverse engineering", "Applied security and cryptography", "Hardware and embedded security", "AI/ML security"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.blackhat.com/us-26/" }
         ]
@@ -1689,7 +1771,7 @@ const EVENTS_DATA = {
         website: "https://www.blackhat.com/us-26/"
       }
     },
-    {
+{
       id: "defcon",
       title: "DEF CON 34",
       organizer: "DEF CON",
@@ -1708,23 +1790,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Aug", day: "6-9" },
+      dateDisplay: {
+        month: "Aug",
+        day: "6-9"
+      },
       eventType: "Hacker Con",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Las Vegas", country: "USA", display: "Las Vegas, USA" },
+      location: {
+        type: "onsite",
+        city: "Las Vegas",
+        country: "USA",
+        display: "Las Vegas, USA"
+      },
       modal: {
         overview: "DEF CON is one of the world's largest and longest-running hacker conventions. It features talks, workshops, villages, and capture-the-flag competitions.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Hacking villages (IoT, Car, Voting, etc.)",
-          "CTF competitions",
-          "Hardware hacking",
-          "Social engineering",
-          "Privacy and anonymity"
-        ],
+        topics: ["Hacking villages (IoT, Car, Voting, etc.)", "CTF competitions", "Hardware hacking", "Social engineering", "Privacy and anonymity"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://defcon.org/" }
         ]
@@ -1734,7 +1818,7 @@ const EVENTS_DATA = {
         website: "https://defcon.org/"
       }
     },
-    {
+{
       id: "blackhat-europe",
       title: "Black Hat Europe 2026",
       organizer: "Black Hat",
@@ -1753,23 +1837,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Dec", day: "7-10" },
+      dateDisplay: {
+        month: "Dec",
+        day: "7-10"
+      },
       eventType: "Security",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "London", country: "UK", display: "London, UK" },
+      location: {
+        type: "onsite",
+        city: "London",
+        country: "UK",
+        display: "London, UK"
+      },
       modal: {
         overview: "Black Hat Europe is the premier cybersecurity event in Europe, featuring the latest in security research and training.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Security research",
-          "Penetration testing",
-          "Threat hunting",
-          "Incident response",
-          "European privacy regulations"
-        ],
+        topics: ["Security research", "Penetration testing", "Threat hunting", "Incident response", "European privacy regulations"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.blackhat.com/eu-26/" }
         ]
@@ -1779,11 +1865,7 @@ const EVENTS_DATA = {
         website: "https://www.blackhat.com/eu-26/"
       }
     },
-
-    // ========================================
-    // MORE TECH CONFERENCES
-    // ========================================
-    {
+{
       id: "web-summit",
       title: "Web Summit 2026",
       organizer: "Web Summit",
@@ -1802,23 +1884,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Nov", day: "2-5" },
+      dateDisplay: {
+        month: "Nov",
+        day: "2-5"
+      },
       eventType: "Tech Summit",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Lisbon", country: "Portugal", display: "Lisbon, Portugal" },
+      location: {
+        type: "onsite",
+        city: "Lisbon",
+        country: "Portugal",
+        display: "Lisbon, Portugal"
+      },
       modal: {
         overview: "Web Summit is one of the largest tech conferences in the world, bringing together startups, investors, and industry leaders. Features AI, fintech, healthtech, and more.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "AI and emerging technologies",
-          "Startup ecosystem",
-          "Investor networking",
-          "Climate tech",
-          "Web3 and decentralization"
-        ],
+        topics: ["AI and emerging technologies", "Startup ecosystem", "Investor networking", "Climate tech", "Web3 and decentralization"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://websummit.com/" }
         ]
@@ -1828,7 +1912,7 @@ const EVENTS_DATA = {
         website: "https://websummit.com/"
       }
     },
-    {
+{
       id: "collision",
       title: "Collision 2026",
       organizer: "Web Summit",
@@ -1847,23 +1931,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "22-25" },
+      dateDisplay: {
+        month: "Jun",
+        day: "22-25"
+      },
       eventType: "Tech Summit",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Toronto", country: "Canada", display: "Toronto, Canada" },
+      location: {
+        type: "onsite",
+        city: "Toronto",
+        country: "Canada",
+        display: "Toronto, Canada"
+      },
       modal: {
         overview: "Collision is North America's fastest-growing tech conference, from the creators of Web Summit. Features talks, networking, and startup pitches.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "AI and tech innovation",
-          "Startup growth",
-          "Investment trends",
-          "Enterprise technology",
-          "Future of work"
-        ],
+        topics: ["AI and tech innovation", "Startup growth", "Investment trends", "Enterprise technology", "Future of work"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://collisionconf.com/" }
         ]
@@ -1873,7 +1959,7 @@ const EVENTS_DATA = {
         website: "https://collisionconf.com/"
       }
     },
-    {
+{
       id: "viva-tech",
       title: "VivaTech 2026",
       organizer: "VivaTech",
@@ -1892,23 +1978,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "17-20" },
+      dateDisplay: {
+        month: "Jun",
+        day: "17-20"
+      },
       eventType: "Tech Summit",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Paris", country: "France", display: "Paris, France" },
+      location: {
+        type: "onsite",
+        city: "Paris",
+        country: "France",
+        display: "Paris, France"
+      },
       modal: {
         overview: "VivaTech is Europe's biggest startup and tech event, held annually in Paris. It connects startups, tech leaders, and investors.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "European tech ecosystem",
-          "AI and deep tech",
-          "Sustainability and climate tech",
-          "Future of mobility",
-          "Corporate innovation"
-        ],
+        topics: ["European tech ecosystem", "AI and deep tech", "Sustainability and climate tech", "Future of mobility", "Corporate innovation"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://vivatechnology.com/" }
         ]
@@ -1918,7 +2006,7 @@ const EVENTS_DATA = {
         website: "https://vivatechnology.com/"
       }
     },
-    {
+{
       id: "ces",
       title: "CES 2026",
       organizer: "Consumer Technology Association",
@@ -1937,23 +2025,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "6-9" },
+      dateDisplay: {
+        month: "Jan",
+        day: "6-9"
+      },
       eventType: "Tech Expo",
       isUrgent: true,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Las Vegas", country: "USA", display: "Las Vegas, USA" },
+      location: {
+        type: "onsite",
+        city: "Las Vegas",
+        country: "USA",
+        display: "Las Vegas, USA"
+      },
       modal: {
         overview: "CES is the world's most influential tech event, showcasing the latest innovations in consumer electronics, automotive, health tech, and more.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "AI and robotics",
-          "Automotive technology",
-          "Smart home and IoT",
-          "Health and wearable tech",
-          "Sustainability innovations"
-        ],
+        topics: ["AI and robotics", "Automotive technology", "Smart home and IoT", "Health and wearable tech", "Sustainability innovations"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.ces.tech/" }
         ]
@@ -1961,9 +2051,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.ces.tech/",
         website: "https://www.ces.tech/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "mwc-barcelona",
       title: "MWC Barcelona 2026",
       organizer: "GSMA",
@@ -1982,23 +2073,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Mar", day: "2-5" },
+      dateDisplay: {
+        month: "Mar",
+        day: "2-5"
+      },
       eventType: "Mobile",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Barcelona", country: "Spain", display: "Barcelona, Spain" },
+      location: {
+        type: "onsite",
+        city: "Barcelona",
+        country: "Spain",
+        display: "Barcelona, Spain"
+      },
       modal: {
         overview: "Mobile World Congress is the world's largest mobile industry event, featuring the latest in mobile technology, 5G/6G, and connected devices.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "5G/6G networks and infrastructure",
-          "AI in mobile and telecom",
-          "Connected devices and IoT",
-          "Mobile app development",
-          "Digital transformation"
-        ],
+        topics: ["5G/6G networks and infrastructure", "AI in mobile and telecom", "Connected devices and IoT", "Mobile app development", "Digital transformation"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.mwcbarcelona.com/" }
         ]
@@ -2008,7 +2101,7 @@ const EVENTS_DATA = {
         website: "https://www.mwcbarcelona.com/"
       }
     },
-    {
+{
       id: "nvidia-gtc",
       title: "NVIDIA GTC 2026",
       organizer: "NVIDIA",
@@ -2027,23 +2120,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Mar", day: "16-20" },
+      dateDisplay: {
+        month: "Mar",
+        day: "16-20"
+      },
       eventType: "AI",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "hybrid", city: "San Jose", country: "USA", display: "San Jose + Online" },
+      location: {
+        type: "hybrid",
+        city: "San Jose",
+        country: "USA",
+        display: "San Jose + Online"
+      },
       modal: {
         overview: "NVIDIA GTC is the premier AI conference covering deep learning, data science, and GPU computing. Features Jensen Huang keynotes and cutting-edge AI research.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Generative AI and LLMs",
-          "GPU computing and CUDA",
-          "Autonomous vehicles",
-          "Robotics and simulation",
-          "Healthcare and life sciences AI"
-        ],
+        topics: ["Generative AI and LLMs", "GPU computing and CUDA", "Autonomous vehicles", "Robotics and simulation", "Healthcare and life sciences AI"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.nvidia.com/gtc/" }
         ]
@@ -2053,7 +2148,7 @@ const EVENTS_DATA = {
         website: "https://www.nvidia.com/gtc/"
       }
     },
-    {
+{
       id: "pycon-us",
       title: "PyCon US 2026",
       organizer: "Python Software Foundation",
@@ -2072,23 +2167,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "May", day: "13-21" },
+      dateDisplay: {
+        month: "May",
+        day: "13-21"
+      },
       eventType: "Python",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Pittsburgh", country: "USA", display: "Pittsburgh, USA" },
+      location: {
+        type: "onsite",
+        city: "Pittsburgh",
+        country: "USA",
+        display: "Pittsburgh, USA"
+      },
       modal: {
         overview: "PyCon US is the largest annual gathering for the Python community. Features talks, tutorials, sprints, and networking opportunities.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Python language and ecosystem",
-          "Data science and ML with Python",
-          "Web development (Django, FastAPI)",
-          "DevOps and automation",
-          "Community and diversity"
-        ],
+        topics: ["Python language and ecosystem", "Data science and ML with Python", "Web development (Django, FastAPI)", "DevOps and automation", "Community and diversity"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://pycon.org/" }
         ]
@@ -2098,7 +2195,7 @@ const EVENTS_DATA = {
         website: "https://pycon.org/"
       }
     },
-    {
+{
       id: "gophercon",
       title: "GopherCon 2026",
       organizer: "GopherCon",
@@ -2117,23 +2214,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "13-16" },
+      dateDisplay: {
+        month: "Jul",
+        day: "13-16"
+      },
       eventType: "Go",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Chicago", country: "USA", display: "Chicago, USA" },
+      location: {
+        type: "onsite",
+        city: "Chicago",
+        country: "USA",
+        display: "Chicago, USA"
+      },
       modal: {
         overview: "GopherCon is the largest conference for the Go programming language community. Features talks from Go team members and community leaders.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Go language features and updates",
-          "Concurrency patterns",
-          "Cloud-native Go development",
-          "Performance optimization",
-          "Testing and tooling"
-        ],
+        topics: ["Go language features and updates", "Concurrency patterns", "Cloud-native Go development", "Performance optimization", "Testing and tooling"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.gophercon.com/" }
         ]
@@ -2143,7 +2242,7 @@ const EVENTS_DATA = {
         website: "https://www.gophercon.com/"
       }
     },
-    {
+{
       id: "rustconf",
       title: "RustConf 2026",
       organizer: "Rust Foundation",
@@ -2162,23 +2261,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Sep", day: "9-11" },
+      dateDisplay: {
+        month: "Sep",
+        day: "9-11"
+      },
       eventType: "Rust",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Montreal", country: "Canada", display: "Montreal, Canada" },
+      location: {
+        type: "onsite",
+        city: "Montreal",
+        country: "Canada",
+        display: "Montreal, Canada"
+      },
       modal: {
         overview: "RustConf is the annual conference for the Rust programming language. Features talks on systems programming, WebAssembly, and the Rust ecosystem.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Rust language and compiler",
-          "Async Rust and concurrency",
-          "WebAssembly with Rust",
-          "Embedded systems",
-          "Memory safety"
-        ],
+        topics: ["Rust language and compiler", "Async Rust and concurrency", "WebAssembly with Rust", "Embedded systems", "Memory safety"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://rustconf.com/" }
         ]
@@ -2188,7 +2289,7 @@ const EVENTS_DATA = {
         website: "https://rustconf.com/"
       }
     },
-    {
+{
       id: "dotai",
       title: "dotAI 2026",
       organizer: "dotConferences",
@@ -2207,23 +2308,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Apr", day: "16" },
+      dateDisplay: {
+        month: "Apr",
+        day: "16"
+      },
       eventType: "AI",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "Paris", country: "France", display: "Paris, France" },
+      location: {
+        type: "onsite",
+        city: "Paris",
+        country: "France",
+        display: "Paris, France"
+      },
       modal: {
         overview: "dotAI is a developer-focused AI conference organized by dotConferences. Features curated talks from AI practitioners and researchers.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Machine learning in production",
-          "Deep learning frameworks",
-          "NLP and computer vision",
-          "MLOps and infrastructure",
-          "AI ethics"
-        ],
+        topics: ["Machine learning in production", "Deep learning frameworks", "NLP and computer vision", "MLOps and infrastructure", "AI ethics"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://www.dotai.io/" }
         ]
@@ -2233,7 +2336,7 @@ const EVENTS_DATA = {
         website: "https://www.dotai.io/"
       }
     },
-    {
+{
       id: "ai-summit-london",
       title: "AI Summit London 2026",
       organizer: "AI Summit",
@@ -2252,23 +2355,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "10-11" },
+      dateDisplay: {
+        month: "Jun",
+        day: "10-11"
+      },
       eventType: "AI",
       isUrgent: false,
       isFeatured: false,
       prize: null,
-      location: { type: "onsite", city: "London", country: "UK", display: "London, UK" },
+      location: {
+        type: "onsite",
+        city: "London",
+        country: "UK",
+        display: "London, UK"
+      },
       modal: {
         overview: "The AI Summit London is a leading enterprise AI conference, bringing together C-suite executives and AI leaders to discuss AI strategy and implementation.",
         requirements: null,
         keyDates: null,
-        topics: [
-          "Enterprise AI strategy",
-          "AI governance and ethics",
-          "Generative AI adoption",
-          "AI in finance and healthcare",
-          "Future of work"
-        ],
+        topics: ["Enterprise AI strategy", "AI governance and ethics", "Generative AI adoption", "AI in finance and healthcare", "Future of work"],
         resources: [
           { icon: "🌐", label: "Official Website", url: "https://theaisummit.com/london/" }
         ]
@@ -2278,11 +2383,7 @@ const EVENTS_DATA = {
         website: "https://theaisummit.com/london/"
       }
     },
-
-    // ========================================
-    // GOOGLE GEMINI HACKATHON
-    // ========================================
-    {
+{
       id: "gemini-3-hackathon",
       title: "Gemini 3 Hackathon: Build what's next",
       organizer: "Google DeepMind",
@@ -2301,24 +2402,28 @@ const EVENTS_DATA = {
         deadline: "2026-02-09T17:00:00",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Feb", day: "9" },
+      dateDisplay: {
+        month: "Feb",
+        day: "9"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2025-12-21",
-      prize: { amount: "$100,000 Total Prizes", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online" },
+      prize: {
+        amount: "$100,000 Total Prizes",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online"
+      },
       modal: {
         overview: "Google DeepMind invites developers to create novel applications using the Gemini 3 API. Build fun, creative, next-generation applications that push AI boundaries through enhanced reasoning, multimodal capabilities, and reduced latency. Grand Prize includes $50,000 + AI Futures Fund interview.",
-        requirements: [
-          "Build NEW applications using Gemini 3 API",
-          "Submit ~200-word description of Gemini 3 integration",
-          "Public project link or working demo required",
-          "Public code repository (if no AI Studio link)",
-          "~3-minute demonstration video",
-          "Must be above legal age of majority"
-        ],
+        requirements: ["Build NEW applications using Gemini 3 API", "Submit ~200-word description of Gemini 3 integration", "Public project link or working demo required", "Public code repository (if no AI Studio link)", "~3-minute demonstration video", "Must be above legal age of majority"],
         keyDates: [
           { label: "Start Date", value: "December 17, 2025" },
           { label: "Submission Deadline", value: "February 9, 2026 @ 5:00pm PST" }
@@ -2334,7 +2439,7 @@ const EVENTS_DATA = {
         website: "https://gemini3.devpost.com/"
       }
     },
-    {
+{
       id: "aws-ai-league-2026",
       title: "AWS AI League 2026 Championship",
       organizer: "Amazon Web Services",
@@ -2354,23 +2459,28 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "2026", day: "TBD" },
+      dateDisplay: {
+        month: "2026",
+        day: "TBD"
+      },
       eventType: "Competition",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2025-12-21",
-      prize: { amount: "$50,000 Prize Pool", icon: "💰" },
-      location: { type: "hybrid", city: null, country: null, display: "AWS Summits + Online" },
+      prize: {
+        amount: "$50,000 Prize Pool",
+        icon: "💰"
+      },
+      location: {
+        type: "hybrid",
+        city: null,
+        country: null,
+        display: "AWS Summits + Online"
+      },
       modal: {
         overview: "AWS AI League 2026 Championship is AWS's flagship AI tournament with doubled prize pool. Compete in gamified tournaments to solve real-world business challenges using AWS AI services. Two tracks: Model Customization with Amazon SageMaker AI and Agentic AI with Amazon Bedrock AgentCore.",
-        requirements: [
-          "Build AI solutions using AWS services",
-          "Choose: Model Customization or Agentic AI track",
-          "Enterprises can host internal tournaments",
-          "Individual developers compete at AWS Summits",
-          "Receive AWS credits for participation"
-        ],
+        requirements: ["Build AI solutions using AWS services", "Choose: Model Customization or Agentic AI track", "Enterprises can host internal tournaments", "Individual developers compete at AWS Summits", "Receive AWS credits for participation"],
         keyDates: [
           { label: "Competition Year", value: "2026" },
           { label: "Format", value: "Ongoing tournaments throughout 2026" }
@@ -2386,7 +2496,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       }
     },
-    {
+{
       id: "algolia-agent-studio",
       title: "Algolia Agent Studio Challenge",
       organizer: "DEV Community × Algolia",
@@ -2405,22 +2515,25 @@ const EVENTS_DATA = {
         deadline: "2026-02-01T23:59:00",
         countdownTarget: "deadline"
       },
-      dateDisplay: { month: "Jan", day: "7" },
+      dateDisplay: {
+        month: "Jan",
+        day: "7"
+      },
       eventType: "Challenge",
       isUrgent: true,
       isFeatured: false,
       isNew: true,
       addedDate: "2025-12-22",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online"
+      },
       modal: {
         overview: "Build with Algolia Agent Studio and manage your entire search infrastructure using natural language. Create AI-driven search solutions leveraging Algolia's instant search technology. Winners announced February 19, 2026.",
-        requirements: [
-          "DEV Community account required",
-          "Build solution using Algolia Agent Studio",
-          "Submit by February 1, 2026 at 23:59 PT",
-          "Follow #algoliachallenge tag for updates"
-        ],
+        requirements: ["DEV Community account required", "Build solution using Algolia Agent Studio", "Submit by February 1, 2026 at 23:59 PT", "Follow #algoliachallenge tag for updates"],
         keyDates: [
           { label: "Contest Start", value: "January 7, 2026" },
           { label: "Submissions Due", value: "February 1, 2026 at 23:59 PT" },
@@ -2522,7 +2635,7 @@ const EventsAPI = {
     });
   },
 
-  // Get count of new events (excludes archived)
+  // Get count of new events
   getNewEventsCount() {
     return EVENTS_DATA.events.filter(e => e.isNew === true && !e.isArchived).length;
   },
