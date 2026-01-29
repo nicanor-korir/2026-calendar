@@ -74,7 +74,7 @@ const EVENTS_DATA = {
       dateDisplay: { month: "Feb", day: "6-15" },
       eventType: "Hackathon",
       isUrgent: false,
-      isFeatured: true,
+      isFeatured: false,
       prize: { amount: "Part of $1M Prize Pool", icon: "💰" },
       location: { type: "hybrid", city: null, country: null, display: "Online + On-site" },
       modal: {

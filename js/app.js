@@ -55,12 +55,34 @@ const SavedEvents = {
     return this.getAll().length;
   },
 
-  // Get count for a specific page
+  // Get count for a specific page (includes past events for My Events)
   getCountForPage(pageName) {
     const savedIds = this.getAll();
     return EVENTS_DATA.events.filter(e =>
       e.page === pageName && savedIds.includes(e.id)
     ).length;
+  },
+
+  // Check if an event is past (ended or deadline passed)
+  isEventPast(event) {
+    if (!event) return false;
+    const now = new Date();
+
+    // For CFPs, check the deadline
+    if (event.page === 'cfp' && event.dates.deadline) {
+      const deadline = new Date(event.dates.deadline);
+      return deadline < now;
+    }
+
+    // For other events, check the end date (or start date if no end)
+    const endDate = event.dates.end ? new Date(event.dates.end) : null;
+    const startDate = new Date(event.dates.start);
+
+    if (endDate) {
+      return endDate < now;
+    }
+
+    return startDate < now;
   },
 
   // Dispatch custom event when saved list changes
@@ -334,24 +356,29 @@ class CalendarApp {
 
       const event = this.events.find(e => e.id === eventId);
       const isArchived = event?.isArchived === true;
+      const isSaved = SavedEvents.isSaved(eventId);
+      const isPast = SavedEvents.isEventPast(event);
 
       if (this.currentFilter === 'archive') {
-        // Archive filter shows only archived events
-        matches = isArchived;
+        // Archive filter shows only archived events that are NOT saved/attending
+        // Events the user is attending should never appear in Archive
+        matches = isArchived && !isSaved;
       } else if (this.currentFilter === 'all') {
         // All filter excludes archived events
-        matches = !isArchived;
+        // Also exclude past saved events (they only show in My Events)
+        matches = !isArchived && !(isSaved && isPast);
       } else if (this.currentFilter === 'saved') {
-        // Check if this event is in the saved list (exclude archived)
-        matches = SavedEvents.isSaved(eventId) && !isArchived;
+        // My Events shows ALL saved events, including past/archived ones
+        matches = isSaved;
       } else if (this.currentFilter === 'new') {
-        // Check if this event has isNew flag (exclude archived)
-        matches = (card.classList.contains('is-new') ||
-          event?.isNew === true) && !isArchived;
+        // Check if this event has isNew flag (exclude archived and past saved)
+        const isNew = card.classList.contains('is-new') || event?.isNew === true;
+        matches = isNew && !isArchived && !(isSaved && isPast);
       } else {
-        // Category/type filters exclude archived events
-        matches = !isArchived && (category.includes(this.currentFilter) ||
-          type.includes(this.currentFilter));
+        // Category/type filters exclude archived events and past saved events
+        const matchesFilter = category.includes(this.currentFilter) ||
+          type.includes(this.currentFilter);
+        matches = matchesFilter && !isArchived && !(isSaved && isPast);
       }
 
       if (matches) {
@@ -368,14 +395,25 @@ class CalendarApp {
       let showFeatured = this.currentFilter === 'all';
 
       // Also show featured if it matches the current filter
-      if (!showFeatured && featuredEvent) {
+      if (featuredEvent) {
+        const featuredIsSaved = SavedEvents.isSaved(featuredEvent.id);
+        const featuredIsPast = SavedEvents.isEventPast(featuredEvent);
+
         if (this.currentFilter === 'saved') {
-          showFeatured = SavedEvents.isSaved(featuredEvent.id);
+          // My Events shows all saved events including past ones
+          showFeatured = featuredIsSaved;
+        } else if (this.currentFilter === 'all') {
+          // Hide past saved events from All view
+          showFeatured = !(featuredIsSaved && featuredIsPast);
         } else if (this.currentFilter === 'new') {
-          showFeatured = featuredEvent.isNew === true;
+          showFeatured = featuredEvent.isNew === true && !(featuredIsSaved && featuredIsPast);
+        } else if (this.currentFilter === 'archive') {
+          // Archive never shows saved/attending events
+          showFeatured = false;
         } else {
-          showFeatured = featuredEvent.category.includes(this.currentFilter) ||
+          const matchesFilter = featuredEvent.category.includes(this.currentFilter) ||
                          featuredEvent.type.includes(this.currentFilter);
+          showFeatured = matchesFilter && !(featuredIsSaved && featuredIsPast);
         }
       }
 
