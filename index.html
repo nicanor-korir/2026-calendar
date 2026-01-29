@@ -95,14 +95,37 @@
             color: var(--accent-primary);
         }
         .landing-card:nth-child(2) .landing-card-count {
+            background: rgba(0, 212, 170, 0.1);
+            border-color: rgba(0, 212, 170, 0.3);
+            color: var(--accent-primary);
+        }
+        .landing-card:nth-child(3) .landing-card-count {
             background: rgba(124, 58, 237, 0.1);
             border-color: rgba(124, 58, 237, 0.3);
             color: var(--accent-secondary);
         }
-        .landing-card:nth-child(3) .landing-card-count {
+        .landing-card:nth-child(4) .landing-card-count {
             background: rgba(245, 158, 11, 0.1);
             border-color: rgba(245, 158, 11, 0.3);
             color: var(--accent-tertiary);
+        }
+        .landing-card:nth-child(5) .landing-card-count {
+            background: rgba(236, 72, 153, 0.1);
+            border-color: rgba(236, 72, 153, 0.3);
+            color: #ec4899;
+        }
+        .landing-card.all-events {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, rgba(0, 212, 170, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+        }
+        .landing-card.my-events {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(245, 158, 11, 0.05) 100%);
+        }
+        .my-events-empty {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-style: italic;
         }
     </style>
 </head>
@@ -119,6 +142,13 @@
         <p class="landing-subtitle">Your curated roadmap to impactful AI, Robotics & Startup events. Conferences, hackathons, and academic deadlines all in one place.</p>
 
         <div class="landing-cards">
+            <a href="all.html" class="landing-card all-events">
+                <div class="landing-card-icon">🌐</div>
+                <h2 class="landing-card-title">All Events</h2>
+                <p class="landing-card-desc">Browse everything in one place. Conferences, hackathons, and CFPs combined.</p>
+                <span class="landing-card-count" id="all-count">48 events</span>
+            </a>
+
             <a href="events.html" class="landing-card">
                 <div class="landing-card-icon">🎯</div>
                 <h2 class="landing-card-title">Conferences & Events</h2>
@@ -139,6 +169,13 @@
                 <p class="landing-card-desc">Academic conference submission deadlines. ICML, NeurIPS, CVPR, ECCV, ICRA, and more top venues.</p>
                 <span class="landing-card-count">6 CFPs</span>
             </a>
+
+            <a href="my-events.html" class="landing-card my-events">
+                <div class="landing-card-icon">⭐</div>
+                <h2 class="landing-card-title">My Events</h2>
+                <p class="landing-card-desc">Your saved events and competitions. Track what you're attending across all categories.</p>
+                <span class="landing-card-count" id="my-events-count">0 saved</span>
+            </a>
         </div>
     </div>
 
@@ -146,5 +183,25 @@
         <p>Built with 💚 for the 2026 competition season</p>
         <p><a href="https://github.com/nicanorhopkins">GitHub</a></p>
     </footer>
+
+    <script>
+        // Update My Events count from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const STORAGE_KEY = 'techCalendar2026_savedEvents';
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                const savedEvents = saved ? JSON.parse(saved) : [];
+                const count = savedEvents.length;
+                const countEl = document.getElementById('my-events-count');
+                if (countEl) {
+                    countEl.textContent = count === 0 ? 'No saved events' :
+                                          count === 1 ? '1 saved' :
+                                          `${count} saved`;
+                }
+            } catch (e) {
+                console.error('Error reading saved events:', e);
+            }
+        });
+    </script>
 </body>
 </html>
