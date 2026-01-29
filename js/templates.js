@@ -4,6 +4,8 @@
 const Templates = {
   // Page titles
   pageTitles: {
+    all: "All Events",
+    "my-events": "My Events",
     events: "Conferences & Events",
     hackathons: "Hackathons & Competitions",
     cfp: "Call for Papers"

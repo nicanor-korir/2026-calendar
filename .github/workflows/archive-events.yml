@@ -2,8 +2,8 @@ name: Archive Past Events
 
 on:
   schedule:
-    # Run daily at 7:00 AM UTC (after update-events workflow)
-    - cron: '0 7 * * *'
+    # Run weekly on Sunday at 9:00 PM UTC (after update-events workflow)
+    - cron: '0 21 * * 0'
   workflow_dispatch: # Allow manual trigger
 
 jobs:

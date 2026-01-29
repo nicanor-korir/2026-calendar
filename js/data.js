@@ -13,6 +13,22 @@ const EVENTS_DATA = {
 
   // Filter definitions for each page
   filters: {
+    all: [
+      { id: "all", label: "All", icon: null },
+      { id: "saved", label: "My Events", icon: "⭐", showCount: true },
+      { id: "new", label: "New", icon: "✨" },
+      { id: "events", label: "Conferences", icon: "🎯" },
+      { id: "hackathons", label: "Hackathons", icon: "💻" },
+      { id: "cfp", label: "CFPs", icon: "📄" },
+      { id: "archive", label: "Archive", icon: "📦" }
+    ],
+    "my-events": [
+      { id: "all", label: "All Saved", icon: null },
+      { id: "events", label: "Conferences", icon: "🎯" },
+      { id: "hackathons", label: "Hackathons", icon: "💻" },
+      { id: "cfp", label: "CFPs", icon: "📄" },
+      { id: "past", label: "Past", icon: "📦" }
+    ],
     events: [
       { id: "all", label: "All Events", icon: null },
       { id: "saved", label: "My Events", icon: "⭐", showCount: true },
@@ -2443,6 +2459,19 @@ const EventsAPI = {
   },
 
   getByPage(pageName, includeArchived = false) {
+    // Special handling for 'all' page - returns all events
+    if (pageName === 'all') {
+      const filtered = includeArchived
+        ? EVENTS_DATA.events
+        : EVENTS_DATA.events.filter(e => !e.isArchived);
+      return this._sortByDate(filtered);
+    }
+
+    // Special handling for 'my-events' page - returns all events (filtering done client-side)
+    if (pageName === 'my-events') {
+      return this._sortByDate(EVENTS_DATA.events);
+    }
+
     const filtered = EVENTS_DATA.events.filter(e =>
       e.page === pageName && (includeArchived || !e.isArchived)
     );
@@ -2454,6 +2483,10 @@ const EventsAPI = {
   },
 
   getFeatured(pageName) {
+    // No featured event for 'all' or 'my-events' pages
+    if (pageName === 'all' || pageName === 'my-events') {
+      return null;
+    }
     return EVENTS_DATA.events.find(e => e.isFeatured && e.page === pageName && !e.isArchived);
   },
 
@@ -2496,6 +2529,9 @@ const EventsAPI = {
 
   // Get count of archived events for a page
   getArchivedCount(pageName) {
+    if (pageName === 'all' || pageName === 'my-events') {
+      return EVENTS_DATA.events.filter(e => e.isArchived === true).length;
+    }
     return EVENTS_DATA.events.filter(e => e.page === pageName && e.isArchived === true).length;
   }
 };

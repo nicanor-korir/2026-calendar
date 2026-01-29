@@ -347,6 +347,10 @@ class CalendarApp {
     const featuredSection = document.querySelector('.featured-section');
     let visibleCount = 0;
 
+    // Check if we're on special pages
+    const isMyEventsPage = this.pageName === 'my-events';
+    const isAllPage = this.pageName === 'all';
+
     cards.forEach(card => {
       const category = card.dataset.category || '';
       const type = card.dataset.type || '';
@@ -358,27 +362,72 @@ class CalendarApp {
       const isArchived = event?.isArchived === true;
       const isSaved = SavedEvents.isSaved(eventId);
       const isPast = SavedEvents.isEventPast(event);
+      const eventPage = event?.page || '';
 
-      if (this.currentFilter === 'archive') {
-        // Archive filter shows only archived events that are NOT saved/attending
-        // Events the user is attending should never appear in Archive
-        matches = isArchived && !isSaved;
-      } else if (this.currentFilter === 'all') {
-        // All filter excludes archived events
-        // Also exclude past saved events (they only show in My Events)
-        matches = !isArchived && !(isSaved && isPast);
-      } else if (this.currentFilter === 'saved') {
-        // My Events shows ALL saved events, including past/archived ones
-        matches = isSaved;
-      } else if (this.currentFilter === 'new') {
-        // Check if this event has isNew flag (exclude archived and past saved)
-        const isNew = card.classList.contains('is-new') || event?.isNew === true;
-        matches = isNew && !isArchived && !(isSaved && isPast);
-      } else {
-        // Category/type filters exclude archived events and past saved events
-        const matchesFilter = category.includes(this.currentFilter) ||
-          type.includes(this.currentFilter);
-        matches = matchesFilter && !isArchived && !(isSaved && isPast);
+      // Special handling for my-events page
+      if (isMyEventsPage) {
+        if (!isSaved) {
+          // Only show saved events on My Events page
+          matches = false;
+        } else if (this.currentFilter === 'all') {
+          // All Saved shows all saved events (upcoming ones)
+          matches = !isPast;
+        } else if (this.currentFilter === 'past') {
+          // Past filter shows past saved events
+          matches = isPast;
+        } else if (['events', 'hackathons', 'cfp'].includes(this.currentFilter)) {
+          // Filter by page type (excluding past)
+          matches = eventPage === this.currentFilter && !isPast;
+        } else {
+          matches = !isPast;
+        }
+      }
+      // Special handling for 'all' page (combined view)
+      else if (isAllPage) {
+        if (this.currentFilter === 'archive') {
+          // Archive filter shows only archived events that are NOT saved/attending
+          matches = isArchived && !isSaved;
+        } else if (this.currentFilter === 'all') {
+          // All filter excludes archived events and past saved events
+          matches = !isArchived && !(isSaved && isPast);
+        } else if (this.currentFilter === 'saved') {
+          // My Events shows ALL saved events, including past/archived ones
+          matches = isSaved;
+        } else if (this.currentFilter === 'new') {
+          const isNew = card.classList.contains('is-new') || event?.isNew === true;
+          matches = isNew && !isArchived && !(isSaved && isPast);
+        } else if (['events', 'hackathons', 'cfp'].includes(this.currentFilter)) {
+          // Filter by page type
+          matches = eventPage === this.currentFilter && !isArchived && !(isSaved && isPast);
+        } else {
+          // Category/type filters
+          const matchesFilter = category.includes(this.currentFilter) ||
+            type.includes(this.currentFilter);
+          matches = matchesFilter && !isArchived && !(isSaved && isPast);
+        }
+      }
+      // Standard page filtering
+      else {
+        if (this.currentFilter === 'archive') {
+          // Archive filter shows only archived events that are NOT saved/attending
+          matches = isArchived && !isSaved;
+        } else if (this.currentFilter === 'all') {
+          // All filter excludes archived events
+          // Also exclude past saved events (they only show in My Events)
+          matches = !isArchived && !(isSaved && isPast);
+        } else if (this.currentFilter === 'saved') {
+          // My Events shows ALL saved events, including past/archived ones
+          matches = isSaved;
+        } else if (this.currentFilter === 'new') {
+          // Check if this event has isNew flag (exclude archived and past saved)
+          const isNew = card.classList.contains('is-new') || event?.isNew === true;
+          matches = isNew && !isArchived && !(isSaved && isPast);
+        } else {
+          // Category/type filters exclude archived events and past saved events
+          const matchesFilter = category.includes(this.currentFilter) ||
+            type.includes(this.currentFilter);
+          matches = matchesFilter && !isArchived && !(isSaved && isPast);
+        }
       }
 
       if (matches) {
@@ -431,7 +480,8 @@ class CalendarApp {
     }
 
     // Show empty state if no results
-    this.updateEmptyState(visibleCount, this.currentFilter === 'saved');
+    const showSavedEmptyState = this.currentFilter === 'saved' || this.pageName === 'my-events';
+    this.updateEmptyState(visibleCount, showSavedEmptyState);
   }
 
   updateEmptyState(visibleCount, isSavedFilter = false) {
