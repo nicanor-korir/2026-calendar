@@ -28,7 +28,7 @@ jobs:
           npm install
 
       - name: Backup data.js
-        run: cp js/data.js js/data.js.backup
+        run: cp js/data.js /tmp/data.js.backup
 
       - name: Archive past events
         id: archive
@@ -55,7 +55,7 @@ jobs:
         if: failure()
         run: |
           echo "Restoring backup due to validation failure"
-          cp js/data.js.backup js/data.js
+          cp /tmp/data.js.backup js/data.js
 
       - name: Check for changes
         id: git-check
@@ -121,4 +121,4 @@ jobs:
 
       - name: Cleanup backup
         if: always()
-        run: rm -f js/data.js.backup
+        run: rm -f /tmp/data.js.backup

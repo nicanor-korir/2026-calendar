@@ -88,6 +88,17 @@ function archiveEvents(data) {
 }
 
 /**
+ * Helper to format object key - quotes if contains special characters
+ */
+function formatKey(key) {
+  // If key contains characters that require quoting (hyphens, spaces, etc.)
+  if (/^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key)) {
+    return key; // Valid identifier, no quotes needed
+  }
+  return `"${key}"`; // Needs quotes
+}
+
+/**
  * Serialize event object to JavaScript string
  */
 function serializeEvent(event, indent = '    ') {
@@ -98,37 +109,37 @@ function serializeEvent(event, indent = '    ') {
     const comma = index < entries.length - 1 ? ',' : '';
 
     if (value === null) {
-      lines.push(`${indent}  ${key}: null${comma}`);
+      lines.push(`${indent}  ${formatKey(key)}: null${comma}`);
     } else if (typeof value === 'boolean') {
-      lines.push(`${indent}  ${key}: ${value}${comma}`);
+      lines.push(`${indent}  ${formatKey(key)}: ${value}${comma}`);
     } else if (typeof value === 'string') {
       // Escape quotes and newlines in strings
       const escaped = value.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
-      lines.push(`${indent}  ${key}: "${escaped}"${comma}`);
+      lines.push(`${indent}  ${formatKey(key)}: "${escaped}"${comma}`);
     } else if (Array.isArray(value)) {
       if (value.length === 0) {
-        lines.push(`${indent}  ${key}: []${comma}`);
+        lines.push(`${indent}  ${formatKey(key)}: []${comma}`);
       } else if (typeof value[0] === 'string') {
         const items = value.map(v => `"${v}"`).join(', ');
-        lines.push(`${indent}  ${key}: [${items}]${comma}`);
+        lines.push(`${indent}  ${formatKey(key)}: [${items}]${comma}`);
       } else {
         // Array of objects
         const items = value.map(item => {
           if (typeof item === 'object') {
             const props = Object.entries(item).map(([k, v]) => {
-              if (v === null) return `${k}: null`;
-              if (typeof v === 'boolean') return `${k}: ${v}`;
+              if (v === null) return `${formatKey(k)}: null`;
+              if (typeof v === 'boolean') return `${formatKey(k)}: ${v}`;
               if (typeof v === 'string') {
                 const esc = v.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-                return `${k}: "${esc}"`;
+                return `${formatKey(k)}: "${esc}"`;
               }
-              return `${k}: ${JSON.stringify(v)}`;
+              return `${formatKey(k)}: ${JSON.stringify(v)}`;
             }).join(', ');
             return `{ ${props} }`;
           }
           return JSON.stringify(item);
         });
-        lines.push(`${indent}  ${key}: [`);
+        lines.push(`${indent}  ${formatKey(key)}: [`);
         items.forEach((item, i) => {
           const itemComma = i < items.length - 1 ? ',' : '';
           lines.push(`${indent}    ${item}${itemComma}`);
@@ -142,32 +153,32 @@ function serializeEvent(event, indent = '    ') {
       nestedEntries.forEach(([nKey, nValue], nIndex) => {
         const nComma = nIndex < nestedEntries.length - 1 ? ',' : '';
         if (nValue === null) {
-          nestedLines.push(`${indent}    ${nKey}: null${nComma}`);
+          nestedLines.push(`${indent}    ${formatKey(nKey)}: null${nComma}`);
         } else if (typeof nValue === 'boolean') {
-          nestedLines.push(`${indent}    ${nKey}: ${nValue}${nComma}`);
+          nestedLines.push(`${indent}    ${formatKey(nKey)}: ${nValue}${nComma}`);
         } else if (typeof nValue === 'string') {
           const escaped = nValue.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
-          nestedLines.push(`${indent}    ${nKey}: "${escaped}"${nComma}`);
+          nestedLines.push(`${indent}    ${formatKey(nKey)}: "${escaped}"${nComma}`);
         } else if (Array.isArray(nValue)) {
           if (nValue.length === 0) {
-            nestedLines.push(`${indent}    ${nKey}: []${nComma}`);
+            nestedLines.push(`${indent}    ${formatKey(nKey)}: []${nComma}`);
           } else if (typeof nValue[0] === 'string') {
             const items = nValue.map(v => `"${v}"`).join(', ');
-            nestedLines.push(`${indent}    ${nKey}: [${items}]${nComma}`);
+            nestedLines.push(`${indent}    ${formatKey(nKey)}: [${items}]${nComma}`);
           } else {
             // Array of objects (like resources)
             const items = nValue.map(item => {
               const props = Object.entries(item).map(([k, v]) => {
-                if (v === null) return `${k}: null`;
+                if (v === null) return `${formatKey(k)}: null`;
                 if (typeof v === 'string') {
                   const esc = v.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-                  return `${k}: "${esc}"`;
+                  return `${formatKey(k)}: "${esc}"`;
                 }
-                return `${k}: ${JSON.stringify(v)}`;
+                return `${formatKey(k)}: ${JSON.stringify(v)}`;
               }).join(', ');
               return `{ ${props} }`;
             });
-            nestedLines.push(`${indent}    ${nKey}: [`);
+            nestedLines.push(`${indent}    ${formatKey(nKey)}: [`);
             items.forEach((item, i) => {
               const itemComma = i < items.length - 1 ? ',' : '';
               nestedLines.push(`${indent}      ${item}${itemComma}`);
@@ -177,17 +188,17 @@ function serializeEvent(event, indent = '    ') {
         } else if (typeof nValue === 'object') {
           // Deep nested object
           const deepProps = Object.entries(nValue).map(([dk, dv]) => {
-            if (dv === null) return `${dk}: null`;
+            if (dv === null) return `${formatKey(dk)}: null`;
             if (typeof dv === 'string') {
               const esc = dv.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-              return `${dk}: "${esc}"`;
+              return `${formatKey(dk)}: "${esc}"`;
             }
-            return `${dk}: ${JSON.stringify(dv)}`;
+            return `${formatKey(dk)}: ${JSON.stringify(dv)}`;
           }).join(', ');
-          nestedLines.push(`${indent}    ${nKey}: { ${deepProps} }${nComma}`);
+          nestedLines.push(`${indent}    ${formatKey(nKey)}: { ${deepProps} }${nComma}`);
         }
       });
-      lines.push(`${indent}  ${key}: {`);
+      lines.push(`${indent}  ${formatKey(key)}: {`);
       lines.push(...nestedLines);
       lines.push(`${indent}  }${comma}`);
     }
@@ -214,7 +225,7 @@ function writeData(data) {
       if (f.showCount) props.push(`showCount: true`);
       return `      { ${props.join(', ')} }`;
     }).join(',\n');
-    return `    ${page}: [\n${filterItems}\n    ]`;
+    return `    ${formatKey(page)}: [\n${filterItems}\n    ]`;
   }).join(',\n');
 
   const content = `// 2026 Tech Events Calendar - Data Layer
