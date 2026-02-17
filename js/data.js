@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 109,
+    totalEvents: 136,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 54
@@ -4876,6 +4876,1090 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192087&copyownerid=176159",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192087&copyownerid=176159"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-02-15)
+    // ========================================
+    {
+      id: "devpost-28409",
+      title: "Enigma'26",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-20T00:00:00.000Z",
+        end: "2026-02-20T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "₹ 37,098", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://enigma-26.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://enigma-26.devpost.com/",
+        website: "https://enigma-26.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-27390",
+      title: "RebelHacks",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-20T00:00:00.000Z",
+        end: "2026-02-20T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "$250", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://rebelhacks.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://rebelhacks.devpost.com/",
+        website: "https://rebelhacks.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-28144",
+      title: ".devHacks 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-20T00:00:00.000Z",
+        end: "2026-02-20T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://devhacks-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://devhacks-2026.devpost.com/",
+        website: "https://devhacks-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-28459",
+      title: "Hack the Planet 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-21T00:00:00.000Z",
+        end: "2026-02-21T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "21" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hack-the-planet-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hack-the-planet-2026.devpost.com/",
+        website: "https://hack-the-planet-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-26256",
+      title: "MathHacks",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-21T00:00:00.000Z",
+        end: "2026-02-21T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "21" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "$CAD 0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://mathhacks.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://mathhacks.devpost.com/",
+        website: "https://mathhacks.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-28597",
+      title: "DJXHack 2.0",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-21T00:00:00.000Z",
+        end: "2026-02-21T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "21" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "₹ 100,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://djxhackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://djxhackathon.devpost.com/",
+        website: "https://djxhackathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-28554",
+      title: "HackEurope",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-21T00:00:00.000Z",
+        end: "2026-02-21T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "21" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "€53,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hackeurope.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hackeurope.devpost.com/",
+        website: "https://hackeurope.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-27988",
+      title: "Cavista Hackathon 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-21T00:00:00.000Z",
+        end: "2026-02-21T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "21" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://cavista-hackathon-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://cavista-hackathon-2026.devpost.com/",
+        website: "https://cavista-hackathon-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-27375",
+      title: "DeerHacks V",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-02-20T00:00:00.000Z",
+        end: "2026-02-20T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: { amount: "$CAD 0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://deerhacks-v.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://deerhacks-v.devpost.com/",
+        website: "https://deerhacks-v.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-icrec--ei-2026---2026-11th-international-conferenc",
+      title: "ICREC--EI 2026 : 2026 11th International Conference on Renewable Energy and Conservation (ICREC 2026)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 11th International Conference on Renewable Energy and Conservation (ICREC 2026) [Rome, Italy] [Nov 20, 2026 - Nov 22, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192421&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192421&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192421&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-mlvis-2026---machine-learning-methods-in-visualisa",
+      title: "MLVis 2026 : Machine Learning Methods in Visualisation for Big Data",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Machine Learning Methods in Visualisation for Big Data [Nottingham, United Kingdom] [Jun 8, 2026 - Jun 8, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192406&copyownerid=132305" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192406&copyownerid=132305",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192406&copyownerid=132305"
+      }
+    },
+    {
+      id: "wikicfp-icoai--esci-2026---2026-the-13th-international-con",
+      title: "ICOAI--ESCI 2026 : 2026 The 13th International Conference on Artificial Intelligence (ICOAI 2026)--ESCI",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 The 13th International Conference on Artificial Intelligence (ICOAI 2026)--ESCI [Paris, France] [Sep 25, 2026 - Sep 27, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192387&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192387&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192387&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-amms--ei-2026---2026-8th-international-applied-mat",
+      title: "AMMS--EI 2026 : 2026 8th International Applied Mathematics, Modelling and Simulation Conference (AMMS 2026)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 8th International Applied Mathematics, Modelling and Simulation Conference (AMMS 2026) [Paris, France] [Sep 11, 2026 - Sep 13, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192382&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192382&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192382&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-grail-v-2026---grounded-retrieval-and-agentic-inte",
+      title: "GRAIL-V 2026 : Grounded Retrieval and Agentic Intelligence for Vision-Language [CVPR]",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Grounded Retrieval and Agentic Intelligence for Vision-Language [CVPR] [Denver, US] [Jun 3, 2026 - Jun 3, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192372&copyownerid=197243" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192372&copyownerid=197243",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192372&copyownerid=197243"
+      }
+    },
+    {
+      id: "wikicfp--cfp--smartcomp--2026---ieee-smartcomp-2026--final",
+      title: "[CfP] SMARTCOMP  2026 : IEEE SMARTCOMP 2026: Final Call for Research Track Papers and Industry Track Papers (Deadline Extended: 16th February 2026)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "IEEE SMARTCOMP 2026: Final Call for Research Track Papers and Industry Track Papers (Deadline Extended: 16th February 2026) [Messina, Italy] [Jun 22, 2026 - Jun 25, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192367&copyownerid=197242" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192367&copyownerid=197242",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192367&copyownerid=197242"
+      }
+    },
+    {
+      id: "wikicfp-ai--amp--fl-2026---14th-international-conference-o",
+      title: "AI &amp; FL 2026 : 14th International Conference of Artificial Intelligence and Fuzzy Logic",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "14th International Conference of Artificial Intelligence and Fuzzy Logic [Melbourne, Australia] [Apr 18, 2026 - Apr 19, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192361&copyownerid=33993" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192361&copyownerid=33993",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192361&copyownerid=33993"
+      }
+    },
+    {
+      id: "wikicfp-distinsys-2026---the-6th-ieee-international-worksh",
+      title: "DistInSys 2026 : The 6th IEEE International Workshop on Distributed Intelligent Systems",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "The 6th IEEE International Workshop on Distributed Intelligent Systems  [Vilamoura, Algarve, Portugal] [Jun 23, 2026 - Jun 26, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192323&copyownerid=197217" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192323&copyownerid=197217",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192323&copyownerid=197217"
+      }
+    },
+    {
+      id: "wikicfp-eibdct-2026---2026-5th-international-conference-on",
+      title: "EIBDCT 2026 : 2026 5th International Conference on Electronic Information Engineering, Big Data and Computer Technology",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 5th International Conference on Electronic Information Engineering, Big Data and Computer Technology [Haikou, China] [Apr 24, 2026 - Apr 26, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192311&copyownerid=163220" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192311&copyownerid=163220",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192311&copyownerid=163220"
+      }
+    },
+    {
+      id: "wikicfp-ieee-insight-2026---insight--intelligent-systems-f",
+      title: "IEEE INSIGHT 2026 : INSIGHT: INtelligent Systems for Imaging-based diaGnosis in HealThcare",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "INSIGHT: INtelligent Systems for Imaging-based diaGnosis in HealThcare [Vilamoura, Algarve, Portugal] [Jun 23, 2026 - Jun 26, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192308&copyownerid=192200" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192308&copyownerid=192200",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192308&copyownerid=192200"
+      }
+    },
+    {
+      id: "wikicfp-icici-2026---international-conference-on-innovatio",
+      title: "ICICI 2026 : International Conference on Innovations in Computational Intelligence",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Innovations in Computational Intelligence [New Delhi, India] [Apr 24, 2026 - Apr 26, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192294&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192294&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192294&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-dbml-2026---5th-international-workshop-on-database",
+      title: "DBML 2026 : 5th International Workshop on Databases and Machine Learning",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "5th International Workshop on Databases and Machine Learning [Montréal, Canada] [May 4, 2026 - May 8, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192282&copyownerid=197187" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192282&copyownerid=197187",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192282&copyownerid=197187"
+      }
+    },
+    {
+      id: "wikicfp-cicba-2026---8th-international-conference-on-compu",
+      title: "CICBA 2026 : 8th International Conference on Computational Intelligence in Communications and Business Analytics",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "8th International Conference on Computational Intelligence in Communications and Business Analytics [Malda, West Bengal, India] [Sep 10, 2026 - Sep 12, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192268&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192268&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192268&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-ettis-2026---6th-international-conference-on-emerg",
+      title: "ETTIS 2026 : 6th International Conference on Emerging Trends and Technologies on Intelligent Systems",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "6th International Conference on Emerging Trends and Technologies on Intelligent Systems [New Delhi, India] [Jul 2, 2026 - Jul 3, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192267&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192267&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192267&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-idsta-2026---7th-international-conference-on-intel",
+      title: "IDSTA 2026 : 7th International Conference on Intelligent Data Science Technologies and Applications",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "7th International Conference on Intelligent Data Science Technologies and Applications [Bucharest, Romania] [Sep 22, 2026 - Sep 25, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192265&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192265&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192265&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-iea-aie-2026---39th-international-conference-on-in",
+      title: "IEA/AIE 2026 : 39th International Conference on Industrial, Engineering &amp; Other Applications of Applied Intelligent Systems",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "39th International Conference on Industrial, Engineering & Other Applications of Applied Intelligent Systems [Kuala Lumpur, Malaysia] [Jul 6, 2026 - Jul 8, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192263&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192263&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192263&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-mlis-2026---8th-international-conference-on-machin",
+      title: "MLIS 2026 : 8th International Conference on Machine Learning and Intelligent Systems",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "8th International Conference on Machine Learning and Intelligent Systems [Sanya, Hainan, China] [Nov 25, 2026 - Nov 28, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192262&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192262&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192262&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-ieee-ddcls-2026---15th-ieee-data-driven-control-an",
+      title: "IEEE DDCLS 2026 : 15th IEEE Data Driven Control and Learning Systems Conference",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-02-15",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "15th IEEE Data Driven Control and Learning Systems Conference [Jishou, Hunan Province, China] [May 8, 2026 - May 11, 2025]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192259&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192259&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192259&copyownerid=13149"
       }
     }
   ]
