@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 111,
+    totalEvents: 102,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 62
@@ -5460,7 +5460,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://enigma-26.devpost.com/",
         website: "https://enigma-26.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-27390",
@@ -5511,7 +5512,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://rebelhacks.devpost.com/",
         website: "https://rebelhacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-28144",
@@ -5562,7 +5564,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://devhacks-2026.devpost.com/",
         website: "https://devhacks-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-28459",
@@ -5613,7 +5616,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://hack-the-planet-2026.devpost.com/",
         website: "https://hack-the-planet-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-26256",
@@ -5664,7 +5668,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://mathhacks.devpost.com/",
         website: "https://mathhacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-28597",
@@ -5715,7 +5720,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://djxhackathon.devpost.com/",
         website: "https://djxhackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-28554",
@@ -5766,7 +5772,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://hackeurope.devpost.com/",
         website: "https://hackeurope.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-27988",
@@ -5817,7 +5824,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cavista-hackathon-2026.devpost.com/",
         website: "https://cavista-hackathon-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-27375",
@@ -5868,7 +5876,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://deerhacks-v.devpost.com/",
         website: "https://deerhacks-v.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wikicfp-icrec--ei-2026---2026-11th-international-conferenc",
