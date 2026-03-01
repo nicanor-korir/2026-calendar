@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 102,
+    totalEvents: 101,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 62
@@ -468,7 +468,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://africatechsummit.com/",
         website: "https://africatechsummit.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "developpp",
