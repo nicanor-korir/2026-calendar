@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 102,
+    totalEvents: 99,
     totalPrizes: "$2M+",
     berlinEvents: 0,
-    cfpCount: 62
+    cfpCount: 61
   },
 
   // Filter definitions for each page
@@ -468,7 +468,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://africatechsummit.com/",
         website: "https://africatechsummit.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "developpp",
@@ -670,7 +671,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://eccv.ecva.net/",
         website: "https://eccv.ecva.net/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "cvpr",
@@ -2102,7 +2104,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.mwcbarcelona.com/",
         website: "https://www.mwcbarcelona.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "nvidia-gtc",
