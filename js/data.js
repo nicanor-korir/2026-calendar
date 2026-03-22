@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 99,
+    totalEvents: 97,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 61
@@ -869,7 +869,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://rethink-iam.de/",
         website: "https://rethink-iam.de/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "rise-of-ai",
@@ -2152,7 +2153,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.nvidia.com/gtc/",
         website: "https://www.nvidia.com/gtc/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "pycon-us",
