@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 120,
+    totalEvents: 117,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 88
@@ -1401,7 +1401,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://nodecongress.com/",
         website: "https://nodecongress.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "react-advanced",
@@ -1638,7 +1639,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cloud.withgoogle.com/next",
         website: "https://cloud.withgoogle.com/next"
-      }
+      },
+      isArchived: true
     },
 {
       id: "aws-reinvent",
@@ -2346,7 +2348,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.dotai.io/",
         website: "https://www.dotai.io/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "ai-summit-london",
