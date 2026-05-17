@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 120,
+    totalEvents: 114,
     totalPrizes: "$2M+",
     berlinEvents: 0,
-    cfpCount: 88
+    cfpCount: 87
   },
 
   // Filter definitions for each page
@@ -825,7 +825,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://neurips.cc/",
         website: "https://neurips.cc/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "rethink-iam",
@@ -920,7 +921,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://riseof.ai/",
         website: "https://riseof.ai/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "open-hardware",
@@ -1401,7 +1403,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://nodecongress.com/",
         website: "https://nodecongress.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "react-advanced",
@@ -1638,7 +1641,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cloud.withgoogle.com/next",
         website: "https://cloud.withgoogle.com/next"
-      }
+      },
+      isArchived: true
     },
 {
       id: "aws-reinvent",
@@ -1732,7 +1736,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.rsaconference.com/",
         website: "https://www.rsaconference.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "blackhat-usa",
@@ -2346,7 +2351,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.dotai.io/",
         website: "https://www.dotai.io/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "ai-summit-london",
