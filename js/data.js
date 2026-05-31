@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 114,
+    totalEvents: 112,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 87
@@ -970,7 +970,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://2026.oshwa.org/",
         website: "https://2026.oshwa.org/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wearedev",
@@ -2210,7 +2211,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://pycon.org/",
         website: "https://pycon.org/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "gophercon",
