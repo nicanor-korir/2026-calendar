@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 267,
+    totalEvents: 171,
     totalPrizes: "$2M+",
     berlinEvents: 0,
-    cfpCount: 107
+    cfpCount: 146
   },
 
   // Filter definitions for each page
@@ -370,7 +370,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://hello-tomorrow.org/global-challenge/",
         website: "https://hello-tomorrow.org/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "abcc",
@@ -1309,7 +1310,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://jsnation.com/",
         website: "https://jsnation.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "react-summit",
@@ -1357,7 +1359,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://reactsummit.com/",
         website: "https://reactsummit.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "node-congress",
@@ -1548,7 +1551,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://mlconference.ai/munich/",
         website: "https://mlconference.ai/munich/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "kubecon-europe",
@@ -1974,7 +1978,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://collisionconf.com/",
         website: "https://collisionconf.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "viva-tech",
@@ -2021,7 +2026,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://vivatechnology.com/",
         website: "https://vivatechnology.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "ces",
@@ -2402,7 +2408,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://theaisummit.com/london/",
         website: "https://theaisummit.com/london/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "gemini-3-hackathon",
@@ -10421,11 +10428,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195373&copyownerid=197995"
       }
     },
-
-    // ========================================
-    // AUTO-ADDED EVENTS (2026-06-09)
-    // ========================================
-    {
+{
       id: "devpost-30113",
       title: "Hack Days Varanasi",
       organizer: "devpost",
@@ -10443,14 +10446,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "10" },
+      dateDisplay: {
+        month: "Jun",
+        day: "10"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "₹ 0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "₹ 0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10463,9 +10477,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://hack-days-varanasi.devpost.com/",
         website: "https://hack-days-varanasi.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30362",
       title: "ACS Hacks",
       organizer: "devpost",
@@ -10483,14 +10498,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "10" },
+      dateDisplay: {
+        month: "Jun",
+        day: "10"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$CAD 0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$CAD 0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10503,9 +10529,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://acshacks.devpost.com/",
         website: "https://acshacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30348",
       title: "Hacks day Bhopal",
       organizer: "devpost",
@@ -10523,14 +10550,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "13" },
+      dateDisplay: {
+        month: "Jun",
+        day: "13"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10543,9 +10581,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://hacks-day-bhopal-30348.devpost.com/",
         website: "https://hacks-day-bhopal-30348.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30054",
       title: "LingHacks VII",
       organizer: "devpost",
@@ -10563,14 +10602,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "13" },
+      dateDisplay: {
+        month: "Jun",
+        day: "13"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10583,9 +10633,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://linghacks-vii.devpost.com/",
         website: "https://linghacks-vii.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30260",
       title: "LingHacks VII",
       organizer: "devpost",
@@ -10603,14 +10654,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "13" },
+      dateDisplay: {
+        month: "Jun",
+        day: "13"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10623,9 +10685,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://linghacks7.devpost.com/",
         website: "https://linghacks7.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-28984",
       title: "Databricks Apps & Agents for Good Hackathon 2026",
       organizer: "devpost",
@@ -10643,14 +10706,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "16" },
+      dateDisplay: {
+        month: "Jun",
+        day: "16"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$17,500", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$17,500",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10663,9 +10737,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://dais-for-good-2026.devpost.com/",
         website: "https://dais-for-good-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30319",
       title: "Play with Purpose Hackathon presented by Cox Enterprises",
       organizer: "devpost",
@@ -10683,14 +10758,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "14" },
+      dateDisplay: {
+        month: "Jun",
+        day: "14"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10703,9 +10789,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://play-with-purpose-hackathon.devpost.com/",
         website: "https://play-with-purpose-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30256",
       title: "Department Battle: Hack Days",
       organizer: "devpost",
@@ -10723,14 +10810,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "18" },
+      dateDisplay: {
+        month: "Jun",
+        day: "18"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "₹ 0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "₹ 0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10743,9 +10841,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://department-battle-hack-days.devpost.com/",
         website: "https://department-battle-hack-days.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-30240",
       title: "GenAI AI Hackathon — Automotive & Manufacturing Use Cases",
       organizer: "devpost",
@@ -10763,14 +10862,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "19" },
+      dateDisplay: {
+        month: "Jun",
+        day: "19"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -10783,9 +10893,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://auto-ai-hackathon-munich-2026.devpost.com/",
         website: "https://auto-ai-hackathon-munich-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "wikicfp-iscslp-2026---international-symposium-on-chinese-s",
       title: "ISCSLP 2026 : International Symposium on Chinese Spoken Language Processing",
       organizer: "wikicfp",
@@ -10803,14 +10914,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "International Symposium on Chinese Spoken Language Processing [Penang, Malaysia] [Nov 14, 2026 - Nov 17, 2026]",
         requirements: null,
@@ -10825,7 +10944,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199861&copyownerid=199080"
       }
     },
-    {
+{
       id: "wikicfp-iscslp-2026---the-15th-international-symposium-on-",
       title: "ISCSLP 2026 : The 15th International Symposium on Chinese Spoken Language Processing",
       organizer: "wikicfp",
@@ -10843,14 +10962,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The 15th International Symposium on Chinese Spoken Language Processing [Penang, Malaysia] [Nov 14, 2026 - Nov 17, 2026]",
         requirements: null,
@@ -10865,7 +10992,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199858&copyownerid=199080"
       }
     },
-    {
+{
       id: "wikicfp-icpm-2027---8th-international-conference-on-proces",
       title: "ICPM 2027 : 8th International Conference on Process Mining",
       organizer: "wikicfp",
@@ -10883,14 +11010,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "8th International Conference on Process Mining [Rende, Italy] [Feb 8, 2027 - Feb 12, 2027]",
         requirements: null,
@@ -10905,7 +11040,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199835&copyownerid=199057"
       }
     },
-    {
+{
       id: "wikicfp-wmlq-2026----3rd-international-workshop-on-machine",
       title: "WMLQ 2026 :  3rd International Workshop on Machine Learning and Quantum Computing Applications in Medicine and Physics",
       organizer: "wikicfp",
@@ -10923,14 +11058,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "3rd International Workshop on Machine Learning and Quantum Computing Applications in Medicine and Physics [Warsaw, Poland] [Sep 7, 2026 - Sep 11, 2026]",
         requirements: null,
@@ -10945,7 +11088,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199806&copyownerid=175737"
       }
     },
-    {
+{
       id: "wikicfp-ei-scopus-mlbdm-2026---2026-6th-international-conf",
       title: "Ei/Scopus-MLBDM 2026 : 2026 6th International Conference on Machine Learning and Big Data Management (MLBDM 2026)",
       organizer: "wikicfp",
@@ -10963,14 +11106,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 6th International Conference on Machine Learning and Big Data Management (MLBDM 2026) [Hangzhou, China] [Dec 18, 2026 - Dec 20, 2026]",
         requirements: null,
@@ -10985,7 +11136,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199708&copyownerid=165700"
       }
     },
-    {
+{
       id: "wikicfp-ciot-2026---8th-international-conference-on-intern",
       title: "CIoT 2026 : 8th International Conference on Internet of Things",
       organizer: "wikicfp",
@@ -11003,14 +11154,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "8th International Conference on Internet of Things [London, United Kingdom] [Jul 16, 2026 - Jul 17, 2026]",
         requirements: null,
@@ -11025,7 +11184,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199700&copyownerid=33993"
       }
     },
-    {
+{
       id: "wikicfp-if-aie-2026---the-2026-international-forum-on-arti",
       title: "IF-AIE 2026 : The 2026 International Forum on Artificial Intelligence in Education                                                              Mode: Hybrid (On-site and Online)",
       organizer: "wikicfp",
@@ -11043,14 +11202,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The 2026 International Forum on Artificial Intelligence in Education                                                              Mode: Hybrid (On-site and Online) [Algiers, Algeria] [Sep 27, 2026 - Sep 28, 2026]",
         requirements: null,
@@ -11065,7 +11232,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199695&copyownerid=199007"
       }
     },
-    {
+{
       id: "wikicfp-icric--ei-2027---2027-international-conference-on-",
       title: "ICRIC--EI 2027 : 2027 International Conference on Robotics and Intelligent Control (ICRIC 2027)",
       organizer: "wikicfp",
@@ -11083,14 +11250,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2027 International Conference on Robotics and Intelligent Control (ICRIC 2027) [Milan, Italy] [Feb 17, 2027 - Feb 19, 2027]",
         requirements: null,
@@ -11105,7 +11280,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199689&copyownerid=13881"
       }
     },
-    {
+{
       id: "wikicfp-cste--ei-2027---2027-9th-international-conference-",
       title: "CSTE--EI 2027 : 2027 9th International Conference on Computer Science and Technologies in Education (CSTE 2027)",
       organizer: "wikicfp",
@@ -11123,14 +11298,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2027 9th International Conference on Computer Science and Technologies in Education (CSTE 2027) [Wuhan, China] [Apr 9, 2027 - Apr 11, 2027]",
         requirements: null,
@@ -11145,7 +11328,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199684&copyownerid=13881"
       }
     },
-    {
+{
       id: "wikicfp-ipmi-2027---information-processing-in-medical-imag",
       title: "IPMI 2027 : Information Processing in Medical Imaging (IPMI) 2027",
       organizer: "wikicfp",
@@ -11163,14 +11346,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "Information Processing in Medical Imaging (IPMI) 2027 [Lake Stukely, QC, Canada] [Jun 27, 2027 - Jul 2, 2027]",
         requirements: null,
@@ -11185,7 +11376,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199677&copyownerid=199001"
       }
     },
-    {
+{
       id: "wikicfp-cadat-2026---the-third-international-conference-on",
       title: "CADAT 2026 : The Third International Conference on Accessible Digital Agriculture Technologies",
       organizer: "wikicfp",
@@ -11203,14 +11394,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The Third International Conference on Accessible Digital Agriculture Technologies [Lisbon, Portugal] [Oct 25, 2026 - Oct 29, 2026]",
         requirements: null,
@@ -11225,7 +11424,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199675&copyownerid=83510"
       }
     },
-    {
+{
       id: "wikicfp-coce-2026---the-third-international-conference-on-",
       title: "COCE 2026 : The Third International Conference on Technologies for Marine and Coastal Ecosystems",
       organizer: "wikicfp",
@@ -11243,14 +11442,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The Third International Conference on Technologies for Marine and Coastal Ecosystems [Lisbon, Portugal] [Oct 25, 2026 - Oct 29, 2026]",
         requirements: null,
@@ -11265,7 +11472,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199673&copyownerid=83510"
       }
     },
-    {
+{
       id: "wikicfp-prediction-solutions-2026---international-conferen",
       title: "PREDICTION SOLUTIONS 2026 : International Conference on Prediction Solutions for Technical and Societal Systems",
       organizer: "wikicfp",
@@ -11283,14 +11490,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "International Conference on Prediction Solutions for Technical and Societal Systems [Lisbon, Portugal] [Oct 25, 2026 - Oct 29, 2026]",
         requirements: null,
@@ -11305,7 +11520,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199660&copyownerid=83510"
       }
     },
-    {
+{
       id: "wikicfp-signal-2026---13th-international-conference-on-sig",
       title: "Signal 2026 : 13th International Conference on Signal and Image Processing",
       organizer: "wikicfp",
@@ -11323,14 +11538,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "13th International Conference on Signal and Image Processing [Sydney, Australia] [Jun 20, 2026 - Jun 21, 2026]",
         requirements: null,
@@ -11345,7 +11568,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199639&copyownerid=33993"
       }
     },
-    {
+{
       id: "wikicfp-bpod-2026---the-ninth-ieee-international-workshop-",
       title: "BPOD 2026 : The Ninth IEEE International Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Analytics and Big Models (BPOD 2026)",
       organizer: "wikicfp",
@@ -11363,14 +11586,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The Ninth IEEE International Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Analytics and Big Models (BPOD 2026) [Phoenix, Arizona, USA] [Dec 14, 2026 - Dec 17, 2026]",
         requirements: null,
@@ -11385,7 +11616,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199628&copyownerid=170448"
       }
     },
-    {
+{
       id: "wikicfp-humsec-esorics-2026---workshop-on-human-targeted-c",
       title: "HumSec@ESORICS 2026 : Workshop on Human-Targeted Cyber Threats and Defenses",
       organizer: "wikicfp",
@@ -11403,14 +11634,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "Workshop on Human-Targeted Cyber Threats and Defenses [Rome, Italy] [Sep 14, 2026 - Sep 18, 2026]",
         requirements: null,
@@ -11425,7 +11664,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199623&copyownerid=198981"
       }
     },
-    {
+{
       id: "wikicfp-hicss-ai4cyber-and-cyber4ai-2027---hicss-60-mini-t",
       title: "HICSS AI4Cyber and Cyber4AI 2027 : HICSS 60 Mini-Track: AI for Cybersecurity",
       organizer: "wikicfp",
@@ -11443,14 +11682,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "HICSS 60 Mini-Track: AI for Cybersecurity [Big Island, Hawaii] [Jan 5, 2027 - Jan 8, 2027]",
         requirements: null,
@@ -11465,7 +11712,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199608&copyownerid=179590"
       }
     },
-    {
+{
       id: "wikicfp-wipe-out--2026---2nd-workshop-on-machine-unlearnin",
       title: "WIPE-OUT  2026 : 2nd Workshop on Machine Unlearning and Privacy Preservation (WIPE-OUT 2) - Deadline Extended",
       organizer: "wikicfp",
@@ -11483,14 +11730,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2nd Workshop on Machine Unlearning and Privacy Preservation (WIPE-OUT 2) - Deadline Extended [Naples, Italy] [Sep 7, 2026 - Sep 7, 2026]",
         requirements: null,
@@ -11505,7 +11760,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199586&copyownerid=198048"
       }
     },
-    {
+{
       id: "wikicfp-iwoar-2026---11th-international-workshop-on-sensor",
       title: "iWOAR 2026 : 11th international Workshop on Sensor-Based Activity Recognition and Artificial Intelligence",
       organizer: "wikicfp",
@@ -11523,14 +11778,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "11th international Workshop on Sensor-Based Activity Recognition and Artificial Intelligence [Wiesbaden, Germany] [Sep 10, 2026 - Sep 11, 2026]",
         requirements: null,
@@ -11545,7 +11808,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199583&copyownerid=198937"
       }
     },
-    {
+{
       id: "wikicfp-sipro-2026---12th-international-conference-on-sign",
       title: "SIPRO 2026 : 12th International Conference on Signal and Image Processing",
       organizer: "wikicfp",
@@ -11563,14 +11826,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-09",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "12th International Conference on Signal and Image Processing [Copenhagen, Denmark] [Jun 27, 2026 - Jun 28, 2026]",
         requirements: null,
@@ -11585,11 +11856,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199582&copyownerid=33993"
       }
     },
-
-    // ========================================
-    // AUTO-ADDED EVENTS (2026-06-28)
-    // ========================================
-    {
+{
       id: "devpost-30352",
       title: "Innovators Hub Hackathon",
       organizer: "devpost",
@@ -11607,14 +11874,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "29" },
+      dateDisplay: {
+        month: "Jun",
+        day: "29"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "₹ 1,900", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "₹ 1,900",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11627,9 +11905,10 @@ const EVENTS_DATA = {
       links: {
         register: "https://innovators-hub-hackathon.devpost.com/",
         website: "https://innovators-hub-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
-    {
+{
       id: "devpost-29856",
       title: "BeanHacks",
       organizer: "devpost",
@@ -11647,14 +11926,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "30" },
+      dateDisplay: {
+        month: "Jun",
+        day: "30"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11669,7 +11959,7 @@ const EVENTS_DATA = {
         website: "https://beanhacks.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-30393",
       title: "Hackdays Prayagraj ",
       organizer: "devpost",
@@ -11687,14 +11977,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "3" },
+      dateDisplay: {
+        month: "Jul",
+        day: "3"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11709,7 +12010,7 @@ const EVENTS_DATA = {
         website: "https://hackdays-prayagraj.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-29633",
       title: "KODA Hacks 2026",
       organizer: "devpost",
@@ -11727,14 +12028,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "1" },
+      dateDisplay: {
+        month: "Jul",
+        day: "1"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11749,7 +12061,7 @@ const EVENTS_DATA = {
         website: "https://koda-hacks-2026.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-30342",
       title: "Ctrl+V Hackathon",
       organizer: "devpost",
@@ -11767,14 +12079,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "1" },
+      dateDisplay: {
+        month: "Jul",
+        day: "1"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11789,7 +12112,7 @@ const EVENTS_DATA = {
         website: "https://ctrl-v-hackathon.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-30413",
       title: "Cyber Sages Hackathon ",
       organizer: "devpost",
@@ -11807,14 +12130,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "6" },
+      dateDisplay: {
+        month: "Jul",
+        day: "6"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11829,7 +12163,7 @@ const EVENTS_DATA = {
         website: "https://cybersageshackathon.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-30526",
       title: "DS6051 Decoding LLMs Hackathon",
       organizer: "devpost",
@@ -11847,14 +12181,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "8" },
+      dateDisplay: {
+        month: "Jul",
+        day: "8"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$0", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$0",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11869,7 +12214,7 @@ const EVENTS_DATA = {
         website: "https://ds6051-hackathon.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-30549",
       title: "Dummy ",
       organizer: "devpost",
@@ -11887,14 +12232,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jul", day: "7" },
+      dateDisplay: {
+        month: "Jul",
+        day: "7"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "₹ 20", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "₹ 20",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11909,7 +12265,7 @@ const EVENTS_DATA = {
         website: "https://dummy-30549.devpost.com/"
       }
     },
-    {
+{
       id: "devpost-30567",
       title: "AQX Sports Analytics Data Bowl",
       organizer: "devpost",
@@ -11927,14 +12283,25 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jun", day: "30" },
+      dateDisplay: {
+        month: "Jun",
+        day: "30"
+      },
       eventType: "Hackathon",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
-      prize: { amount: "$50", icon: "💰" },
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      prize: {
+        amount: "$50",
+        icon: "💰"
+      },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "New hackathons found from devpost. Click to learn more.",
         requirements: null,
@@ -11949,7 +12316,7 @@ const EVENTS_DATA = {
         website: "https://aqxanalyticsdata.devpost.com/"
       }
     },
-    {
+{
       id: "wikicfp-iwqps-2026---the-international-workshop-on-quantum",
       title: "IWQPS 2026 : The International Workshop on Quantum Computing, Privacy and Security",
       organizer: "wikicfp",
@@ -11967,14 +12334,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The International Workshop on Quantum Computing, Privacy and Security [Bucharest, Romania] [Sep 22, 2026 - Sep 25, 2026]",
         requirements: null,
@@ -11989,7 +12364,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200244&copyownerid=199303"
       }
     },
-    {
+{
       id: "wikicfp-mlsc-2026---2026-2nd-international-symposium-on-ma",
       title: "MLSC 2026 : 2026 2nd International Symposium on Machine Learning and Social Computing",
       organizer: "wikicfp",
@@ -12007,14 +12382,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 2nd International Symposium on Machine Learning and Social Computing [Bangkok, Thailand] [Oct 26, 2026 - Oct 28, 2026]",
         requirements: null,
@@ -12029,7 +12412,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200215&copyownerid=182680"
       }
     },
-    {
+{
       id: "wikicfp-spra-2027---spie--2027-7th-symposium-on-pattern-re",
       title: "SPRA 2027 : SPIE--2027 7th Symposium on Pattern Recognition and Applications (SPRA 2027)",
       organizer: "wikicfp",
@@ -12047,14 +12430,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "SPIE--2027 7th Symposium on Pattern Recognition and Applications (SPRA 2027) [Tokyo, Japan] [Mar 3, 2027 - Mar 5, 2027]",
         requirements: null,
@@ -12069,7 +12460,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200160&copyownerid=13881"
       }
     },
-    {
+{
       id: "wikicfp-ieee-aipe-2027---ieee--2027-the-4th-international-",
       title: "IEEE AIPE 2027 : IEEE--2027 the 4th International Conference on Artificial Intelligence and Power Engineering (AIPE 2027)",
       organizer: "wikicfp",
@@ -12087,14 +12478,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "IEEE--2027 the 4th International Conference on Artificial Intelligence and Power Engineering (AIPE 2027) [Nanjing, China] [Feb 26, 2027 - Feb 28, 2027]",
         requirements: null,
@@ -12109,7 +12508,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200152&copyownerid=13881"
       }
     },
-    {
+{
       id: "wikicfp-icpram-2027---16th-international-conference-on-pat",
       title: "ICPRAM 2027 : 16th International Conference on Pattern Recognition Applications and Methods",
       organizer: "wikicfp",
@@ -12127,14 +12526,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "16th International Conference on Pattern Recognition Applications and Methods [Valletta, Malta] [Feb 20, 2027 - Feb 22, 2027]",
         requirements: null,
@@ -12149,7 +12556,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200101&copyownerid=45217"
       }
     },
-    {
+{
       id: "wikicfp-visapp-2027---22nd-international-conference-on-com",
       title: "VISAPP 2027 : 22nd International Conference on Computer Vision Theory and Applications",
       organizer: "wikicfp",
@@ -12167,14 +12574,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "22nd International Conference on Computer Vision Theory and Applications [Valletta, Malta] [Feb 26, 2027 - Feb 28, 2027]",
         requirements: null,
@@ -12189,7 +12604,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200096&copyownerid=45217"
       }
     },
-    {
+{
       id: "wikicfp-cvaa-2026---ieee-2026-6th-international-conference",
       title: "CVAA 2026 : IEEE 2026 6th International Conference on Computer Vision, Application and Algorithm",
       organizer: "wikicfp",
@@ -12207,14 +12622,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "IEEE 2026 6th International Conference on Computer Vision, Application and Algorithm [Hong Kong,China] [Sep 18, 2026 - Sep 20, 2026]",
         requirements: null,
@@ -12229,7 +12652,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200081&copyownerid=182680"
       }
     },
-    {
+{
       id: "wikicfp-acm-aamlds-2026---2026-international-conference-on",
       title: "ACM-AAMLDS 2026 : 2026 International Conference on Advanced Algorithms, Machine Learning, and Data Science (AAMLDS 2026)",
       organizer: "wikicfp",
@@ -12247,14 +12670,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2026 International Conference on Advanced Algorithms, Machine Learning, and Data Science (AAMLDS 2026) [Xiamen, China] [Dec 4, 2026 - Dec 6, 2026]",
         requirements: null,
@@ -12269,7 +12700,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200077&copyownerid=163993"
       }
     },
-    {
+{
       id: "wikicfp-ea-2026---17th-international-conference-on-artific",
       title: "EA 2026 : 17th International Conference on Artificial Evolution",
       organizer: "wikicfp",
@@ -12287,14 +12718,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "17th International Conference on Artificial Evolution [Nice, France] [Oct 27, 2026 - Oct 29, 2026]",
         requirements: null,
@@ -12309,7 +12748,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200074&copyownerid=13149"
       }
     },
-    {
+{
       id: "wikicfp-queerinai-2026---queer-in-ai-2026",
       title: "QueerInAI 2026 : Queer in AI 2026",
       organizer: "wikicfp",
@@ -12327,14 +12766,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "Queer in AI 2026 [Bremen] [Aug 14, 2026 - Aug 15, 2026]",
         requirements: null,
@@ -12349,7 +12796,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200068&copyownerid=193489"
       }
     },
-    {
+{
       id: "wikicfp-acml-2026---18th-asian-conference-on-machine-learn",
       title: "ACML 2026 : 18th Asian Conference on Machine Learning",
       organizer: "wikicfp",
@@ -12367,14 +12814,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "18th Asian Conference on Machine Learning [Melbourne, Australia] [Dec 1, 2026 - Dec 4, 2026]",
         requirements: null,
@@ -12389,7 +12844,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200050&copyownerid=13149"
       }
     },
-    {
+{
       id: "wikicfp-ictai-2026---international-conference-on-tools-wit",
       title: "ICTAI 2026 : International Conference on Tools with Artificial Intelligence",
       organizer: "wikicfp",
@@ -12407,14 +12862,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "International Conference on Tools with Artificial Intelligence [Boca Raton, Florida, USA] [Nov 2, 2026 - Nov 4, 2026]",
         requirements: null,
@@ -12429,7 +12892,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200049&copyownerid=13149"
       }
     },
-    {
+{
       id: "wikicfp-nlpa-2026---7th-international-conference-on-natura",
       title: "NLPA 2026 : 7th International Conference on Natural Language Processing &amp; Applications",
       organizer: "wikicfp",
@@ -12447,14 +12910,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "7th International Conference on Natural Language Processing & Applications [Toronto, Canada] [Jul 25, 2026 - Jul 26, 2026]",
         requirements: null,
@@ -12469,7 +12940,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200044&copyownerid=33993"
       }
     },
-    {
+{
       id: "wikicfp-ieee-is-2026---13th-ieee-international-conference-",
       title: "IEEE IS 2026 : 13th IEEE International Conference on Intelligent Systems",
       organizer: "wikicfp",
@@ -12487,14 +12958,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "13th IEEE International Conference on Intelligent Systems [Varna, Bulgaria] [Sep 3, 2026 - Sep 5, 2026]",
         requirements: null,
@@ -12509,7 +12988,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200035&copyownerid=13149"
       }
     },
-    {
+{
       id: "wikicfp-icaicta-2026---the-13th-international-conference-o",
       title: "ICAICTA 2026 : The 13th International Conference on Advanced Informatics: Concepts, Theory and Applications",
       organizer: "wikicfp",
@@ -12527,14 +13006,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "The 13th International Conference on Advanced Informatics: Concepts, Theory and Applications [UTAR, Kampar, Perak, Malaysia] [Oct 20, 2026 - Oct 21, 2026]",
         requirements: null,
@@ -12549,7 +13036,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200024&copyownerid=199175"
       }
     },
-    {
+{
       id: "wikicfp-aimldl-2026---7th-international-conference-on-ai--",
       title: "AIMLDL 2026 : 7th International Conference on AI, Machine Learning and Deep Learning",
       organizer: "wikicfp",
@@ -12567,14 +13054,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "7th International Conference on AI, Machine Learning and Deep Learning [London, United Kingdom] [Jul 16, 2026 - Jul 17, 2026]",
         requirements: null,
@@ -12589,7 +13084,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199977&copyownerid=33993"
       }
     },
-    {
+{
       id: "wikicfp-prima-2026---pacific-rim-international-conference-",
       title: "PRIMA 2026 : Pacific Rim International Conference on Multi-Agents",
       organizer: "wikicfp",
@@ -12607,14 +13102,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "Pacific Rim International Conference on Multi-Agents [Kumamoto, Japan] [Dec 14, 2026 - Dec 17, 2026]",
         requirements: null,
@@ -12629,7 +13132,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199947&copyownerid=199136"
       }
     },
-    {
+{
       id: "wikicfp-spm-2026---13th-international-conference-on-signal",
       title: "SPM 2026 : 13th International Conference on Signal, Image Processing and Multimedia",
       organizer: "wikicfp",
@@ -12647,14 +13150,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "13th International Conference on Signal, Image Processing and Multimedia  [London, United Kingdom] [Jul 16, 2026 - Jul 17, 2026]",
         requirements: null,
@@ -12669,7 +13180,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199941&copyownerid=33993"
       }
     },
-    {
+{
       id: "wikicfp-icnlp--ei-2027---2027-the-9th-international-confer",
       title: "ICNLP--EI 2027 : 2027 The 9th International Conference on Natural Language Processing (ICNLP 2027)",
       organizer: "wikicfp",
@@ -12687,14 +13198,22 @@ const EVENTS_DATA = {
         deadline: null,
         countdownTarget: "start"
       },
-      dateDisplay: { month: "Jan", day: "1" },
+      dateDisplay: {
+        month: "Jan",
+        day: "1"
+      },
       eventType: "CFP",
       isUrgent: false,
       isFeatured: false,
       isNew: true,
       addedDate: "2026-06-28",
       prize: null,
-      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      location: {
+        type: "online",
+        city: null,
+        country: null,
+        display: "Online / TBA"
+      },
       modal: {
         overview: "2027 The 9th International Conference on Natural Language Processing (ICNLP 2027) [Zhenjiang, China] [Apr 16, 2027 - Apr 18, 2027]",
         requirements: null,
