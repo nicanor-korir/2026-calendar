@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 171,
+    totalEvents: 167,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 146
@@ -11957,7 +11957,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://beanhacks.devpost.com/",
         website: "https://beanhacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30393",
@@ -12008,7 +12009,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://hackdays-prayagraj.devpost.com/",
         website: "https://hackdays-prayagraj.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-29633",
@@ -12059,7 +12061,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://koda-hacks-2026.devpost.com/",
         website: "https://koda-hacks-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30342",
@@ -12110,7 +12113,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://ctrl-v-hackathon.devpost.com/",
         website: "https://ctrl-v-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30413",
