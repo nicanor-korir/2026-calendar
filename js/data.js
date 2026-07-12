@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 171,
+    totalEvents: 162,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 146
@@ -1021,7 +1021,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.wearedevelopers.com/world-congress/tickets",
         website: "https://www.wearedevelopers.com/world-congress"
-      }
+      },
+      isArchived: true
     },
 {
       id: "ifa-berlin",
@@ -11957,7 +11958,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://beanhacks.devpost.com/",
         website: "https://beanhacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30393",
@@ -12008,7 +12010,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://hackdays-prayagraj.devpost.com/",
         website: "https://hackdays-prayagraj.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-29633",
@@ -12059,7 +12062,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://koda-hacks-2026.devpost.com/",
         website: "https://koda-hacks-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30342",
@@ -12110,7 +12114,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://ctrl-v-hackathon.devpost.com/",
         website: "https://ctrl-v-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30413",
@@ -12161,7 +12166,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cybersageshackathon.devpost.com/",
         website: "https://cybersageshackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30526",
@@ -12212,7 +12218,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://ds6051-hackathon.devpost.com/",
         website: "https://ds6051-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30549",
@@ -12263,7 +12270,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://dummy-30549.devpost.com/",
         website: "https://dummy-30549.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30567",
@@ -12314,7 +12322,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://aqxanalyticsdata.devpost.com/",
         website: "https://aqxanalyticsdata.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wikicfp-iwqps-2026---the-international-workshop-on-quantum",
