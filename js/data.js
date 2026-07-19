@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 162,
+    totalEvents: 161,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 146
@@ -2267,7 +2267,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.gophercon.com/",
         website: "https://www.gophercon.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "rustconf",
