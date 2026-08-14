@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 161,
+    totalEvents: 159,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 146
@@ -1791,7 +1791,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.blackhat.com/us-26/",
         website: "https://www.blackhat.com/us-26/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "defcon",
@@ -1838,7 +1839,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://defcon.org/",
         website: "https://defcon.org/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "blackhat-europe",
