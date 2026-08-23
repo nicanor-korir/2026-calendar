@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 295,
+    totalEvents: 309,
     totalPrizes: "$2M+",
     berlinEvents: 0,
     cfpCount: 146
@@ -14362,6 +14362,570 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202467&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202467&copyownerid=13149"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-08-23)
+    // ========================================
+    {
+      id: "devpost-30287",
+      title: "Hacking  2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-24T00:00:00.000Z",
+        end: "2026-08-24T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "24" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://cloudhacks-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://cloudhacks-2026.devpost.com/",
+        website: "https://cloudhacks-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30893",
+      title: "TechX Rwanda Hackathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-29T00:00:00.000Z",
+        end: "2026-08-29T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "29" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://techx-rwanda-hackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://techx-rwanda-hackathon.devpost.com/",
+        website: "https://techx-rwanda-hackathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30285",
+      title: "Hacks day Bhopal",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-29T00:00:00.000Z",
+        end: "2026-08-29T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "29" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hacks-day-bhopal.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hacks-day-bhopal.devpost.com/",
+        website: "https://hacks-day-bhopal.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30964",
+      title: "Prompt Wars 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-29T00:00:00.000Z",
+        end: "2026-08-29T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "29" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "₹ 30,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://prompt-wars-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://prompt-wars-2026.devpost.com/",
+        website: "https://prompt-wars-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30846",
+      title: "DreamHacks @ Georgia Institute of Technology",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-29T00:00:00.000Z",
+        end: "2026-08-29T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "29" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://dreamhacks-gt.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://dreamhacks-gt.devpost.com/",
+        website: "https://dreamhacks-gt.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31086",
+      title: "Sunbeam Seattle",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-29T00:00:00.000Z",
+        end: "2026-08-29T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "29" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://sunbeam-seattle.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://sunbeam-seattle.devpost.com/",
+        website: "https://sunbeam-seattle.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31002",
+      title: "SYNCS HACK 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-28T00:00:00.000Z",
+        end: "2026-08-28T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "28" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$5,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://syncs-hack-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://syncs-hack-2026.devpost.com/",
+        website: "https://syncs-hack-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31111",
+      title: "Agentic Day Online Hackathon Powered by Mel",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-30T00:00:00.000Z",
+        end: "2026-08-30T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "30" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$600", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://powered-by-mel.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://powered-by-mel.devpost.com/",
+        website: "https://powered-by-mel.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30976",
+      title: "LifeHack 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-08-29T00:00:00.000Z",
+        end: "2026-08-29T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Aug", day: "29" },
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: { amount: "$100", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://lifehack-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://lifehack-2026.devpost.com/",
+        website: "https://lifehack-2026.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-ieee-seai-2027---ieee--2027-7th-international-conf",
+      title: "IEEE SEAI 2027 : IEEE--2027 7th International Conference on Software Engineering and Artificial Intelligence (SEAI 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "IEEE--2027 7th International Conference on Software Engineering and Artificial Intelligence (SEAI 2027) [Quanzhou, China] [Jun 18, 2027 - Jun 20, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202773&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202773&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202773&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-aiaa-2026---16th-international-conference-on-artif",
+      title: "AIAA 2026 : 16th International Conference on Artificial Intelligence, Soft Computing and Applications",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "16th International Conference on Artificial Intelligence, Soft Computing and Applications [Zurich, Switzerland] [Nov 27, 2026 - Nov 28, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202738&copyownerid=33993" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202738&copyownerid=33993",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202738&copyownerid=33993"
+      }
+    },
+    {
+      id: "wikicfp-icict-2027---12th-international-congress-on-inform",
+      title: "ICICT 2027 : 12th International Congress on Information and Communication Technology",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "12th International Congress on Information and Communication Technology [London, UK] [Feb 23, 2027 - Feb 26, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202736&copyownerid=200014" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202736&copyownerid=200014",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202736&copyownerid=200014"
+      }
+    },
+    {
+      id: "wikicfp-ai-for-chip-design-at-neurips-2026---ai-for-chip-d",
+      title: "AI for Chip Design at NeurIPS 2026 : AI for Chip Design Workshop at NeurIPS 2026",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "AI for Chip Design Workshop at NeurIPS 2026 [Paris, France] [Dec 12, 2026 - Dec 12, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202670&copyownerid=190618" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202670&copyownerid=190618",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202670&copyownerid=190618"
+      }
+    },
+    {
+      id: "wikicfp-sylen-2027---sylen-annual-conference-2027",
+      title: "SYLEN 2027 : SYLEN Annual Conference 2027",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-01T00:00:00.000Z",
+        end: "2027-01-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Jan", day: "1" },
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-08-23",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "SYLEN Annual Conference 2027 [San Jose, USA] [Feb 16, 2027 - Feb 16, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202652&copyownerid=199951" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202652&copyownerid=199951",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202652&copyownerid=199951"
       }
     }
   ]
