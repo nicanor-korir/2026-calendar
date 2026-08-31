@@ -21,6 +21,7 @@ import {
   formatDateDisplay,
   safeParseDate as parseDateOrNull,
 } from './lib/event-dates.js';
+import { inspectEventPage, sleep } from './lib/sources.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -350,6 +351,34 @@ async function fetchAIDeadlines() {
 }
 
 /**
+ * Look up the submission deadline for each newly discovered CFP.
+ * Failures are non-fatal: refresh-events.js retries them daily.
+ */
+async function enrichCfpDeadlines(rawEvents) {
+  const cfps = rawEvents.filter(e => e.page === 'cfp' && !e.deadline && e.url);
+  if (cfps.length === 0) return;
+
+  console.log('');
+  console.log(`Looking up submission deadlines for ${cfps.length} new CFPs...`);
+  let found = 0;
+
+  for (const event of cfps) {
+    const details = await inspectEventPage(event.url);
+    if (details?.deadline) {
+      event.deadline = details.deadline.toISOString();
+      found++;
+    }
+    if (details?.start) {
+      event.startDate = details.start.toISOString();
+      event.endDate = (details.end || details.start).toISOString();
+    }
+    await sleep(750);
+  }
+
+  console.log(`  Found ${found} deadlines`);
+}
+
+/**
  * Safely parse a date string, returning null if invalid
  */
 function safeParseDate(dateStr) {
@@ -391,9 +420,15 @@ function convertToFullEvent(rawEvent) {
     const datesTBD = !startDate && !deadline;
     const anchor = startDate || deadline;
 
+    // CFP cards advertise the submission deadline; everything else the event date
+    const badgeStart = rawEvent.page === 'cfp' && deadline ? deadline : anchor;
+    const badgeEnd = rawEvent.page === 'cfp' && deadline
+      ? deadline
+      : (startDate ? endDate : anchor);
+
     const dateDisplay = datesTBD
       ? { month: String(now.getFullYear()), day: 'TBD' }
-      : formatDateDisplay(anchor, startDate ? endDate : anchor);
+      : formatDateDisplay(badgeStart, badgeEnd);
 
     // Create tags including NEW tag
     const tags = [
@@ -647,6 +682,11 @@ async function main() {
     console.log('No new events to add.');
     return;
   }
+
+  // A CFP is only useful while you can still submit to it, and the WikiCFP
+  // feed carries conference dates but no submission deadline - so look each
+  // new CFP up on its own page before converting it.
+  await enrichCfpDeadlines(newEvents);
 
   // Convert to full format, filtering out any that failed conversion
   const convertedEvents = newEvents

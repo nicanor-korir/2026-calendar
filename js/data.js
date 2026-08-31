@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 115,
+    totalEvents: 53,
     totalPrizes: "$2M+",
     berlinEvents: 4,
-    cfpCount: 102
+    cfpCount: 40
   },
 
   // Filter definitions for each page
@@ -236,11 +236,11 @@ const EVENTS_DATA = {
         start: "2026-09-01T00:00:00",
         end: "2026-09-30T23:59:59",
         deadline: "2026-02-28T23:59:59",
-        countdownTarget: "deadline"
+        countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "28"
+        month: "Aug",
+        day: "31 - Sep 30"
       },
       eventType: "Competition",
       isUrgent: false,
@@ -1098,7 +1098,7 @@ const EVENTS_DATA = {
       },
       dateDisplay: {
         month: "Sep",
-        day: "10"
+        day: "10-10"
       },
       eventType: "AI",
       isUrgent: false,
@@ -1146,7 +1146,7 @@ const EVENTS_DATA = {
       },
       dateDisplay: {
         month: "Sep",
-        day: "22"
+        day: "22-22"
       },
       eventType: "AI / Quantum",
       isUrgent: false,
@@ -1242,7 +1242,7 @@ const EVENTS_DATA = {
       },
       dateDisplay: {
         month: "Dec",
-        day: "TBA"
+        day: "11-11"
       },
       eventType: "Frontend",
       isUrgent: false,
@@ -3075,12 +3075,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-14T00:00:00.000Z",
         end: "2026-10-18T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-04-13T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "14-18"
+        month: "Apr",
+        day: "13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3108,8 +3108,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192057&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlhc-2026---machine-learning-for-healthcare",
@@ -3178,12 +3179,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-03T00:00:00.000Z",
         end: "2026-09-04T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-02-01T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "3-4"
+        month: "Feb",
+        day: "1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3211,8 +3212,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192046&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icinci-2026---4th-international-conference-on-inve",
@@ -3593,12 +3595,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-10T00:00:00.000Z",
         end: "2026-10-12T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-08T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "10-12"
+        month: "Jul",
+        day: "8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3626,8 +3628,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191973&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icaci-2026---18th-international-conference-on-adva",
@@ -3956,12 +3959,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-08T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Jun",
+        day: "8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3989,8 +3992,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191920&copyownerid=196945"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-call-for-workshop-proposals---ecml-pkdd-2026---cal",
@@ -4007,12 +4011,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-02-13T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Feb",
+        day: "13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4040,8 +4044,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191919&copyownerid=196945"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ecml-pkdd-2026---ecml-pkdd-2026---european-confere",
@@ -4058,12 +4063,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-03-12T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Mar",
+        day: "12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4091,8 +4096,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191917&copyownerid=175190"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "devpost-27991",
@@ -4733,12 +4739,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-18T00:00:00.000Z",
         end: "2026-12-21T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "18-21"
+        month: "Sep",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4747,10 +4753,10 @@ const EVENTS_DATA = {
       addedDate: "2026-02-08",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Tokyo",
+        country: "Japan",
+        display: "Tokyo, Japan"
       },
       modal: {
         overview: "2026 9th Artificial Intelligence and Cloud Computing Conference (AICCC 2026) [Tokyo, Japan] [Dec 18, 2026 - Dec 21, 2026]",
@@ -4766,7 +4772,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192224&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -4784,12 +4790,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-16T00:00:00.000Z",
         end: "2026-10-18T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-25T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "16-18"
+        month: "Aug",
+        day: "25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4817,8 +4823,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192218&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iccr-2026---2026-8th-international-conference-on-c",
@@ -4833,14 +4840,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2026-12-03T00:00:00.000Z",
-        end: "2026-12-05T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        start: "2026-12-11T00:00:00.000Z",
+        end: "2026-12-13T00:00:00.000Z",
+        deadline: "2026-10-01T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "3-5"
+        month: "Oct",
+        day: "1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4849,10 +4856,10 @@ const EVENTS_DATA = {
       addedDate: "2026-02-08",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Tokyo",
+        country: "Japan",
+        display: "Tokyo, Japan"
       },
       modal: {
         overview: "2026 8th International Conference on Control and Robotics (ICCR 2026) [Tokyo, Japan] [Dec 3, 2026 - Dec 5, 2026]",
@@ -4868,7 +4875,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192210&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -4936,14 +4943,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2026-12-03T00:00:00.000Z",
-        end: "2026-12-05T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        start: "2026-12-11T00:00:00.000Z",
+        end: "2026-12-13T00:00:00.000Z",
+        deadline: "2026-10-01T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "3-5"
+        month: "Oct",
+        day: "1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4952,10 +4959,10 @@ const EVENTS_DATA = {
       addedDate: "2026-02-08",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Tokyo",
+        country: "Japan",
+        display: "Tokyo, Japan"
       },
       modal: {
         overview: "2026 6th International Conference on Artificial Intelligence and Application Technologies (AIAT 2026) [Tokyo, Japan] [Dec 3, 2026 - Dec 5, 2026]",
@@ -4971,7 +4978,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192197&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -4989,12 +4996,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-05T00:00:00.000Z",
         end: "2026-10-09T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-08T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "5-9"
+        month: "Jun",
+        day: "8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5022,8 +5029,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192196&copyownerid=197136"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ida-2026---intelligent-data-analysis",
@@ -5092,12 +5100,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-16T00:00:00.000Z",
         end: "2026-10-18T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "16-18"
+        month: "Aug",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5125,8 +5133,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192171&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ciis--ei-2026---2026-the-9th-international-confere",
@@ -5143,12 +5152,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-26T00:00:00.000Z",
         end: "2026-10-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "26-28"
+        month: "Aug",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5176,8 +5185,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192169&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-icoias-2026---ieee--2026-the-8th-internationa",
@@ -5350,12 +5360,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-28T00:00:00.000Z",
         end: "2026-10-30T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-24T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "28-30"
+        month: "Jul",
+        day: "24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5383,8 +5393,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192112&copyownerid=45217"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-aiih-2026---special-session--ai-innovations-in-aut",
@@ -5453,12 +5464,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-03-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Mar",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5486,8 +5497,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192100&copyownerid=175190"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-aimsa-2026---20th-international-conference-on-arti",
@@ -5504,12 +5516,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-15T00:00:00.000Z",
         end: "2026-10-16T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "15-16"
+        month: "Jun",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5537,8 +5549,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192091&copyownerid=95584"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-comp-2026---open-computer-science",
@@ -6074,12 +6087,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-20T00:00:00.000Z",
         end: "2026-11-22T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-25T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "20-22"
+        month: "Sep",
+        day: "25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6088,10 +6101,10 @@ const EVENTS_DATA = {
       addedDate: "2026-02-15",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Rome",
+        country: "Italy",
+        display: "Rome, Italy"
       },
       modal: {
         overview: "2026 11th International Conference on Renewable Energy and Conservation (ICREC 2026) [Rome, Italy] [Nov 20, 2026 - Nov 22, 2026]",
@@ -6107,7 +6120,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192421&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -6177,12 +6190,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-25T00:00:00.000Z",
         end: "2026-09-27T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "25-27"
+        month: "Aug",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6210,8 +6223,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192387&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-amms--ei-2026---2026-8th-international-applied-mat",
@@ -6228,12 +6242,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-11T00:00:00.000Z",
         end: "2026-09-13T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-31T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "11-13"
+        month: "Jul",
+        day: "31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6261,8 +6275,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192382&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-grail-v-2026---grounded-retrieval-and-agentic-inte",
@@ -6695,12 +6710,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-10T00:00:00.000Z",
         end: "2026-09-12T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-31T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "10-12"
+        month: "May",
+        day: "31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6728,8 +6743,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192268&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ettis-2026---6th-international-conference-on-emerg",
@@ -6798,12 +6814,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-22T00:00:00.000Z",
         end: "2026-09-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "22-25"
+        month: "May",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6831,8 +6847,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192265&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iea-aie-2026---39th-international-conference-on-in",
@@ -6901,12 +6918,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-25T00:00:00.000Z",
         end: "2026-11-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-03-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "25-28"
+        month: "Mar",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6934,8 +6951,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192262&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-ddcls-2026---15th-ieee-data-driven-control-an",
@@ -7576,12 +7594,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-15T00:00:00.000Z",
         end: "2026-10-18T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "15-18"
+        month: "Aug",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7609,8 +7627,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194144&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iccpr--ei-2026---2026-15th-international-conferenc",
@@ -7627,12 +7646,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-29T00:00:00.000Z",
         end: "2026-11-01T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "29 - Nov 1"
+        month: "Sep",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7641,10 +7660,10 @@ const EVENTS_DATA = {
       addedDate: "2026-03-22",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Wuxi",
+        country: "China",
+        display: "Wuxi, China"
       },
       modal: {
         overview: "2026 15th International Conference on Computing and Pattern Recognition (ICCPR 2026) [Wuxi, China] [Oct 29, 2026 - Nov 1, 2026]",
@@ -7660,7 +7679,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194132&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -7782,12 +7801,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-23T00:00:00.000Z",
         end: "2026-09-24T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-04-17T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "23-24"
+        month: "Apr",
+        day: "17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7815,8 +7834,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193039&copyownerid=197686"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-cosit-2026---13th-international-conference-on-comp",
@@ -7885,12 +7905,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-30T00:00:00.000Z",
         end: "2026-09-30T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "30"
+        month: "May",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7918,8 +7938,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193035&copyownerid=197750"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-wccs-2026---9th-workshop-on-complex-collective-sys",
@@ -7936,12 +7957,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-08-30T00:00:00.000Z",
         end: "2026-09-02T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-11T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Aug",
-        day: "30 - Sep 2"
+        month: "May",
+        day: "11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7969,8 +7990,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193008&copyownerid=173574"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mhpc-im-2026---9th-minisymposium-on-high-performan",
@@ -8091,12 +8113,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-25T00:00:00.000Z",
         end: "2026-12-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "25-28"
+        month: "Sep",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8105,10 +8127,10 @@ const EVENTS_DATA = {
       addedDate: "2026-03-22",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Hokkaido",
+        country: "Japan",
+        display: "Hokkaido, Japan"
       },
       modal: {
         overview: "2026 9th International Conference on Digital Medicine and Image Processing (DMIP 2026) [Hokkaido, Japan] [Dec 25, 2026 - Dec 28, 2026]",
@@ -8124,7 +8146,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192952&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -8142,12 +8164,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-22T00:00:00.000Z",
         end: "2026-09-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-21T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "22-25"
+        month: "May",
+        day: "21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8175,8 +8197,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192946&copyownerid=197588"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iea-aie-2027--2027---the-40th-international-confer",
@@ -8193,12 +8216,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-07-20T00:00:00.000Z",
         end: "2027-07-22T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jul",
-        day: "20-22"
+        month: "Dec",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8207,10 +8230,10 @@ const EVENTS_DATA = {
       addedDate: "2026-03-22",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Naples",
+        country: "Italy",
+        display: "Naples, Italy"
       },
       modal: {
         overview: "The 40th International Conference on Industrial, Engineering & Other Applications of Applied Intelligent Systems  [Naples, Italy] [Jul 20, 2027 - Jul 22, 2027]",
@@ -8226,7 +8249,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192921&copyownerid=108124"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -8296,12 +8319,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-26T00:00:00.000Z",
         end: "2026-09-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "26-28"
+        month: "Jun",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8329,8 +8352,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192906&copyownerid=168593"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-kunming-aiaat-2026---2026-7th-international-confer",
@@ -8971,12 +8995,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-02T00:00:00.000Z",
         end: "2026-12-04T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-02T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "2-4"
+        month: "Sep",
+        day: "2"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8985,10 +9009,10 @@ const EVENTS_DATA = {
       addedDate: "2026-03-29",
       prize: null,
       location: {
-        type: "online",
-        city: null,
+        type: "onsite",
+        city: "Granada",
         country: null,
-        display: "Online / TBA"
+        display: "Granada"
       },
       modal: {
         overview: "15th International Conference on Complex Networks & Their Applications [Granada] [Dec 2, 2026 - Dec 4, 2026]",
@@ -9004,7 +9028,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194271&copyownerid=32890"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -9022,12 +9046,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-11T00:00:00.000Z",
         end: "2026-09-13T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "11-13"
+        month: "Jul",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9055,8 +9079,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194235&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ais-2026---the-12th-international-artificial-intel",
@@ -9073,12 +9098,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-21T00:00:00.000Z",
         end: "2026-09-24T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-23T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "21-24"
+        month: "May",
+        day: "23"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9106,8 +9131,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194230&copyownerid=85287"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-biom-2026---6th-international-conference-on-big-da",
@@ -9176,12 +9202,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-20T00:00:00.000Z",
         end: "2026-11-22T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "20-22"
+        month: "Sep",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9190,10 +9216,10 @@ const EVENTS_DATA = {
       addedDate: "2026-03-29",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Osaka",
+        country: "Japan",
+        display: "Osaka, Japan"
       },
       modal: {
         overview: "2026 7th Asia Service Sciences and Software Engineering Conference (ASSE 2026) [Osaka, Japan] [Nov 20, 2026 - Nov 22, 2026]",
@@ -9209,7 +9235,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194208&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -9279,12 +9305,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Jun",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9312,8 +9338,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194195&copyownerid=192844"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "devpost-30184",
@@ -9798,12 +9825,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-21T00:00:00.000Z",
         end: "2026-11-22T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-01T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "21-22"
+        month: "Jun",
+        day: "1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9831,8 +9858,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=198361&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-nlpd-2026---7th-international-conference-on-nlp--a",
@@ -9953,12 +9981,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-28T00:00:00.000Z",
         end: "2026-10-30T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-09T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "28-30"
+        month: "Jun",
+        day: "9"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9986,8 +10014,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195468&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-hicss-ds--aai--and-ml-2027---hicss-59-mini-track--",
@@ -10004,12 +10033,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-01-05T00:00:00.000Z",
         end: "2027-01-08T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "5-8"
+        month: "Jun",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10037,8 +10066,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195467&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-sogood-2026---cfp--sogood-2026---ecml-pkdd-worksho",
@@ -10055,12 +10085,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Jun",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10088,8 +10118,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195465&copyownerid=52809"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-aiicrta-2026---ieee-international-conference-",
@@ -10106,12 +10137,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-22T00:00:00.000Z",
         end: "2026-12-23T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "22-23"
+        month: "Sep",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10120,10 +10151,10 @@ const EVENTS_DATA = {
       addedDate: "2026-05-24",
       prize: null,
       location: {
-        type: "online",
-        city: null,
+        type: "onsite",
+        city: "Tunisia",
         country: null,
-        display: "Online / TBA"
+        display: "Tunisia"
       },
       modal: {
         overview: "IEEE International Conference on AI Innovations, Cyber Resilience and Transformative Applications [Tunisia] [Dec 22, 2026 - Dec 23, 2026]",
@@ -10139,7 +10170,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195463&copyownerid=198789"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -10157,12 +10188,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-09T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "9-11"
+        month: "Jun",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10190,8 +10221,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195449&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-inista-2026---20th-international-conference-on-inn",
@@ -10208,12 +10240,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-17T00:00:00.000Z",
         end: "2026-09-19T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "17-19"
+        month: "May",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10241,8 +10273,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195446&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-daset-2026---the-5th-international-conference-on-d",
@@ -10259,12 +10292,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-16T00:00:00.000Z",
         end: "2026-12-17T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-13T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "16-17"
+        month: "Sep",
+        day: "13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10273,10 +10306,10 @@ const EVENTS_DATA = {
       addedDate: "2026-05-24",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Selangor",
+        country: "Malaysia",
+        display: "Selangor, Malaysia"
       },
       modal: {
         overview: "The 5th International Conference on Data Science and Emerging Technologies 2026 [Selangor, Malaysia] [Dec 16, 2026 - Dec 17, 2026]",
@@ -10292,7 +10325,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195445&copyownerid=193708"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -10310,12 +10343,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-07T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7"
+        month: "Jun",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10343,8 +10376,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195440&copyownerid=198086"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-spnlp-2026---4th-international-conference-on-speec",
@@ -10465,12 +10499,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-03-19T00:00:00.000Z",
         end: "2027-03-21T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Mar",
-        day: "19-21"
+        month: "Sep",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10479,10 +10513,10 @@ const EVENTS_DATA = {
       addedDate: "2026-05-24",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Chongqing",
+        country: "China",
+        display: "Chongqing, China"
       },
       modal: {
         overview: "IEEE--2027 International Conference on Machine Learning and Cognitive Computing (MLCC 2027) [Chongqing, China] [Mar 19, 2027 - Mar 21, 2027]",
@@ -10498,7 +10532,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195435&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -10516,12 +10550,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-02-26T00:00:00.000Z",
         end: "2027-03-01T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-25T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "26 - Mar 1"
+        month: "Sep",
+        day: "25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10530,10 +10564,10 @@ const EVENTS_DATA = {
       addedDate: "2026-05-24",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Shenzhen",
+        country: "China",
+        display: "Shenzhen, China"
       },
       modal: {
         overview: "2027 19th International Conference on Machine Learning and Computing (ICMLC 2027) [Shenzhen, China] [Feb 26, 2027 - Mar 1, 2027]",
@@ -10549,7 +10583,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195414&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -10567,12 +10601,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-28T00:00:00.000Z",
         end: "2026-10-01T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-12T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "28 - Oct 1"
+        month: "Jun",
+        day: "12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10600,8 +10634,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195405&copyownerid=3032"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-cvml-2026---2026-2nd-international-conference-on-c",
@@ -10618,12 +10653,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-18T00:00:00.000Z",
         end: "2026-09-20T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-24T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "18-20"
+        month: "Jul",
+        day: "24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10651,8 +10686,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195394&copyownerid=198704"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-sai-2026---15th-international-conference-on-soft-c",
@@ -10773,12 +10809,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-22T00:00:00.000Z",
         end: "2026-09-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-05-29T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "22-25"
+        month: "May",
+        day: "29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10806,8 +10842,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195373&copyownerid=197995"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "devpost-30113",
@@ -11292,12 +11329,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-14T00:00:00.000Z",
         end: "2026-11-17T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-12T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "14-17"
+        month: "Jun",
+        day: "12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11325,8 +11362,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199861&copyownerid=199080"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iscslp-2026---the-15th-international-symposium-on-",
@@ -11343,12 +11381,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-14T00:00:00.000Z",
         end: "2026-11-17T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-12T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "14-17"
+        month: "Jun",
+        day: "12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11376,8 +11414,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199858&copyownerid=199080"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icpm-2027---8th-international-conference-on-proces",
@@ -11394,12 +11433,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-02-08T00:00:00.000Z",
         end: "2027-02-12T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-11T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "8-12"
+        month: "Sep",
+        day: "11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11408,10 +11447,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-09",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Rende",
+        country: "Italy",
+        display: "Rende, Italy"
       },
       modal: {
         overview: "8th International Conference on Process Mining [Rende, Italy] [Feb 8, 2027 - Feb 12, 2027]",
@@ -11427,7 +11466,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199835&copyownerid=199057"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -11445,12 +11484,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-28T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7-11"
+        month: "Jun",
+        day: "28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11478,8 +11517,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199806&copyownerid=175737"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ei-scopus-mlbdm-2026---2026-6th-international-conf",
@@ -11496,12 +11536,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-18T00:00:00.000Z",
         end: "2026-12-20T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-11-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "18-20"
+        month: "Nov",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11510,10 +11550,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-09",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Hangzhou",
+        country: "China",
+        display: "Hangzhou, China"
       },
       modal: {
         overview: "2026 6th International Conference on Machine Learning and Big Data Management (MLBDM 2026) [Hangzhou, China] [Dec 18, 2026 - Dec 20, 2026]",
@@ -11529,7 +11569,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199708&copyownerid=165700"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -11599,12 +11639,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-27T00:00:00.000Z",
         end: "2026-09-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "27-28"
+        month: "Jul",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11632,8 +11672,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199695&copyownerid=199007"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icric--ei-2027---2027-international-conference-on-",
@@ -11650,12 +11691,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-02-17T00:00:00.000Z",
         end: "2027-02-19T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-25T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "17-19"
+        month: "Sep",
+        day: "25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11664,10 +11705,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-09",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Milan",
+        country: "Italy",
+        display: "Milan, Italy"
       },
       modal: {
         overview: "2027 International Conference on Robotics and Intelligent Control (ICRIC 2027) [Milan, Italy] [Feb 17, 2027 - Feb 19, 2027]",
@@ -11683,7 +11724,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199689&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -11701,12 +11742,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-04-09T00:00:00.000Z",
         end: "2027-04-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-11-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Apr",
-        day: "9-11"
+        month: "Nov",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11715,10 +11756,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-09",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Wuhan",
+        country: "China",
+        display: "Wuhan, China"
       },
       modal: {
         overview: "2027 9th International Conference on Computer Science and Technologies in Education (CSTE 2027) [Wuhan, China] [Apr 9, 2027 - Apr 11, 2027]",
@@ -11734,7 +11775,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199684&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -11752,12 +11793,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-06-27T00:00:00.000Z",
         end: "2027-07-02T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-07T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jun",
-        day: "27 - Jul 2"
+        month: "Dec",
+        day: "7"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11766,10 +11807,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-09",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Lake Stukely",
+        country: "Canada",
+        display: "Lake Stukely, QC, Canada"
       },
       modal: {
         overview: "Information Processing in Medical Imaging (IPMI) 2027 [Lake Stukely, QC, Canada] [Jun 27, 2027 - Jul 2, 2027]",
@@ -11785,7 +11826,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199677&copyownerid=199001"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -11803,12 +11844,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-25T00:00:00.000Z",
         end: "2026-10-29T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-06T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "25-29"
+        month: "Jul",
+        day: "6"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11836,8 +11877,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199675&copyownerid=83510"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-coce-2026---the-third-international-conference-on-",
@@ -11854,12 +11896,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-25T00:00:00.000Z",
         end: "2026-10-29T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-06T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "25-29"
+        month: "Jul",
+        day: "6"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11887,8 +11929,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199673&copyownerid=83510"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-prediction-solutions-2026---international-conferen",
@@ -11905,12 +11948,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-25T00:00:00.000Z",
         end: "2026-10-29T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-06T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "25-29"
+        month: "Jul",
+        day: "6"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11938,8 +11981,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199660&copyownerid=83510"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-signal-2026---13th-international-conference-on-sig",
@@ -12008,12 +12052,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-14T00:00:00.000Z",
         end: "2026-12-17T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-10-01T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "14-17"
+        month: "Oct",
+        day: "1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12022,10 +12066,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-09",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Phoenix",
+        country: "USA",
+        display: "Phoenix, Arizona, USA"
       },
       modal: {
         overview: "The Ninth IEEE International Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Analytics and Big Models (BPOD 2026) [Phoenix, Arizona, USA] [Dec 14, 2026 - Dec 17, 2026]",
@@ -12041,7 +12085,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199628&copyownerid=170448"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -12059,12 +12103,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-14T00:00:00.000Z",
         end: "2026-09-18T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "14-18"
+        month: "Jul",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12092,8 +12136,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199623&copyownerid=198981"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-hicss-ai4cyber-and-cyber4ai-2027---hicss-60-mini-t",
@@ -12110,12 +12155,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-01-05T00:00:00.000Z",
         end: "2027-01-08T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "5-8"
+        month: "Jun",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12143,8 +12188,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199608&copyownerid=179590"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-wipe-out--2026---2nd-workshop-on-machine-unlearnin",
@@ -12161,12 +12207,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-07T00:00:00.000Z",
         end: "2026-09-07T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-19T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "7"
+        month: "Jun",
+        day: "19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12194,8 +12240,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199586&copyownerid=198048"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iwoar-2026---11th-international-workshop-on-sensor",
@@ -12212,12 +12259,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-10T00:00:00.000Z",
         end: "2026-09-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-25T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "10-11"
+        month: "Jun",
+        day: "25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12245,8 +12292,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199583&copyownerid=198937"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-sipro-2026---12th-international-conference-on-sign",
@@ -12783,12 +12831,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-22T00:00:00.000Z",
         end: "2026-09-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "22-25"
+        month: "Aug",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12816,8 +12864,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200244&copyownerid=199303"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlsc-2026---2026-2nd-international-symposium-on-ma",
@@ -12834,12 +12883,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-26T00:00:00.000Z",
         end: "2026-10-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "26-28"
+        month: "Aug",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12867,8 +12916,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200215&copyownerid=182680"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-spra-2027---spie--2027-7th-symposium-on-pattern-re",
@@ -12885,12 +12935,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-03-03T00:00:00.000Z",
         end: "2027-03-05T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-10-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Mar",
-        day: "3-5"
+        month: "Oct",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12899,10 +12949,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Tokyo",
+        country: "Japan",
+        display: "Tokyo, Japan"
       },
       modal: {
         overview: "SPIE--2027 7th Symposium on Pattern Recognition and Applications (SPRA 2027) [Tokyo, Japan] [Mar 3, 2027 - Mar 5, 2027]",
@@ -12918,7 +12968,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200160&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -12936,12 +12986,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-02-26T00:00:00.000Z",
         end: "2027-02-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-10-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "26-28"
+        month: "Oct",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12950,10 +13000,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Nanjing",
+        country: "China",
+        display: "Nanjing, China"
       },
       modal: {
         overview: "IEEE--2027 the 4th International Conference on Artificial Intelligence and Power Engineering (AIPE 2027) [Nanjing, China] [Feb 26, 2027 - Feb 28, 2027]",
@@ -12969,7 +13019,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200152&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -12987,12 +13037,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-02-20T00:00:00.000Z",
         end: "2027-02-22T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "20-22"
+        month: "Sep",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13001,10 +13051,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Valletta",
+        country: "Malta",
+        display: "Valletta, Malta"
       },
       modal: {
         overview: "16th International Conference on Pattern Recognition Applications and Methods [Valletta, Malta] [Feb 20, 2027 - Feb 22, 2027]",
@@ -13020,7 +13070,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200101&copyownerid=45217"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -13038,12 +13088,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-02-26T00:00:00.000Z",
         end: "2027-02-28T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Feb",
-        day: "26-28"
+        month: "Sep",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13052,10 +13102,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Valletta",
+        country: "Malta",
+        display: "Valletta, Malta"
       },
       modal: {
         overview: "22nd International Conference on Computer Vision Theory and Applications [Valletta, Malta] [Feb 26, 2027 - Feb 28, 2027]",
@@ -13071,7 +13121,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200096&copyownerid=45217"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -13089,12 +13139,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-18T00:00:00.000Z",
         end: "2026-09-20T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-04T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
         month: "Sep",
-        day: "18-20"
+        day: "4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13103,10 +13153,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Hong Kong",
+        country: "China",
+        display: "Hong Kong,China"
       },
       modal: {
         overview: "IEEE 2026 6th International Conference on Computer Vision, Application and Algorithm [Hong Kong,China] [Sep 18, 2026 - Sep 20, 2026]",
@@ -13122,7 +13172,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200081&copyownerid=182680"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -13140,12 +13190,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-04T00:00:00.000Z",
         end: "2026-12-06T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-11-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "4-6"
+        month: "Nov",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13154,10 +13204,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Xiamen",
+        country: "China",
+        display: "Xiamen, China"
       },
       modal: {
         overview: "2026 International Conference on Advanced Algorithms, Machine Learning, and Data Science (AAMLDS 2026) [Xiamen, China] [Dec 4, 2026 - Dec 6, 2026]",
@@ -13173,7 +13223,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200077&copyownerid=163993"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -13191,12 +13241,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-27T00:00:00.000Z",
         end: "2026-10-29T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-28T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "27-29"
+        month: "Jun",
+        day: "28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13224,8 +13274,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200074&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-queerinai-2026---queer-in-ai-2026",
@@ -13294,12 +13345,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-01T00:00:00.000Z",
         end: "2026-12-04T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-26T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "1-4"
+        month: "Jun",
+        day: "26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13327,8 +13378,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200050&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ictai-2026---international-conference-on-tools-wit",
@@ -13345,12 +13397,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-11-02T00:00:00.000Z",
         end: "2026-11-04T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-21T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Nov",
-        day: "2-4"
+        month: "Jul",
+        day: "21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13378,8 +13430,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200049&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-nlpa-2026---7th-international-conference-on-natura",
@@ -13448,12 +13501,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-03T00:00:00.000Z",
         end: "2026-09-05T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-06-22T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "3-5"
+        month: "Jun",
+        day: "22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13481,8 +13534,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200035&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icaicta-2026---the-13th-international-conference-o",
@@ -13499,12 +13553,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-20T00:00:00.000Z",
         end: "2026-10-21T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-07-19T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "20-21"
+        month: "Jul",
+        day: "19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13532,8 +13586,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200024&copyownerid=199175"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-aimldl-2026---7th-international-conference-on-ai--",
@@ -13602,12 +13657,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-14T00:00:00.000Z",
         end: "2026-12-17T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-03T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "14-17"
+        month: "Aug",
+        day: "3"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13635,8 +13690,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199947&copyownerid=199136"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-spm-2026---13th-international-conference-on-signal",
@@ -13705,12 +13761,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-04-16T00:00:00.000Z",
         end: "2027-04-18T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-11-30T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Apr",
-        day: "16-18"
+        month: "Nov",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13719,10 +13775,10 @@ const EVENTS_DATA = {
       addedDate: "2026-06-28",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Zhenjiang",
+        country: "China",
+        display: "Zhenjiang, China"
       },
       modal: {
         overview: "2027 The 9th International Conference on Natural Language Processing (ICNLP 2027) [Zhenjiang, China] [Apr 16, 2027 - Apr 18, 2027]",
@@ -13738,7 +13794,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199934&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14224,12 +14280,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-26T00:00:00.000Z",
         end: "2026-10-29T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "26-29"
+        month: "Aug",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14257,8 +14313,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202702&copyownerid=88612"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-iccta--esci-2027---2027-13th-international-confere",
@@ -14275,12 +14332,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-06-02T00:00:00.000Z",
         end: "2027-06-04T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2027-01-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jun",
-        day: "2-4"
+        month: "Jan",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14289,10 +14346,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Vienna",
+        country: "Austria",
+        display: "Vienna, Austria"
       },
       modal: {
         overview: "2027 13th International Conference on Computer Technology Applications (ICCTA 2027)--ESCI [Vienna, Austria] [Jun 2, 2027 - Jun 4, 2027]",
@@ -14308,7 +14365,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202637&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14326,12 +14383,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-04-23T00:00:00.000Z",
         end: "2027-04-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Apr",
-        day: "23-25"
+        month: "Dec",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14340,10 +14397,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Chengdu",
+        country: "China",
+        display: "Chengdu, China"
       },
       modal: {
         overview: "2027 the 7th International Symposium on AI (ISAI 2027) [Chengdu, China] [Apr 23, 2027 - Apr 25, 2027]",
@@ -14359,7 +14416,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202632&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14377,12 +14434,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-04-23T00:00:00.000Z",
         end: "2027-04-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Apr",
-        day: "23-25"
+        month: "Dec",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14391,10 +14448,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Chengdu",
+        country: "China",
+        display: "Chengdu, China"
       },
       modal: {
         overview: "IEEE--2027 the 12th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA 2027) [Chengdu, China] [Apr 23, 2027 - Apr 25, 2027]",
@@ -14410,7 +14467,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202630&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14428,12 +14485,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-07-16T00:00:00.000Z",
         end: "2027-07-19T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2027-02-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jul",
-        day: "16-19"
+        month: "Feb",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14442,10 +14499,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Tokyo",
+        country: "Japan",
+        display: "Tokyo, Japan"
       },
       modal: {
         overview: "2027 The 10th International Conference on Machine Learning and Machine Intelligence (MLMI 2027) [Tokyo, Japan] [Jul 16, 2027 - Jul 19, 2027]",
@@ -14461,7 +14518,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202619&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14479,12 +14536,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-05-14T00:00:00.000Z",
         end: "2027-05-16T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "May",
-        day: "14-16"
+        month: "Dec",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14493,10 +14550,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Nanjing",
+        country: "China",
+        display: "Nanjing, China"
       },
       modal: {
         overview: "2027 International Conference on Artificial Intelligence and Generation Technologies (AIGT 2027) [Nanjing, China] [May 14, 2027 - May 16, 2027]",
@@ -14512,7 +14569,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202618&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14530,12 +14587,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-11T00:00:00.000Z",
         end: "2026-12-12T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-29T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "11-12"
+        month: "Aug",
+        day: "29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14563,8 +14620,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202573&copyownerid=199911"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-apdsp-2027---2027-11th-asia-pacific-digital-signal",
@@ -14581,12 +14639,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-05-28T00:00:00.000Z",
         end: "2027-05-30T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2027-01-10T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "May",
-        day: "28-30"
+        month: "Jan",
+        day: "10"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14595,10 +14653,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Xining",
+        country: "China",
+        display: "Xining, China"
       },
       modal: {
         overview: "2027 11th Asia-Pacific Digital Signal Processing Conference (APDSP 2027) [Xining, China] [May 28, 2027 - May 30, 2027]",
@@ -14614,7 +14672,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202563&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14632,12 +14690,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-05-07T00:00:00.000Z",
         end: "2027-05-09T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-05T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "May",
-        day: "7-9"
+        month: "Dec",
+        day: "5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14646,10 +14704,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Lianyungang",
+        country: "China",
+        display: "Lianyungang, Jiangsu, China"
       },
       modal: {
         overview: "2027 9th International Artificial Intelligence Technology Conference (AITC 2027) [Lianyungang, Jiangsu, China] [May 7, 2027 - May 9, 2027]",
@@ -14665,7 +14723,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202562&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14683,12 +14741,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-04-24T00:00:00.000Z",
         end: "2027-04-26T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-11-20T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Apr",
-        day: "24-26"
+        month: "Nov",
+        day: "20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14697,10 +14755,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Okinawa",
+        country: "Japan",
+        display: "Okinawa, Japan"
       },
       modal: {
         overview: "2027 the 2nd International Conference on Machine Learning and Computational Intelligence (MLCI 2027) [Okinawa, Japan] [Apr 24, 2027 - Apr 26, 2027]",
@@ -14716,7 +14774,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202554&copyownerid=13881"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14734,12 +14792,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-11T00:00:00.000Z",
         end: "2026-12-12T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-04T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "11-12"
+        month: "Sep",
+        day: "4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14748,10 +14806,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Sydney",
+        country: "Australia",
+        display: "Sydney, Australia"
       },
       modal: {
         overview: "NeurIPS 2026 Workshop on Foundation Models for the Brain and Body [Sydney, Australia] [Dec 11, 2026 - Dec 12, 2026]",
@@ -14767,7 +14825,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202542&copyownerid=199874"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14785,12 +14843,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-19T00:00:00.000Z",
         end: "2026-09-20T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-29T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "19-20"
+        month: "Aug",
+        day: "29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14818,8 +14876,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202539&copyownerid=33993"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlbdbi-2026---ieee-2026-8th-international-conferen",
@@ -14836,12 +14895,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-23T00:00:00.000Z",
         end: "2026-10-25T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-09-04T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "23-25"
+        month: "Sep",
+        day: "4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14850,10 +14909,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Hangzhou",
+        country: "China",
+        display: "Hangzhou, China"
       },
       modal: {
         overview: "IEEE 2026 8th International Conference on Machine Learning, Big Data and Business Intelligence [Hangzhou, China] [Oct 23, 2026 - Oct 25, 2026]",
@@ -14869,7 +14928,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202530&copyownerid=182680"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14887,12 +14946,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-12-18T00:00:00.000Z",
         end: "2026-12-20T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-31T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Dec",
-        day: "18-20"
+        month: "Aug",
+        day: "31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14920,8 +14979,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202527&copyownerid=199862"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-faiml-2027---6th-international-conference-on-front",
@@ -14938,12 +14998,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-05-07T00:00:00.000Z",
         end: "2027-05-09T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-12-15T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "May",
-        day: "7-9"
+        month: "Dec",
+        day: "15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14952,10 +15012,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Shenyang",
+        country: "China",
+        display: "Shenyang, China"
       },
       modal: {
         overview: "6th International Conference on Frontiers of Artificial Intelligence and Machine Learning [Shenyang, China] [May 7, 2027 - May 9, 2027]",
@@ -14971,7 +15031,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202525&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -14989,12 +15049,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2027-06-06T00:00:00.000Z",
         end: "2027-06-11T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-10-18T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jun",
-        day: "6-11"
+        month: "Oct",
+        day: "18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -15003,10 +15063,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Seattle",
+        country: "WA",
+        display: "Seattle, WA"
       },
       modal: {
         overview: "AI Con USA 2027 [Seattle, WA] [Jun 6, 2027 - Jun 11, 2027]",
@@ -15022,7 +15082,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202524&copyownerid=199859"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -15054,10 +15114,10 @@ const EVENTS_DATA = {
       addedDate: "2026-08-16",
       prize: null,
       location: {
-        type: "online",
-        city: null,
-        country: null,
-        display: "Online / TBA"
+        type: "onsite",
+        city: "Tenerife",
+        country: "Spain",
+        display: "Tenerife, Spain"
       },
       modal: {
         overview: "International Work-Conference on Artificial Neural Networks [Tenerife, Spain] [Jun 14, 2027 - Jun 16, 2027]",
@@ -15073,7 +15133,7 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202497&copyownerid=72744"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
+      datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31"
     },
 {
@@ -15091,12 +15151,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-09-19T00:00:00.000Z",
         end: "2026-09-20T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-29T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Sep",
-        day: "19-20"
+        month: "Aug",
+        day: "29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -15124,8 +15184,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202479&copyownerid=33993"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mmlds-2026---international-conference-on-multimoda",
@@ -15142,12 +15203,12 @@ const EVENTS_DATA = {
       dates: {
         start: "2026-10-30T00:00:00.000Z",
         end: "2026-11-01T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        deadline: "2026-08-07T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Oct",
-        day: "30 - Nov 1"
+        month: "Aug",
+        day: "7"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -15175,8 +15236,9 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202467&copyownerid=13149"
       },
       datesTBD: false,
-      datesResolvedFrom: "description",
-      datesCheckedAt: "2026-08-31"
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     }
   ]
 };
@@ -15184,11 +15246,15 @@ const EVENTS_DATA = {
 // Helper API to access events data
 const EventsAPI = {
   _sortByDate(events) {
-    // Events whose dates are not announced yet sort to the end rather than
-    // to 1970 - they have no real start date to compare against.
+    // Sort by the date the card advertises: a CFP's submission deadline,
+    // everything else's start date. Events whose dates are not announced yet
+    // sort to the end rather than to 1970.
     const key = (e) => {
       if (e.datesTBD) return Infinity;
-      const t = new Date(e.dates.start).getTime();
+      const value = e.page === 'cfp' && e.dates.deadline
+        ? e.dates.deadline
+        : e.dates.start;
+      const t = new Date(value).getTime();
       return isNaN(t) ? Infinity : t;
     };
     return [...events].sort((a, b) => key(a) - key(b));

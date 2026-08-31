@@ -18,29 +18,58 @@ const Templates = {
     return { month, day: `${day} - ${Templates.MONTHS[end.getMonth()]} ${end.getDate()}` };
   },
 
-  // Which date a card should advertise. Normally the countdown target, but if
-  // that is a registration deadline that has already passed while the event
-  // itself is still ahead, show the event date instead - an expired deadline
-  // on the badge reads as an event that already happened.
+  // Which date a card should advertise.
+  //
+  // A call for papers is only useful while you can still submit to it, so a
+  // CFP card leads with its submission deadline; the conference date is a
+  // fallback and is labelled as such rather than as a deadline.
+  //
+  // For everything else the badge shows the event date, except that a
+  // registration deadline which has already passed while the event itself is
+  // still ahead falls back to the event date - an expired deadline on the
+  // badge reads as an event that already happened.
   effectiveDate(event) {
     const now = new Date();
-    const deadline = event.dates.deadline ? new Date(event.dates.deadline) : null;
-    const start = event.dates.start ? new Date(event.dates.start) : null;
-    const end = event.dates.end ? new Date(event.dates.end) : null;
+    const parse = v => {
+      if (!v) return null;
+      const d = new Date(v);
+      return isNaN(d.getTime()) ? null : d;
+    };
+    const deadline = parse(event.dates.deadline);
+    const start = parse(event.dates.start);
+    const end = parse(event.dates.end);
+
+    if (event.datesTBD) {
+      return { label: 'Date', target: event.dates.start, display: event.dateDisplay };
+    }
+
+    if (event.page === 'cfp') {
+      if (deadline) {
+        return {
+          label: 'Submit by',
+          target: event.dates.deadline,
+          display: Templates.formatBadge(deadline, deadline),
+        };
+      }
+      return {
+        label: 'Conference',
+        target: event.dates.start,
+        display: start ? Templates.formatBadge(start, end) : event.dateDisplay,
+      };
+    }
+
     const usesDeadline = event.dates.countdownTarget === 'deadline' && deadline;
 
-    if (usesDeadline && deadline < now && start && start > now && !event.datesTBD) {
-      return {
-        label: 'Date',
-        target: event.dates.start,
-        display: Templates.formatBadge(start, end),
-      };
+    if (usesDeadline && deadline < now && start && start > now) {
+      return { label: 'Date', target: event.dates.start, display: Templates.formatBadge(start, end) };
     }
 
     return {
       label: usesDeadline ? 'Deadline' : 'Date',
       target: usesDeadline ? event.dates.deadline : event.dates.start,
-      display: event.dateDisplay,
+      display: (usesDeadline ? deadline : start)
+        ? (usesDeadline ? Templates.formatBadge(deadline, deadline) : Templates.formatBadge(start, end))
+        : event.dateDisplay,
     };
   },
 
@@ -371,6 +400,7 @@ const Templates = {
           </div>
           <div class="modal-body">
             ${this.modalCountdown(event, targetDate)}
+            ${isCFP ? this.modalConferenceDates(event) : ''}
             ${this.modalOverview(event)}
             ${isCFP && event.modal.keyDates ? this.modalKeyDates(event) : ''}
             ${isCFP && event.modal.topics ? this.modalTopics(event) : ''}
@@ -394,8 +424,26 @@ const Templates = {
     `;
   },
 
+  // CFP cards lead with the submission deadline, so the modal spells out when
+  // the conference itself takes place
+  modalConferenceDates(event) {
+    if (!event.dates.deadline || event.datesTBD) return '';
+    const start = new Date(event.dates.start);
+    if (isNaN(start.getTime())) return '';
+    const end = event.dates.end ? new Date(event.dates.end) : null;
+    const badge = Templates.formatBadge(start, end);
+    return `
+      <div class="modal-section">
+        <h4 class="modal-section-title"><span class="icon">📅</span> Conference</h4>
+        <p style="color: var(--text-secondary);">${badge.month} ${badge.day}, ${start.getFullYear()}${event.location?.display ? ` · ${event.location.display}` : ''}</p>
+      </div>
+    `;
+  },
+
   modalCountdown(event, targetDate) {
-    const label = event.page === 'cfp' ? 'Submission Deadline' : 'Event Date';
+    const label = event.page === 'cfp'
+      ? (event.dates.deadline ? 'Submission Deadline' : 'Conference Date (deadline unknown)')
+      : 'Event Date';
     return `
       <div class="modal-countdown">
         <div class="modal-countdown-label">⏱️ ${label}</div>

@@ -213,11 +213,15 @@ ${eventsSerialized}
 // Helper API to access events data
 const EventsAPI = {
   _sortByDate(events) {
-    // Events whose dates are not announced yet sort to the end rather than
-    // to 1970 - they have no real start date to compare against.
+    // Sort by the date the card advertises: a CFP's submission deadline,
+    // everything else's start date. Events whose dates are not announced yet
+    // sort to the end rather than to 1970.
     const key = (e) => {
       if (e.datesTBD) return Infinity;
-      const t = new Date(e.dates.start).getTime();
+      const value = e.page === 'cfp' && e.dates.deadline
+        ? e.dates.deadline
+        : e.dates.start;
+      const t = new Date(value).getTime();
       return isNaN(t) ? Infinity : t;
     };
     return [...events].sort((a, b) => key(a) - key(b));
