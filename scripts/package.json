@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "fetch": "node fetch-events.js",
+    "archive": "node archive-events.js",
+    "refresh": "node refresh-events.js",
     "test": "node fetch-events.js --dry-run"
   },
   "dependencies": {

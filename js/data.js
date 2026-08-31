@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 178,
+    totalEvents: 115,
     totalPrizes: "$2M+",
-    berlinEvents: 0,
-    cfpCount: 165
+    berlinEvents: 4,
+    cfpCount: 102
   },
 
   // Filter definitions for each page
@@ -495,8 +495,8 @@ const EVENTS_DATA = {
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Open",
-        day: "2026"
+        month: "2026",
+        day: "TBD"
       },
       eventType: "Funding",
       isUrgent: false,
@@ -523,7 +523,9 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.developpp.de/",
         website: "https://www.developpp.de/"
-      }
+      },
+      datesTBD: true,
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "ijcai",
@@ -726,7 +728,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cvpr.thecvf.com/",
         website: "https://cvpr.thecvf.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "icra",
@@ -776,7 +779,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra",
         website: "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra"
-      }
+      },
+      isArchived: true
     },
 {
       id: "neurips",
@@ -1263,7 +1267,9 @@ const EVENTS_DATA = {
       links: {
         register: "https://reactday.berlin/",
         website: "https://reactday.berlin/"
-      }
+      },
+      datesTBD: false,
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "jsnation",
@@ -2527,7 +2533,9 @@ const EVENTS_DATA = {
       links: {
         register: "https://aws.amazon.com/ai/aileague",
         website: "https://aws.amazon.com/ai/aileague"
-      }
+      },
+      datesTBD: true,
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "algolia-agent-studio",
@@ -3065,14 +3073,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-14T00:00:00.000Z",
+        end: "2026-10-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "14-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3098,7 +3106,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192057&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192057&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlhc-2026---machine-learning-for-healthcare",
@@ -3113,14 +3124,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-12T00:00:00.000Z",
+        end: "2026-08-14T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "12-14"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3146,7 +3157,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192047&copyownerid=3032",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192047&copyownerid=3032"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-intellisys-2026---12th-intelligent-systems-confere",
@@ -3161,14 +3176,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-03T00:00:00.000Z",
+        end: "2026-09-04T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "3-4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3194,7 +3209,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192046&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192046&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icinci-2026---4th-international-conference-on-inve",
@@ -3209,14 +3227,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-10T00:00:00.000Z",
+        end: "2026-06-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "10-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3242,7 +3260,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192045&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192045&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-nlptt-2026---7th-international-conference-on-nlp-t",
@@ -3257,14 +3279,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-18T00:00:00.000Z",
+        end: "2026-04-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "18-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3290,7 +3312,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192038&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192038&copyownerid=46167"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-sci-2026---8th-international-conference-on-smart-c",
@@ -3305,14 +3331,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-28T00:00:00.000Z",
+        end: "2026-04-29T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "28-29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3338,7 +3364,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192030&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192030&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ipmu-2026---21st-international-conference-on-infor",
@@ -3353,14 +3383,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-15T00:00:00.000Z",
+        end: "2026-06-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "15-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3386,7 +3416,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192020&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192020&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-l4dc-2025---7th-annual-learning-for-dynamics--amp-",
@@ -3401,14 +3435,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2025-06-04T00:00:00.000Z",
+        end: "2025-06-06T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "4-6"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3434,7 +3468,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192004&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192004&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-l4dc-2026---8th-annual-learning-for-dynamics--amp-",
@@ -3449,14 +3487,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-17T00:00:00.000Z",
+        end: "2026-06-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "17-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3482,7 +3520,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192003&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192003&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-dmdb-2026---13th-international-conference-on-data-",
@@ -3497,14 +3539,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-03-14T00:00:00.000Z",
+        end: "2026-03-15T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Mar",
+        day: "14-15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3530,7 +3572,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191992&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191992&copyownerid=46167"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-miwai-2026---19th-multi-disciplinary-international",
@@ -3545,14 +3591,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-10T00:00:00.000Z",
+        end: "2026-10-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "10-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3578,7 +3624,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191973&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191973&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icaci-2026---18th-international-conference-on-adva",
@@ -3593,14 +3642,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-13T00:00:00.000Z",
+        end: "2026-08-16T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "13-16"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3626,7 +3675,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191957&copyownerid=196967",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191957&copyownerid=196967"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-isnn-2026---20th-international-symposium-on-neural",
@@ -3641,14 +3694,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-18T00:00:00.000Z",
+        end: "2026-08-21T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "18-21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3674,7 +3727,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191956&copyownerid=196967",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191956&copyownerid=196967"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-coit-2026---6th-international-conference-on-comput",
@@ -3689,14 +3746,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-03-21T00:00:00.000Z",
+        end: "2026-03-22T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Mar",
+        day: "21-22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3722,7 +3779,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191952&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191952&copyownerid=46167"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-nlpai-2026---4th-international-conference-on-nlp--",
@@ -3737,14 +3798,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-03-30T00:00:00.000Z",
+        end: "2026-03-31T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Mar",
+        day: "30-31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3770,7 +3831,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191951&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191951&copyownerid=46167"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-mlise-2026---2026-6th-international-conferenc",
@@ -3785,14 +3850,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-28T00:00:00.000Z",
+        end: "2026-05-31T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "28-31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3818,7 +3883,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191941&copyownerid=182680",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191941&copyownerid=182680"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-amlc-2026---2026-applied-machine-learning-conferen",
@@ -3833,14 +3902,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-17T00:00:00.000Z",
+        end: "2026-04-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "17-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3866,7 +3935,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191930&copyownerid=196954",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191930&copyownerid=196954"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-call-for-phd-forum-contributions---ecml--2026---ca",
@@ -3881,14 +3954,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3914,7 +3987,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191920&copyownerid=196945",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191920&copyownerid=196945"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-call-for-workshop-proposals---ecml-pkdd-2026---cal",
@@ -3929,14 +4005,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -3962,7 +4038,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191919&copyownerid=196945",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191919&copyownerid=196945"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ecml-pkdd-2026---ecml-pkdd-2026---european-confere",
@@ -3977,14 +4056,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4010,7 +4089,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191917&copyownerid=175190",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=191917&copyownerid=175190"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "devpost-27991",
@@ -4493,14 +4575,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-09T00:00:00.000Z",
+        end: "2026-06-13T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "9-13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4526,7 +4608,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192250&copyownerid=184327",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192250&copyownerid=184327"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-meco-2026---15th-mediterranean-conference-on-embed",
@@ -4541,14 +4627,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-09T00:00:00.000Z",
+        end: "2026-06-13T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "9-13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4574,7 +4660,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192248&copyownerid=184327",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192248&copyownerid=184327"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-graai-2026---graphs-across-ai--from-structural-rea",
@@ -4589,14 +4679,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-21T00:00:00.000Z",
+        end: "2026-06-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "21-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4622,7 +4712,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192232&copyownerid=197147",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192232&copyownerid=197147"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-aiccc--ei-2026---2026-9th-artificial-intelligence-",
@@ -4637,14 +4731,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-18T00:00:00.000Z",
+        end: "2026-12-21T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "18-21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4670,7 +4764,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192224&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192224&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icaii-2026---2026-4th-international-conference-on-",
@@ -4685,14 +4782,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-16T00:00:00.000Z",
+        end: "2026-10-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "16-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4718,7 +4815,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192218&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192218&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iccr-2026---2026-8th-international-conference-on-c",
@@ -4733,14 +4833,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-03T00:00:00.000Z",
+        end: "2026-12-05T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "3-5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4766,7 +4866,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192210&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192210&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlic-2026---2026-3rd-international-conference-on-m",
@@ -4781,14 +4884,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-24T00:00:00.000Z",
+        end: "2026-04-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "24-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4814,7 +4917,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192207&copyownerid=163220",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192207&copyownerid=163220"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-aiat-2026---2026-6th-international-conference-on-a",
@@ -4829,14 +4936,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-03T00:00:00.000Z",
+        end: "2026-12-05T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "3-5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4862,7 +4969,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192197&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192197&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ds-2026---discovery-science",
@@ -4877,14 +4987,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-05T00:00:00.000Z",
+        end: "2026-10-09T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "5-9"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4910,7 +5020,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192196&copyownerid=197136",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192196&copyownerid=197136"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ida-2026---intelligent-data-analysis",
@@ -4925,14 +5038,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-22T00:00:00.000Z",
+        end: "2026-04-24T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "22-24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -4958,7 +5071,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192195&copyownerid=197136",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192195&copyownerid=197136"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-wsse-2026---acm--2026-the-8th-world-symposium-on-s",
@@ -4973,14 +5090,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-16T00:00:00.000Z",
+        end: "2026-10-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "16-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5006,7 +5123,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192171&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192171&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ciis--ei-2026---2026-the-9th-international-confere",
@@ -5021,14 +5141,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-26T00:00:00.000Z",
+        end: "2026-10-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "26-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5054,7 +5174,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192169&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192169&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ieee-icoias-2026---ieee--2026-the-8th-internationa",
@@ -5069,14 +5192,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-21T00:00:00.000Z",
+        end: "2026-08-23T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "21-23"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5102,7 +5225,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192162&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192162&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-dmo-fintech-2026---2nd-international-workshop-on-d",
@@ -5117,14 +5244,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-09T00:00:00.000Z",
+        end: "2026-06-09T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "9"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5150,7 +5277,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192142&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192142&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-it-2026---15thinternational-conference-on-informat",
@@ -5165,14 +5296,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-03-14T00:00:00.000Z",
+        end: "2026-03-15T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Mar",
+        day: "14-15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5198,7 +5329,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192130&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192130&copyownerid=46167"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ncta-2026---18th-international-conference-on-neura",
@@ -5213,14 +5348,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-28T00:00:00.000Z",
+        end: "2026-10-30T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "28-30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5246,7 +5381,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192112&copyownerid=45217",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192112&copyownerid=45217"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aiih-2026---special-session--ai-innovations-in-aut",
@@ -5261,14 +5399,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-26T00:00:00.000Z",
+        end: "2026-08-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "26-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5294,7 +5432,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192102&copyownerid=174132",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192102&copyownerid=174132"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ecml-pkdd-2026--ads-2026---ecml-pkdd-2026---applie",
@@ -5309,14 +5451,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5342,7 +5484,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192100&copyownerid=175190",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192100&copyownerid=175190"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aimsa-2026---20th-international-conference-on-arti",
@@ -5357,14 +5502,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-15T00:00:00.000Z",
+        end: "2026-10-16T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "15-16"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5390,7 +5535,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192091&copyownerid=95584",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192091&copyownerid=95584"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-comp-2026---open-computer-science",
@@ -5405,14 +5553,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
-        deadline: null,
-        countdownTarget: "start"
+        start: "2026-12-31T00:00:00.000Z",
+        end: "2026-12-31T00:00:00.000Z",
+        deadline: "2026-12-31T00:00:00.000Z",
+        countdownTarget: "deadline"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5438,7 +5586,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192087&copyownerid=176159",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192087&copyownerid=176159"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "wikicfp",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "devpost-28409",
@@ -5921,14 +6072,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-20T00:00:00.000Z",
+        end: "2026-11-22T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "20-22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -5954,7 +6105,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192421&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192421&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlvis-2026---machine-learning-methods-in-visualisa",
@@ -5969,14 +6123,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-08T00:00:00.000Z",
+        end: "2026-06-08T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6002,7 +6156,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192406&copyownerid=132305",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192406&copyownerid=132305"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icoai--esci-2026---2026-the-13th-international-con",
@@ -6017,14 +6175,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-25T00:00:00.000Z",
+        end: "2026-09-27T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "25-27"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6050,7 +6208,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192387&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192387&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-amms--ei-2026---2026-8th-international-applied-mat",
@@ -6065,14 +6226,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-11T00:00:00.000Z",
+        end: "2026-09-13T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "11-13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6098,7 +6259,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192382&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192382&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-grail-v-2026---grounded-retrieval-and-agentic-inte",
@@ -6113,14 +6277,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-03T00:00:00.000Z",
+        end: "2026-06-03T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "3"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6146,7 +6310,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192372&copyownerid=197243",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192372&copyownerid=197243"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp--cfp--smartcomp--2026---ieee-smartcomp-2026--final",
@@ -6161,14 +6329,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-22T00:00:00.000Z",
+        end: "2026-06-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6194,7 +6362,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192367&copyownerid=197242",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192367&copyownerid=197242"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ai--amp--fl-2026---14th-international-conference-o",
@@ -6209,14 +6381,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-18T00:00:00.000Z",
+        end: "2026-04-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "18-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6242,7 +6414,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192361&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192361&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-distinsys-2026---the-6th-ieee-international-worksh",
@@ -6257,14 +6433,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-23T00:00:00.000Z",
+        end: "2026-06-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "23-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6290,7 +6466,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192323&copyownerid=197217",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192323&copyownerid=197217"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-eibdct-2026---2026-5th-international-conference-on",
@@ -6305,14 +6485,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-24T00:00:00.000Z",
+        end: "2026-04-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "24-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6338,7 +6518,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192311&copyownerid=163220",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192311&copyownerid=163220"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-insight-2026---insight--intelligent-systems-f",
@@ -6353,14 +6537,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-23T00:00:00.000Z",
+        end: "2026-06-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "23-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6386,7 +6570,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192308&copyownerid=192200",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192308&copyownerid=192200"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icici-2026---international-conference-on-innovatio",
@@ -6401,14 +6589,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-24T00:00:00.000Z",
+        end: "2026-04-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "24-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6434,7 +6622,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192294&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192294&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-dbml-2026---5th-international-workshop-on-database",
@@ -6449,14 +6641,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-04T00:00:00.000Z",
+        end: "2026-05-08T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "4-8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6482,7 +6674,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192282&copyownerid=197187",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192282&copyownerid=197187"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-cicba-2026---8th-international-conference-on-compu",
@@ -6497,14 +6693,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-10T00:00:00.000Z",
+        end: "2026-09-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "10-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6530,7 +6726,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192268&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192268&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ettis-2026---6th-international-conference-on-emerg",
@@ -6545,14 +6744,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-02T00:00:00.000Z",
+        end: "2026-07-03T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "2-3"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6578,7 +6777,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192267&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192267&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-idsta-2026---7th-international-conference-on-intel",
@@ -6593,14 +6796,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-22T00:00:00.000Z",
+        end: "2026-09-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6626,7 +6829,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192265&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192265&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iea-aie-2026---39th-international-conference-on-in",
@@ -6641,14 +6847,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-06T00:00:00.000Z",
+        end: "2026-07-08T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "6-8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6674,7 +6880,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192263&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192263&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlis-2026---8th-international-conference-on-machin",
@@ -6689,14 +6899,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-25T00:00:00.000Z",
+        end: "2026-11-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "25-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6722,7 +6932,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192262&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192262&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ieee-ddcls-2026---15th-ieee-data-driven-control-an",
@@ -6737,14 +6950,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-08T00:00:00.000Z",
+        end: "2026-05-08T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -6770,7 +6983,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192259&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192259&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "devpost-29143",
@@ -7253,14 +7470,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-12T00:00:00.000Z",
+        end: "2026-07-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "12-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7286,7 +7503,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194159&copyownerid=126803",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194159&copyownerid=126803"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-nlpml-2026---7th-international-conference-on-natur",
@@ -7301,14 +7522,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-16T00:00:00.000Z",
+        end: "2026-05-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7334,7 +7555,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194152&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194152&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icmv-2026---spie--2026-19th-international-conferen",
@@ -7349,14 +7574,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-15T00:00:00.000Z",
+        end: "2026-10-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "15-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7382,7 +7607,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194144&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194144&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iccpr--ei-2026---2026-15th-international-conferenc",
@@ -7397,14 +7625,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-29T00:00:00.000Z",
+        end: "2026-11-01T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "29 - Nov 1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7430,7 +7658,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194132&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194132&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp--cfp--smartcomp-phd-forum-2026---ieee-smartcomp-20",
@@ -7445,14 +7676,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-22T00:00:00.000Z",
+        end: "2026-06-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7478,7 +7709,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193049&copyownerid=197242",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193049&copyownerid=197242"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-kdd-mlf-2026---acm-sigkdd-workshop-on-machine-lear",
@@ -7493,14 +7728,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-09T00:00:00.000Z",
+        end: "2026-08-13T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "9-13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7526,7 +7761,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193042&copyownerid=197760",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193042&copyownerid=197760"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-cais-26-2026---3rd-international-conference-on-cyb",
@@ -7541,14 +7780,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-23T00:00:00.000Z",
+        end: "2026-09-24T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "23-24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7574,7 +7813,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193039&copyownerid=197686",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193039&copyownerid=197686"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-cosit-2026---13th-international-conference-on-comp",
@@ -7589,14 +7831,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-16T00:00:00.000Z",
+        end: "2026-05-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7622,7 +7864,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193037&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193037&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-techsummit--2026---techsummit-2026-amsterdam",
@@ -7637,14 +7883,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-30T00:00:00.000Z",
+        end: "2026-09-30T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7670,7 +7916,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193035&copyownerid=197750",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193035&copyownerid=197750"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-wccs-2026---9th-workshop-on-complex-collective-sys",
@@ -7685,14 +7934,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-30T00:00:00.000Z",
+        end: "2026-09-02T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "30 - Sep 2"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7718,7 +7967,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193008&copyownerid=173574",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193008&copyownerid=173574"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mhpc-im-2026---9th-minisymposium-on-high-performan",
@@ -7733,14 +7985,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-30T00:00:00.000Z",
+        end: "2026-08-30T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7766,7 +8018,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193007&copyownerid=173574",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=193007&copyownerid=173574"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-aiso-2026---15th-international-conference-on-artif",
@@ -7781,14 +8037,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-23T00:00:00.000Z",
+        end: "2026-05-24T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "23-24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7814,7 +8070,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192996&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192996&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-dmip-2026---2026-9th-international-conference-on-d",
@@ -7829,14 +8089,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-25T00:00:00.000Z",
+        end: "2026-12-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "25-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7862,7 +8122,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192952&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192952&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-gcpr-2026---german-conference-on-pattern-recogniti",
@@ -7877,14 +8140,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-22T00:00:00.000Z",
+        end: "2026-09-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7910,7 +8173,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192946&copyownerid=197588",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192946&copyownerid=197588"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iea-aie-2027--2027---the-40th-international-confer",
@@ -7925,14 +8191,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-07-20T00:00:00.000Z",
+        end: "2027-07-22T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "20-22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -7958,7 +8224,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192921&copyownerid=108124",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192921&copyownerid=108124"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp--cfp--smartcomp-poster-demo-wip-2026---ieee-smartc",
@@ -7973,14 +8242,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-22T00:00:00.000Z",
+        end: "2026-06-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8006,7 +8275,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192919&copyownerid=197242",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192919&copyownerid=197242"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ict-2026---18th-international-conference-ict-innov",
@@ -8021,14 +8294,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-26T00:00:00.000Z",
+        end: "2026-09-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "26-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8054,7 +8327,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192906&copyownerid=168593",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192906&copyownerid=168593"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-kunming-aiaat-2026---2026-7th-international-confer",
@@ -8069,14 +8345,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-10T00:00:00.000Z",
+        end: "2026-07-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "10-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8102,7 +8378,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192902&copyownerid=90512",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192902&copyownerid=90512"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-cmca-2026---15th-international-conference-on-contr",
@@ -8117,14 +8397,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-04-25T00:00:00.000Z",
+        end: "2026-04-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "25-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8150,7 +8430,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192885&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192885&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-araeml-2026---2026-ieee-3rd-international-con",
@@ -8165,14 +8449,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-24T00:00:00.000Z",
+        end: "2026-07-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "24-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8198,7 +8482,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192874&copyownerid=165700",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=192874&copyownerid=165700"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "devpost-29404",
@@ -8681,14 +8969,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-02T00:00:00.000Z",
+        end: "2026-12-04T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "2-4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8714,7 +9002,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194271&copyownerid=32890",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194271&copyownerid=32890"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ichmi--ei-2026---2026-6th-international-conference",
@@ -8729,14 +9020,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-11T00:00:00.000Z",
+        end: "2026-09-13T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "11-13"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8762,7 +9053,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194235&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194235&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ais-2026---the-12th-international-artificial-intel",
@@ -8777,14 +9071,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-21T00:00:00.000Z",
+        end: "2026-09-24T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "21-24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8810,7 +9104,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194230&copyownerid=85287",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194230&copyownerid=85287"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-biom-2026---6th-international-conference-on-big-da",
@@ -8825,14 +9122,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-23T00:00:00.000Z",
+        end: "2026-05-24T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "23-24"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8858,7 +9155,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194215&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194215&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-asse--ei-2026---2026-7th-asia-service-sciences-and",
@@ -8873,14 +9174,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-20T00:00:00.000Z",
+        end: "2026-11-22T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "20-22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8906,7 +9207,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194208&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194208&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aiapp-2026---13th-international-conference-on-arti",
@@ -8921,14 +9225,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-16T00:00:00.000Z",
+        end: "2026-05-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -8954,7 +9258,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194196&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194196&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlsa-2026---13th-workshop-on-machine-learning-and-",
@@ -8969,14 +9277,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9002,7 +9310,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194195&copyownerid=192844",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=194195&copyownerid=192844"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "devpost-30184",
@@ -9485,14 +9796,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-21T00:00:00.000Z",
+        end: "2026-11-22T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "21-22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9518,7 +9829,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=198361&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=198361&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-nlpd-2026---7th-international-conference-on-nlp--a",
@@ -9533,14 +9847,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-16T00:00:00.000Z",
+        end: "2026-07-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9566,7 +9880,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195488&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195488&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-csit-2026---13th-international-conference-on-compu",
@@ -9581,14 +9899,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-25T00:00:00.000Z",
+        end: "2026-07-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "25-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9614,7 +9932,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195487&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195487&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ic3k-2026---18th-international-joint-conference-on",
@@ -9629,14 +9951,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-28T00:00:00.000Z",
+        end: "2026-10-30T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "28-30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9662,7 +9984,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195468&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195468&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-hicss-ds--aai--and-ml-2027---hicss-59-mini-track--",
@@ -9677,14 +10002,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-01-05T00:00:00.000Z",
+        end: "2027-01-08T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
         month: "Jan",
-        day: "1"
+        day: "5-8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9710,7 +10035,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195467&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195467&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-sogood-2026---cfp--sogood-2026---ecml-pkdd-worksho",
@@ -9725,14 +10053,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9758,7 +10086,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195465&copyownerid=52809",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195465&copyownerid=52809"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ieee-aiicrta-2026---ieee-international-conference-",
@@ -9773,14 +10104,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-22T00:00:00.000Z",
+        end: "2026-12-23T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "22-23"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9806,7 +10137,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195463&copyownerid=198789",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195463&copyownerid=198789"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-asyu-2026---conference-on-innovations-in-intellige",
@@ -9821,14 +10155,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-09T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "9-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9854,7 +10188,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195449&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195449&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-inista-2026---20th-international-conference-on-inn",
@@ -9869,14 +10206,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-17T00:00:00.000Z",
+        end: "2026-09-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "17-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9902,7 +10239,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195446&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195446&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-daset-2026---the-5th-international-conference-on-d",
@@ -9917,14 +10257,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-16T00:00:00.000Z",
+        end: "2026-12-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9950,7 +10290,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195445&copyownerid=193708",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195445&copyownerid=193708"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-bias---ecml-pkdd-2026---cfp---bias---ecml-pkdd-26",
@@ -9965,14 +10308,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-07T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -9998,7 +10341,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195440&copyownerid=198086",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195440&copyownerid=198086"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-spnlp-2026---4th-international-conference-on-speec",
@@ -10013,14 +10359,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-05-30T00:00:00.000Z",
+        end: "2026-05-31T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "30-31"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10046,7 +10392,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195439&copyownerid=46167",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195439&copyownerid=46167"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-bdml-2026---7th-international-conference-on-big-da",
@@ -10061,14 +10411,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-27T00:00:00.000Z",
+        end: "2026-06-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "27-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10094,7 +10444,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195437&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195437&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlcc-2027---ieee--2027-international-conference-on",
@@ -10109,14 +10463,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-03-19T00:00:00.000Z",
+        end: "2027-03-21T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Mar",
+        day: "19-21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10142,7 +10496,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195435&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195435&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icmlc-2027---2027-19th-international-conference-on",
@@ -10157,14 +10514,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-02-26T00:00:00.000Z",
+        end: "2027-03-01T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Feb",
+        day: "26 - Mar 1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10190,7 +10547,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195414&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195414&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlsp-2026---2026-ieee-international-workshop-on-ma",
@@ -10205,14 +10565,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-28T00:00:00.000Z",
+        end: "2026-10-01T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "28 - Oct 1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10238,7 +10598,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195405&copyownerid=3032",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195405&copyownerid=3032"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-cvml-2026---2026-2nd-international-conference-on-c",
@@ -10253,14 +10616,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-18T00:00:00.000Z",
+        end: "2026-09-20T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "18-20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10286,7 +10649,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195394&copyownerid=198704",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195394&copyownerid=198704"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-sai-2026---15th-international-conference-on-soft-c",
@@ -10301,14 +10667,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-20T00:00:00.000Z",
+        end: "2026-06-21T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "20-21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10334,7 +10700,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195389&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195389&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-isiea-2026---13th-ieee-symposium-on-industrial-ele",
@@ -10349,14 +10719,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-25T00:00:00.000Z",
+        end: "2026-07-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "25-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10382,7 +10752,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195381&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195381&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-gcpr--updated--2026---german-conference-on-pattern",
@@ -10397,14 +10771,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-22T00:00:00.000Z",
+        end: "2026-09-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10430,7 +10804,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195373&copyownerid=197995",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=195373&copyownerid=197995"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "devpost-30113",
@@ -10913,14 +11290,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-14T00:00:00.000Z",
+        end: "2026-11-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "14-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10946,7 +11323,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199861&copyownerid=199080",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199861&copyownerid=199080"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iscslp-2026---the-15th-international-symposium-on-",
@@ -10961,14 +11341,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-14T00:00:00.000Z",
+        end: "2026-11-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "14-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -10994,7 +11374,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199858&copyownerid=199080",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199858&copyownerid=199080"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icpm-2027---8th-international-conference-on-proces",
@@ -11009,14 +11392,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-02-08T00:00:00.000Z",
+        end: "2027-02-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Feb",
+        day: "8-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11042,7 +11425,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199835&copyownerid=199057",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199835&copyownerid=199057"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-wmlq-2026----3rd-international-workshop-on-machine",
@@ -11057,14 +11443,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11090,7 +11476,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199806&copyownerid=175737",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199806&copyownerid=175737"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ei-scopus-mlbdm-2026---2026-6th-international-conf",
@@ -11105,14 +11494,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-18T00:00:00.000Z",
+        end: "2026-12-20T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "18-20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11138,7 +11527,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199708&copyownerid=165700",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199708&copyownerid=165700"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ciot-2026---8th-international-conference-on-intern",
@@ -11153,14 +11545,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-16T00:00:00.000Z",
+        end: "2026-07-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11186,7 +11578,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199700&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199700&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-if-aie-2026---the-2026-international-forum-on-arti",
@@ -11201,14 +11597,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-27T00:00:00.000Z",
+        end: "2026-09-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "27-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11234,7 +11630,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199695&copyownerid=199007",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199695&copyownerid=199007"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icric--ei-2027---2027-international-conference-on-",
@@ -11249,14 +11648,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-02-17T00:00:00.000Z",
+        end: "2027-02-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Feb",
+        day: "17-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11282,7 +11681,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199689&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199689&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-cste--ei-2027---2027-9th-international-conference-",
@@ -11297,14 +11699,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-04-09T00:00:00.000Z",
+        end: "2027-04-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "9-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11330,7 +11732,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199684&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199684&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ipmi-2027---information-processing-in-medical-imag",
@@ -11345,14 +11750,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-06-27T00:00:00.000Z",
+        end: "2027-07-02T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "27 - Jul 2"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11378,7 +11783,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199677&copyownerid=199001",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199677&copyownerid=199001"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-cadat-2026---the-third-international-conference-on",
@@ -11393,14 +11801,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-25T00:00:00.000Z",
+        end: "2026-10-29T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "25-29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11426,7 +11834,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199675&copyownerid=83510",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199675&copyownerid=83510"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-coce-2026---the-third-international-conference-on-",
@@ -11441,14 +11852,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-25T00:00:00.000Z",
+        end: "2026-10-29T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "25-29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11474,7 +11885,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199673&copyownerid=83510",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199673&copyownerid=83510"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-prediction-solutions-2026---international-conferen",
@@ -11489,14 +11903,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-25T00:00:00.000Z",
+        end: "2026-10-29T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "25-29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11522,7 +11936,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199660&copyownerid=83510",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199660&copyownerid=83510"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-signal-2026---13th-international-conference-on-sig",
@@ -11537,14 +11954,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-20T00:00:00.000Z",
+        end: "2026-06-21T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "20-21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11570,7 +11987,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199639&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199639&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-bpod-2026---the-ninth-ieee-international-workshop-",
@@ -11585,14 +12006,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-14T00:00:00.000Z",
+        end: "2026-12-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "14-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11618,7 +12039,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199628&copyownerid=170448",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199628&copyownerid=170448"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-humsec-esorics-2026---workshop-on-human-targeted-c",
@@ -11633,14 +12057,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-14T00:00:00.000Z",
+        end: "2026-09-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "14-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11666,7 +12090,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199623&copyownerid=198981",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199623&copyownerid=198981"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-hicss-ai4cyber-and-cyber4ai-2027---hicss-60-mini-t",
@@ -11681,14 +12108,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-01-05T00:00:00.000Z",
+        end: "2027-01-08T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
         month: "Jan",
-        day: "1"
+        day: "5-8"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11714,7 +12141,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199608&copyownerid=179590",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199608&copyownerid=179590"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-wipe-out--2026---2nd-workshop-on-machine-unlearnin",
@@ -11729,14 +12159,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-07T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "7"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11762,7 +12192,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199586&copyownerid=198048",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199586&copyownerid=198048"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iwoar-2026---11th-international-workshop-on-sensor",
@@ -11777,14 +12210,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-10T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "10-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11810,7 +12243,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199583&copyownerid=198937",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199583&copyownerid=198937"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-sipro-2026---12th-international-conference-on-sign",
@@ -11825,14 +12261,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-06-27T00:00:00.000Z",
+        end: "2026-06-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "27-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -11858,7 +12294,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199582&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199582&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "devpost-30352",
@@ -12341,14 +12781,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-22T00:00:00.000Z",
+        end: "2026-09-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "22-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12374,7 +12814,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200244&copyownerid=199303",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200244&copyownerid=199303"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlsc-2026---2026-2nd-international-symposium-on-ma",
@@ -12389,14 +12832,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-26T00:00:00.000Z",
+        end: "2026-10-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "26-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12422,7 +12865,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200215&copyownerid=182680",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200215&copyownerid=182680"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-spra-2027---spie--2027-7th-symposium-on-pattern-re",
@@ -12437,14 +12883,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-03-03T00:00:00.000Z",
+        end: "2027-03-05T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Mar",
+        day: "3-5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12470,7 +12916,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200160&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200160&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ieee-aipe-2027---ieee--2027-the-4th-international-",
@@ -12485,14 +12934,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-02-26T00:00:00.000Z",
+        end: "2027-02-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Feb",
+        day: "26-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12518,7 +12967,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200152&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200152&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icpram-2027---16th-international-conference-on-pat",
@@ -12533,14 +12985,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-02-20T00:00:00.000Z",
+        end: "2027-02-22T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Feb",
+        day: "20-22"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12566,7 +13018,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200101&copyownerid=45217",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200101&copyownerid=45217"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-visapp-2027---22nd-international-conference-on-com",
@@ -12581,14 +13036,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-02-26T00:00:00.000Z",
+        end: "2027-02-28T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Feb",
+        day: "26-28"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12614,7 +13069,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200096&copyownerid=45217",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200096&copyownerid=45217"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-cvaa-2026---ieee-2026-6th-international-conference",
@@ -12629,14 +13087,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-18T00:00:00.000Z",
+        end: "2026-09-20T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "18-20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12662,7 +13120,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200081&copyownerid=182680",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200081&copyownerid=182680"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-acm-aamlds-2026---2026-international-conference-on",
@@ -12677,14 +13138,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-04T00:00:00.000Z",
+        end: "2026-12-06T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "4-6"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12710,7 +13171,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200077&copyownerid=163993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200077&copyownerid=163993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ea-2026---17th-international-conference-on-artific",
@@ -12725,14 +13189,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-27T00:00:00.000Z",
+        end: "2026-10-29T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "27-29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12758,7 +13222,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200074&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200074&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-queerinai-2026---queer-in-ai-2026",
@@ -12773,14 +13240,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-08-14T00:00:00.000Z",
+        end: "2026-08-15T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Aug",
+        day: "14-15"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12806,7 +13273,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200068&copyownerid=193489",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200068&copyownerid=193489"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-acml-2026---18th-asian-conference-on-machine-learn",
@@ -12821,14 +13292,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-01T00:00:00.000Z",
+        end: "2026-12-04T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "1-4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12854,7 +13325,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200050&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200050&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-ictai-2026---international-conference-on-tools-wit",
@@ -12869,14 +13343,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-11-02T00:00:00.000Z",
+        end: "2026-11-04T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Nov",
+        day: "2-4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12902,7 +13376,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200049&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200049&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-nlpa-2026---7th-international-conference-on-natura",
@@ -12917,14 +13394,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-25T00:00:00.000Z",
+        end: "2026-07-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "25-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12950,7 +13427,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200044&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200044&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ieee-is-2026---13th-ieee-international-conference-",
@@ -12965,14 +13446,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-03T00:00:00.000Z",
+        end: "2026-09-05T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "3-5"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -12998,7 +13479,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200035&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200035&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icaicta-2026---the-13th-international-conference-o",
@@ -13013,14 +13497,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-20T00:00:00.000Z",
+        end: "2026-10-21T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "20-21"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13046,7 +13530,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200024&copyownerid=199175",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=200024&copyownerid=199175"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aimldl-2026---7th-international-conference-on-ai--",
@@ -13061,14 +13548,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-16T00:00:00.000Z",
+        end: "2026-07-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13094,7 +13581,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199977&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199977&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-prima-2026---pacific-rim-international-conference-",
@@ -13109,14 +13600,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-14T00:00:00.000Z",
+        end: "2026-12-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "14-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13142,7 +13633,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199947&copyownerid=199136",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199947&copyownerid=199136"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-spm-2026---13th-international-conference-on-signal",
@@ -13157,14 +13651,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-07-16T00:00:00.000Z",
+        end: "2026-07-17T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "16-17"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13190,7 +13684,11 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199941&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199941&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icnlp--ei-2027---2027-the-9th-international-confer",
@@ -13205,14 +13703,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-04-16T00:00:00.000Z",
+        end: "2027-04-18T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "16-18"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13238,7 +13736,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199934&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=199934&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "devpost-30909",
@@ -13721,14 +14222,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-26T00:00:00.000Z",
+        end: "2026-10-29T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "26-29"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13754,7 +14255,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202702&copyownerid=88612",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202702&copyownerid=88612"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iccta--esci-2027---2027-13th-international-confere",
@@ -13769,14 +14273,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-06-02T00:00:00.000Z",
+        end: "2027-06-04T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "2-4"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13802,7 +14306,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202637&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202637&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-isai--ei-2027---2027-the-7th-international-symposi",
@@ -13817,14 +14324,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-04-23T00:00:00.000Z",
+        end: "2027-04-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "23-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13850,7 +14357,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202632&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202632&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-icccbda-2027---ieee--2027-the-12th-international-c",
@@ -13865,14 +14375,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-04-23T00:00:00.000Z",
+        end: "2027-04-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "23-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13898,7 +14408,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202630&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202630&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlmi-2027---2027-the-10th-international-conference",
@@ -13913,14 +14426,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-07-16T00:00:00.000Z",
+        end: "2027-07-19T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jul",
+        day: "16-19"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13946,7 +14459,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202619&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202619&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aigt--ei-2027---2027-international-conference-on-a",
@@ -13961,14 +14477,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-05-14T00:00:00.000Z",
+        end: "2027-05-16T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "14-16"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -13994,7 +14510,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202618&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202618&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-rtca-2026---real-time-conversational-agents-worksh",
@@ -14009,14 +14528,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-11T00:00:00.000Z",
+        end: "2026-12-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "11-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14042,7 +14561,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202573&copyownerid=199911",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202573&copyownerid=199911"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-apdsp-2027---2027-11th-asia-pacific-digital-signal",
@@ -14057,14 +14579,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-05-28T00:00:00.000Z",
+        end: "2027-05-30T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "28-30"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14090,7 +14612,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202563&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202563&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aitc--ei-2027---2027-9th-international-artificial-",
@@ -14105,14 +14630,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-05-07T00:00:00.000Z",
+        end: "2027-05-09T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "7-9"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14138,7 +14663,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202562&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202562&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlci--ei-2027---2027-the-2nd-international-confere",
@@ -14153,14 +14681,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-04-24T00:00:00.000Z",
+        end: "2027-04-26T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Apr",
+        day: "24-26"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14186,7 +14714,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202554&copyownerid=13881",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202554&copyownerid=13881"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-brainbodyfm---neurips-2026---neurips-2026-workshop",
@@ -14201,14 +14732,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-11T00:00:00.000Z",
+        end: "2026-12-12T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "11-12"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14234,7 +14765,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202542&copyownerid=199874",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202542&copyownerid=199874"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-scai-2026---15th-international-conference-on-soft-",
@@ -14249,14 +14783,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-19T00:00:00.000Z",
+        end: "2026-09-20T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "19-20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14282,7 +14816,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202539&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202539&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mlbdbi-2026---ieee-2026-8th-international-conferen",
@@ -14297,14 +14834,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-23T00:00:00.000Z",
+        end: "2026-10-25T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "23-25"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14330,7 +14867,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202530&copyownerid=182680",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202530&copyownerid=182680"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-pic-2026---the-10th-ieee-international-conference-",
@@ -14345,14 +14885,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-12-18T00:00:00.000Z",
+        end: "2026-12-20T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Dec",
+        day: "18-20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14378,7 +14918,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202527&copyownerid=199862",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202527&copyownerid=199862"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-faiml-2027---6th-international-conference-on-front",
@@ -14393,14 +14936,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-05-07T00:00:00.000Z",
+        end: "2027-05-09T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "May",
+        day: "7-9"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14426,7 +14969,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202525&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202525&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-aiconusa-2027---ai-con-usa-2027",
@@ -14441,14 +14987,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-06-06T00:00:00.000Z",
+        end: "2027-06-11T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "6-11"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14474,7 +15020,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202524&copyownerid=199859",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202524&copyownerid=199859"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-iwann-2027---international-work-conference-on-arti",
@@ -14489,14 +15038,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2027-06-14T00:00:00.000Z",
+        end: "2027-06-16T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Jun",
+        day: "14-16"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14522,7 +15071,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202497&copyownerid=72744",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202497&copyownerid=72744"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
@@ -14537,14 +15089,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-09-19T00:00:00.000Z",
+        end: "2026-09-20T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Sep",
+        day: "19-20"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14570,7 +15122,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202479&copyownerid=33993",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202479&copyownerid=33993"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     },
 {
       id: "wikicfp-mmlds-2026---international-conference-on-multimoda",
@@ -14585,14 +15140,14 @@ const EVENTS_DATA = {
         { text: "wikicfp", color: "default" }
       ],
       dates: {
-        start: "2027-01-01T00:00:00.000Z",
-        end: "2027-01-01T00:00:00.000Z",
+        start: "2026-10-30T00:00:00.000Z",
+        end: "2026-11-01T00:00:00.000Z",
         deadline: null,
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Jan",
-        day: "1"
+        month: "Oct",
+        day: "30 - Nov 1"
       },
       eventType: "CFP",
       isUrgent: false,
@@ -14618,7 +15173,10 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202467&copyownerid=13149",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202467&copyownerid=13149"
-      }
+      },
+      datesTBD: false,
+      datesResolvedFrom: "description",
+      datesCheckedAt: "2026-08-31"
     }
   ]
 };
@@ -14626,11 +15184,14 @@ const EVENTS_DATA = {
 // Helper API to access events data
 const EventsAPI = {
   _sortByDate(events) {
-    return [...events].sort((a, b) => {
-      const dateA = new Date(a.dates.start);
-      const dateB = new Date(b.dates.start);
-      return dateA - dateB;
-    });
+    // Events whose dates are not announced yet sort to the end rather than
+    // to 1970 - they have no real start date to compare against.
+    const key = (e) => {
+      if (e.datesTBD) return Infinity;
+      const t = new Date(e.dates.start).getTime();
+      return isNaN(t) ? Infinity : t;
+    };
+    return [...events].sort((a, b) => key(a) - key(b));
   },
 
   getAll() {

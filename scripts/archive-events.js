@@ -3,72 +3,48 @@
  * Moves past events to archived status and updates counts
  *
  * An event is considered "past" when:
- * - Its end date has passed, OR
  * - Its deadline has passed (for CFPs), OR
+ * - Its end date has passed, OR
  * - Its start date has passed (if no end date)
+ *
+ * Events whose dates are not known yet (TBD/TBA, or a placeholder left behind
+ * by a source that published no dates) are NOT archived on those dates - they
+ * are handed to refresh-events.js instead, which tries to resolve them. The one
+ * exception is a TBD event still pointing at a year that has already ended.
  */
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { loadData, writeData, updateMetaCounts } from './lib/data-file.js';
+import { isEventPast, hasUnknownDates, isStaleUnknown } from './lib/event-dates.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const DATA_FILE = path.join(__dirname, '..', 'js', 'data.js');
 const DRY_RUN = process.argv.includes('--dry-run');
-
-/**
- * Parse the existing data.js file
- */
-function loadExistingData() {
-  const content = fs.readFileSync(DATA_FILE, 'utf-8');
-  // Extract the EVENTS_DATA object
-  const match = content.match(/const EVENTS_DATA = (\{[\s\S]*?\});[\s\S]*?\/\/ Helper API/);
-  if (!match) {
-    throw new Error('Could not parse EVENTS_DATA from data.js');
-  }
-  // Use eval to parse the object (safe since we control the file)
-  return eval('(' + match[1] + ')');
-}
 
 /**
  * Check if an event should be archived
  */
-function shouldArchive(event) {
-  const now = new Date();
-
+function shouldArchive(event, now = new Date()) {
   // Already archived
   if (event.isArchived) {
     return false;
   }
 
-  // For CFPs, check the deadline
-  if (event.page === 'cfp' && event.dates.deadline) {
-    const deadline = new Date(event.dates.deadline);
-    return deadline < now;
+  // Dates not announced yet - keep it listed unless its year is already over
+  if (hasUnknownDates(event)) {
+    return isStaleUnknown(event, now);
   }
 
-  // For other events, check the end date (or start date if no end)
-  const endDate = event.dates.end ? new Date(event.dates.end) : null;
-  const startDate = new Date(event.dates.start);
-
-  if (endDate) {
-    return endDate < now;
-  }
-
-  return startDate < now;
+  return isEventPast(event, now);
 }
 
 /**
  * Archive events and update counts
  */
 function archiveEvents(data) {
+  const now = new Date();
   let archivedCount = 0;
   const archivedByPage = { events: 0, hackathons: 0, cfp: 0 };
 
   data.events.forEach(event => {
-    if (shouldArchive(event)) {
+    if (shouldArchive(event, now)) {
       event.isArchived = true;
       archivedCount++;
       archivedByPage[event.page]++;
@@ -76,253 +52,9 @@ function archiveEvents(data) {
     }
   });
 
-  // Update meta counts (only count non-archived events)
-  const activeEvents = data.events.filter(e => !e.isArchived);
-  data.meta.totalEvents = activeEvents.length;
-  data.meta.berlinEvents = activeEvents.filter(e =>
-    e.page === 'events' && e.category.includes('berlin')
-  ).length;
-  data.meta.cfpCount = activeEvents.filter(e => e.page === 'cfp').length;
+  updateMetaCounts(data);
 
   return { archivedCount, archivedByPage };
-}
-
-/**
- * Helper to format object key - quotes if contains special characters
- */
-function formatKey(key) {
-  // If key contains characters that require quoting (hyphens, spaces, etc.)
-  if (/^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key)) {
-    return key; // Valid identifier, no quotes needed
-  }
-  return `"${key}"`; // Needs quotes
-}
-
-/**
- * Serialize event object to JavaScript string
- */
-function serializeEvent(event, indent = '    ') {
-  const lines = ['{'];
-  const entries = Object.entries(event);
-
-  entries.forEach(([key, value], index) => {
-    const comma = index < entries.length - 1 ? ',' : '';
-
-    if (value === null) {
-      lines.push(`${indent}  ${formatKey(key)}: null${comma}`);
-    } else if (typeof value === 'boolean') {
-      lines.push(`${indent}  ${formatKey(key)}: ${value}${comma}`);
-    } else if (typeof value === 'string') {
-      // Escape quotes and newlines in strings
-      const escaped = value.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
-      lines.push(`${indent}  ${formatKey(key)}: "${escaped}"${comma}`);
-    } else if (Array.isArray(value)) {
-      if (value.length === 0) {
-        lines.push(`${indent}  ${formatKey(key)}: []${comma}`);
-      } else if (typeof value[0] === 'string') {
-        const items = value.map(v => `"${v}"`).join(', ');
-        lines.push(`${indent}  ${formatKey(key)}: [${items}]${comma}`);
-      } else {
-        // Array of objects
-        const items = value.map(item => {
-          if (typeof item === 'object') {
-            const props = Object.entries(item).map(([k, v]) => {
-              if (v === null) return `${formatKey(k)}: null`;
-              if (typeof v === 'boolean') return `${formatKey(k)}: ${v}`;
-              if (typeof v === 'string') {
-                const esc = v.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-                return `${formatKey(k)}: "${esc}"`;
-              }
-              return `${formatKey(k)}: ${JSON.stringify(v)}`;
-            }).join(', ');
-            return `{ ${props} }`;
-          }
-          return JSON.stringify(item);
-        });
-        lines.push(`${indent}  ${formatKey(key)}: [`);
-        items.forEach((item, i) => {
-          const itemComma = i < items.length - 1 ? ',' : '';
-          lines.push(`${indent}    ${item}${itemComma}`);
-        });
-        lines.push(`${indent}  ]${comma}`);
-      }
-    } else if (typeof value === 'object') {
-      // Nested object (dates, location, modal, links, etc.)
-      const nestedLines = [];
-      const nestedEntries = Object.entries(value);
-      nestedEntries.forEach(([nKey, nValue], nIndex) => {
-        const nComma = nIndex < nestedEntries.length - 1 ? ',' : '';
-        if (nValue === null) {
-          nestedLines.push(`${indent}    ${formatKey(nKey)}: null${nComma}`);
-        } else if (typeof nValue === 'boolean') {
-          nestedLines.push(`${indent}    ${formatKey(nKey)}: ${nValue}${nComma}`);
-        } else if (typeof nValue === 'string') {
-          const escaped = nValue.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
-          nestedLines.push(`${indent}    ${formatKey(nKey)}: "${escaped}"${nComma}`);
-        } else if (Array.isArray(nValue)) {
-          if (nValue.length === 0) {
-            nestedLines.push(`${indent}    ${formatKey(nKey)}: []${nComma}`);
-          } else if (typeof nValue[0] === 'string') {
-            const items = nValue.map(v => `"${v}"`).join(', ');
-            nestedLines.push(`${indent}    ${formatKey(nKey)}: [${items}]${nComma}`);
-          } else {
-            // Array of objects (like resources)
-            const items = nValue.map(item => {
-              const props = Object.entries(item).map(([k, v]) => {
-                if (v === null) return `${formatKey(k)}: null`;
-                if (typeof v === 'string') {
-                  const esc = v.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-                  return `${formatKey(k)}: "${esc}"`;
-                }
-                return `${formatKey(k)}: ${JSON.stringify(v)}`;
-              }).join(', ');
-              return `{ ${props} }`;
-            });
-            nestedLines.push(`${indent}    ${formatKey(nKey)}: [`);
-            items.forEach((item, i) => {
-              const itemComma = i < items.length - 1 ? ',' : '';
-              nestedLines.push(`${indent}      ${item}${itemComma}`);
-            });
-            nestedLines.push(`${indent}    ]${nComma}`);
-          }
-        } else if (typeof nValue === 'object') {
-          // Deep nested object
-          const deepProps = Object.entries(nValue).map(([dk, dv]) => {
-            if (dv === null) return `${formatKey(dk)}: null`;
-            if (typeof dv === 'string') {
-              const esc = dv.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-              return `${formatKey(dk)}: "${esc}"`;
-            }
-            return `${formatKey(dk)}: ${JSON.stringify(dv)}`;
-          }).join(', ');
-          nestedLines.push(`${indent}    ${formatKey(nKey)}: { ${deepProps} }${nComma}`);
-        }
-      });
-      lines.push(`${indent}  ${formatKey(key)}: {`);
-      lines.push(...nestedLines);
-      lines.push(`${indent}  }${comma}`);
-    }
-  });
-
-  lines.push(`${indent}}`);
-  return lines.join('\n');
-}
-
-/**
- * Write updated data back to data.js
- */
-function writeData(data) {
-  // Build the events array section
-  const eventsSerialized = data.events.map(e => serializeEvent(e)).join(',\n');
-
-  // Build filters section
-  const filtersSection = Object.entries(data.filters).map(([page, filters]) => {
-    const filterItems = filters.map(f => {
-      const props = [];
-      props.push(`id: "${f.id}"`);
-      props.push(`label: "${f.label}"`);
-      props.push(`icon: ${f.icon ? `"${f.icon}"` : 'null'}`);
-      if (f.showCount) props.push(`showCount: true`);
-      return `      { ${props.join(', ')} }`;
-    }).join(',\n');
-    return `    ${formatKey(page)}: [\n${filterItems}\n    ]`;
-  }).join(',\n');
-
-  const content = `// 2026 Tech Events Calendar - Data Layer
-// Single source of truth for all events
-
-const EVENTS_DATA = {
-  meta: {
-    title: "${data.meta.title}",
-    subtitle: "${data.meta.subtitle}",
-    totalEvents: ${data.meta.totalEvents},
-    totalPrizes: "${data.meta.totalPrizes}",
-    berlinEvents: ${data.meta.berlinEvents},
-    cfpCount: ${data.meta.cfpCount}
-  },
-
-  // Filter definitions for each page
-  filters: {
-${filtersSection}
-  },
-
-  // All events
-  events: [
-${eventsSerialized}
-  ]
-};
-
-// Helper API to access events data
-const EventsAPI = {
-  _sortByDate(events) {
-    return [...events].sort((a, b) => {
-      const dateA = new Date(a.dates.start);
-      const dateB = new Date(b.dates.start);
-      return dateA - dateB;
-    });
-  },
-
-  getAll() {
-    return this._sortByDate(EVENTS_DATA.events);
-  },
-
-  getByPage(pageName, includeArchived = false) {
-    const filtered = EVENTS_DATA.events.filter(e =>
-      e.page === pageName && (includeArchived || !e.isArchived)
-    );
-    return this._sortByDate(filtered);
-  },
-
-  getById(id) {
-    return EVENTS_DATA.events.find(e => e.id === id);
-  },
-
-  getFeatured(pageName) {
-    return EVENTS_DATA.events.find(e => e.isFeatured && e.page === pageName && !e.isArchived);
-  },
-
-  getFiltersForPage(pageName) {
-    return EVENTS_DATA.filters[pageName] || [];
-  },
-
-  getMeta() {
-    return EVENTS_DATA.meta;
-  },
-
-  filterEvents(events, filterValue) {
-    if (filterValue === 'all') return events.filter(e => !e.isArchived);
-
-    // Special handling for "archive" filter
-    if (filterValue === 'archive') {
-      return events.filter(event => event.isArchived === true);
-    }
-
-    // Special handling for "new" filter
-    if (filterValue === 'new') {
-      return events.filter(event => event.isNew === true && !event.isArchived);
-    }
-
-    return events.filter(event => {
-      if (event.isArchived) return false;
-      const matchesCategory = event.category.includes(filterValue);
-      const matchesType = event.type.includes(filterValue);
-      return matchesCategory || matchesType;
-    });
-  },
-
-  // Get count of new events
-  getNewEventsCount() {
-    return EVENTS_DATA.events.filter(e => e.isNew === true && !e.isArchived).length;
-  },
-
-  // Get count of archived events for a page
-  getArchivedCount(pageName) {
-    return EVENTS_DATA.events.filter(e => e.page === pageName && e.isArchived).length;
-  }
-};
-`;
-
-  fs.writeFileSync(DATA_FILE, content, 'utf-8');
 }
 
 /**
@@ -336,7 +68,7 @@ async function main() {
 
   // Load current data
   console.log('Loading data.js...');
-  const data = loadExistingData();
+  const data = loadData();
   console.log(`Found ${data.events.length} total events`);
   console.log('');
 
@@ -344,6 +76,14 @@ async function main() {
   console.log('Checking for past events...');
   const { archivedCount, archivedByPage } = archiveEvents(data);
   console.log('');
+
+  // Report events still waiting on dates so the TBD backlog stays visible
+  const pendingDates = data.events.filter(e => !e.isArchived && hasUnknownDates(e));
+  if (pendingDates.length > 0) {
+    console.log(`${pendingDates.length} active events still have unknown dates ` +
+      `(run refresh-events.js to resolve them)`);
+    console.log('');
+  }
 
   if (archivedCount === 0) {
     console.log('No events to archive.');
