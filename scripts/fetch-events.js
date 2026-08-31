@@ -16,6 +16,11 @@ import Parser from 'rss-parser';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {
+  parseDateRangeFromText,
+  formatDateDisplay,
+  safeParseDate as parseDateOrNull,
+} from './lib/event-dates.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -252,12 +257,18 @@ async function fetchWikiCFP() {
 
     for (const item of feed.items || []) {
       const id = 'wikicfp-' + (item.title || '').toLowerCase().replace(/[^a-z0-9]/g, '-').slice(0, 50);
+      const description = item.contentSnippet || item.content || '';
+      // Descriptions carry "[City, Country] [Oct 14, 2026 - Oct 18, 2026]"
+      const range = parseDateRangeFromText(description);
+
       events.push({
         id,
         title: item.title,
         source: 'wikicfp',
         url: item.link,
-        description: item.contentSnippet,
+        description,
+        startDate: range ? range.start.toISOString() : null,
+        endDate: range ? range.end.toISOString() : null,
         page: 'cfp',
         category: ['cfp'],
         type: ['ml'],
@@ -357,19 +368,32 @@ function convertToFullEvent(rawEvent) {
   try {
     const now = new Date();
     const addedDate = now.toISOString().split('T')[0];
-    const defaultDate = new Date(now.getFullYear() + 1, 0, 1); // Jan 1 next year
 
-    // Parse dates safely
-    let startDate = safeParseDate(rawEvent.startDate) || defaultDate;
-    let endDate = safeParseDate(rawEvent.endDate) || startDate;
-    let deadline = safeParseDate(rawEvent.deadline);
+    // Parse dates safely. When a source publishes no usable date we record the
+    // event as TBD rather than inventing one - a fabricated date renders as a
+    // real date on the card and never archives. refresh-events.js revisits
+    // these until the organiser announces something.
+    let startDate = parseDateOrNull(rawEvent.startDate);
+    let endDate = parseDateOrNull(rawEvent.endDate) || startDate;
+    let deadline = parseDateOrNull(rawEvent.deadline);
 
-    // Validate dates are not in the past (except for testing)
-    const cutoffDate = new Date(now.getFullYear(), 0, 1); // Jan 1 of current year
-    if (startDate < cutoffDate && !rawEvent.startDate) {
-      startDate = defaultDate;
-      endDate = defaultDate;
+    // Fall back to a date range embedded in the listing text
+    if (!startDate) {
+      const range = parseDateRangeFromText(
+        [rawEvent.description, rawEvent.dateText, rawEvent.title].filter(Boolean).join(' ')
+      );
+      if (range) {
+        startDate = range.start;
+        endDate = range.end;
+      }
     }
+
+    const datesTBD = !startDate && !deadline;
+    const anchor = startDate || deadline;
+
+    const dateDisplay = datesTBD
+      ? { month: String(now.getFullYear()), day: 'TBD' }
+      : formatDateDisplay(anchor, startDate ? endDate : anchor);
 
     // Create tags including NEW tag
     const tags = [
@@ -390,15 +414,13 @@ function convertToFullEvent(rawEvent) {
       type: rawEvent.type || [],
       tags,
       dates: {
-        start: startDate.toISOString(),
-        end: endDate.toISOString(),
+        start: anchor ? anchor.toISOString() : null,
+        end: (startDate ? endDate : anchor) ? (startDate ? endDate : anchor).toISOString() : null,
         deadline: deadline ? deadline.toISOString() : null,
         countdownTarget: deadline ? 'deadline' : 'start',
       },
-      dateDisplay: {
-        month: startDate.toLocaleString('en', { month: 'short' }),
-        day: startDate.getDate().toString(),
-      },
+      dateDisplay,
+      datesTBD,
     eventType: rawEvent.page === 'hackathons' ? 'Hackathon' : rawEvent.page === 'cfp' ? 'CFP' : 'Event',
     isUrgent: false,
     isFeatured: false,
@@ -513,13 +535,15 @@ function formatEventAsJS(event) {
     lines.push(`${indent}    { text: "${escapeString(tag.text)}", color: "${tag.color}" }${comma}`);
   });
   lines.push(`${indent}  ],`);
+  const quoteOrNull = v => (v ? `"${v}"` : 'null');
   lines.push(`${indent}  dates: {`);
-  lines.push(`${indent}    start: "${event.dates.start}",`);
-  lines.push(`${indent}    end: "${event.dates.end}",`);
-  lines.push(`${indent}    deadline: ${event.dates.deadline ? `"${event.dates.deadline}"` : 'null'},`);
+  lines.push(`${indent}    start: ${quoteOrNull(event.dates.start)},`);
+  lines.push(`${indent}    end: ${quoteOrNull(event.dates.end)},`);
+  lines.push(`${indent}    deadline: ${quoteOrNull(event.dates.deadline)},`);
   lines.push(`${indent}    countdownTarget: "${event.dates.countdownTarget}"`);
   lines.push(`${indent}  },`);
   lines.push(`${indent}  dateDisplay: { month: "${event.dateDisplay.month}", day: "${event.dateDisplay.day}" },`);
+  lines.push(`${indent}  datesTBD: ${event.datesTBD === true},`);
   lines.push(`${indent}  eventType: "${event.eventType}",`);
   lines.push(`${indent}  isUrgent: ${event.isUrgent},`);
   lines.push(`${indent}  isFeatured: ${event.isFeatured},`);

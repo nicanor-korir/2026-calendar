@@ -6,6 +6,11 @@ on:
     - cron: '0 20 * * 0'
   workflow_dispatch: # Allow manual trigger
 
+# Shared with the archive workflow - both rewrite js/data.js
+concurrency:
+  group: events-data
+  cancel-in-progress: false
+
 jobs:
   update-events:
     runs-on: ubuntu-latest

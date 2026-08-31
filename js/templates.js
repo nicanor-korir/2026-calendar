@@ -2,6 +2,56 @@
 // Generates HTML from event data
 
 const Templates = {
+  MONTHS: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+           'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+
+  // Badge text for a date range: "Sep 4-8", "Mar 23 - Apr 2", "Sep 10"
+  formatBadge(start, end) {
+    const month = Templates.MONTHS[start.getMonth()];
+    const day = start.getDate();
+    if (!end || end.toDateString() === start.toDateString()) {
+      return { month, day: String(day) };
+    }
+    if (end.getMonth() === start.getMonth() && end.getFullYear() === start.getFullYear()) {
+      return { month, day: `${day}-${end.getDate()}` };
+    }
+    return { month, day: `${day} - ${Templates.MONTHS[end.getMonth()]} ${end.getDate()}` };
+  },
+
+  // Which date a card should advertise. Normally the countdown target, but if
+  // that is a registration deadline that has already passed while the event
+  // itself is still ahead, show the event date instead - an expired deadline
+  // on the badge reads as an event that already happened.
+  effectiveDate(event) {
+    const now = new Date();
+    const deadline = event.dates.deadline ? new Date(event.dates.deadline) : null;
+    const start = event.dates.start ? new Date(event.dates.start) : null;
+    const end = event.dates.end ? new Date(event.dates.end) : null;
+    const usesDeadline = event.dates.countdownTarget === 'deadline' && deadline;
+
+    if (usesDeadline && deadline < now && start && start > now && !event.datesTBD) {
+      return {
+        label: 'Date',
+        target: event.dates.start,
+        display: Templates.formatBadge(start, end),
+      };
+    }
+
+    return {
+      label: usesDeadline ? 'Deadline' : 'Date',
+      target: usesDeadline ? event.dates.deadline : event.dates.start,
+      display: event.dateDisplay,
+    };
+  },
+
+  // ", 2026" suffix for the featured card - omitted when the badge already
+  // carries the year (TBD events) or when there is no usable date
+  eventYear(event) {
+    if (event.datesTBD) return '';
+    const start = new Date(event.dates?.start);
+    return isNaN(start.getTime()) ? '' : `, ${start.getFullYear()}`;
+  },
+
   // Page titles
   pageTitles: {
     all: "All Events",
@@ -172,6 +222,7 @@ const Templates = {
   // Event card
   eventCard(event) {
     const urgentClass = event.isUrgent ? 'urgent' : '';
+    const dateInfo = Templates.effectiveDate(event);
     const categoryAttr = event.category.join(' ');
     const typeAttr = event.type.join(' ');
     const isSaved = typeof SavedEvents !== 'undefined' && SavedEvents.isSaved(event.id);
@@ -185,8 +236,8 @@ const Templates = {
            onclick="openModal('${event.id}')">
         <div class="event-header">
           <div class="event-date-badge ${urgentClass}">
-            <div class="month">${event.dateDisplay.month}</div>
-            <div class="day">${event.dateDisplay.day}</div>
+            <div class="month">${dateInfo.display.month}</div>
+            <div class="day">${dateInfo.display.day}</div>
           </div>
           <button class="save-btn ${isSaved ? 'saved' : ''}"
                   data-save-id="${event.id}"
@@ -210,7 +261,7 @@ const Templates = {
         </div>
         <div class="event-footer">
           <div class="event-deadline">
-            ${event.page === 'cfp' ? 'Deadline' : 'Date'}: <strong>${event.dateDisplay.month} ${event.dateDisplay.day}</strong>
+            ${dateInfo.label}: <strong>${dateInfo.display.month} ${dateInfo.display.day}</strong>
           </div>
           <div class="event-action">View Details →</div>
         </div>
@@ -222,9 +273,8 @@ const Templates = {
   featuredCard(event) {
     if (!event) return '';
 
-    const targetDate = event.dates.countdownTarget === 'deadline'
-      ? event.dates.deadline
-      : event.dates.start;
+    const dateInfo = Templates.effectiveDate(event);
+    const targetDate = dateInfo.target;
 
     return `
       <section class="featured-section">
@@ -254,7 +304,7 @@ const Templates = {
               <div class="featured-meta">
                 <div class="meta-item">
                   <span class="icon">📅</span>
-                  <span>${event.dateDisplay.month} ${event.dateDisplay.day}, 2026</span>
+                  <span>${dateInfo.display.month} ${dateInfo.display.day}${Templates.eventYear(event)}</span>
                 </div>
                 <div class="meta-item">
                   <span class="icon">📍</span>
@@ -303,9 +353,8 @@ const Templates = {
   // Modal
   modal(event) {
     const isCFP = event.page === 'cfp';
-    const targetDate = event.dates.countdownTarget === 'deadline'
-      ? event.dates.deadline
-      : event.dates.start;
+    const dateInfo = Templates.effectiveDate(event);
+    const targetDate = dateInfo.target;
     const isSaved = typeof SavedEvents !== 'undefined' && SavedEvents.isSaved(event.id);
 
     return `

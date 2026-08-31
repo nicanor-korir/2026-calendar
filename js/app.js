@@ -1,6 +1,47 @@
 // 2026 Tech Events Calendar - Application Logic
 
 // ========================================
+// DATE HELPERS
+// ========================================
+
+// Check if an event is past: its own end date has gone by, or - for CFPs -
+// its submission deadline has. Events whose dates are not announced yet
+// (datesTBD) are never past. Mirrors isEventPast() in scripts/lib/event-dates.js.
+function isEventPast(event) {
+  if (!event || !event.dates) return false;
+  if (event.datesTBD) return false;
+  if (!event.dates.start && !event.dates.end && !event.dates.deadline) return false;
+
+  const now = new Date();
+  const parse = v => {
+    if (!v) return null;
+    const d = new Date(v);
+    return isNaN(d.getTime()) ? null : d;
+  };
+
+  // The event window itself. Once that has passed the event is over, whatever
+  // the deadline says - some listings carry a deadline for the next edition.
+  const eventEnd = parse(event.dates.end) || parse(event.dates.start);
+  if (eventEnd && eventEnd < now) return true;
+
+  // For CFPs a passed submission deadline also retires the entry
+  if (event.page === 'cfp') {
+    const deadline = parse(event.dates.deadline);
+    if (deadline && deadline < now) return true;
+  }
+
+  return false;
+}
+
+// An event drops out of the active views when it has been archived by the
+// nightly job OR when it has simply passed since that job last ran. The
+// runtime check keeps the calendar correct between data refreshes.
+function isEventExpired(event) {
+  if (!event) return false;
+  return event.isArchived === true || isEventPast(event);
+}
+
+// ========================================
 // SAVED EVENTS MANAGER (localStorage)
 // ========================================
 const SavedEvents = {
@@ -65,24 +106,7 @@ const SavedEvents = {
 
   // Check if an event is past (ended or deadline passed)
   isEventPast(event) {
-    if (!event) return false;
-    const now = new Date();
-
-    // For CFPs, check the deadline
-    if (event.page === 'cfp' && event.dates.deadline) {
-      const deadline = new Date(event.dates.deadline);
-      return deadline < now;
-    }
-
-    // For other events, check the end date (or start date if no end)
-    const endDate = event.dates.end ? new Date(event.dates.end) : null;
-    const startDate = new Date(event.dates.start);
-
-    if (endDate) {
-      return endDate < now;
-    }
-
-    return startDate < now;
+    return isEventPast(event);
   },
 
   // Dispatch custom event when saved list changes
@@ -277,25 +301,42 @@ const GlobalSearch = {
   }
 };
 
+// Pages that aggregate every section rather than holding events of their own
+const AGGREGATE_PAGES = ['all', 'my-events'];
+
 class CalendarApp {
   constructor(pageName) {
     this.pageName = pageName;
     this.currentFilter = 'all';
-    // Load all events including archived so archive filter works
-    this.events = EventsAPI.getByPage(pageName, true);
+    // Load all events including archived so the archive filter works.
+    // all.html and my-events.html span every section - no event carries
+    // page: "all", so filtering by page name would leave them empty.
+    this.events = AGGREGATE_PAGES.includes(pageName)
+      ? EventsAPI.getAll()
+      : EventsAPI.getByPage(pageName, true);
   }
 
   init() {
     this.renderPage();
     this.bindFilters();
     this.bindModalEvents();
+    // Apply the default filter immediately - the grid is rendered with every
+    // event (archived ones included, so the Archive tab works), so without this
+    // first pass past events stay visible until a tab is clicked.
+    this.applyFilter();
     GlobalSearch.init();
     Countdown.initAll();
   }
 
+  // The featured slot must never hold an event that is over
+  getFeatured() {
+    const featured = EventsAPI.getFeatured(this.pageName);
+    return featured && !isEventExpired(featured) ? featured : null;
+  }
+
   renderPage() {
     const app = document.getElementById('app');
-    const featured = EventsAPI.getFeatured(this.pageName);
+    const featured = this.getFeatured();
 
     app.innerHTML = `
       ${Templates.header(this.pageName)}
@@ -359,9 +400,11 @@ class CalendarApp {
       let matches = false;
 
       const event = this.events.find(e => e.id === eventId);
-      const isArchived = event?.isArchived === true;
+      // Treat events that have simply passed as archived too, so the calendar
+      // stays correct even if the nightly archive job has not run yet.
+      const isArchived = isEventExpired(event);
       const isSaved = SavedEvents.isSaved(eventId);
-      const isPast = SavedEvents.isEventPast(event);
+      const isPast = isEventPast(event);
       const eventPage = event?.page || '';
 
       // Special handling for my-events page
@@ -440,13 +483,13 @@ class CalendarApp {
 
     // Hide featured section when filtering (but show if saved and filtering by saved)
     if (featuredSection) {
-      const featuredEvent = EventsAPI.getFeatured(this.pageName);
+      const featuredEvent = this.getFeatured();
       let showFeatured = this.currentFilter === 'all';
 
       // Also show featured if it matches the current filter
       if (featuredEvent) {
         const featuredIsSaved = SavedEvents.isSaved(featuredEvent.id);
-        const featuredIsPast = SavedEvents.isEventPast(featuredEvent);
+        const featuredIsPast = isEventPast(featuredEvent);
 
         if (this.currentFilter === 'saved') {
           // My Events shows all saved events including past ones

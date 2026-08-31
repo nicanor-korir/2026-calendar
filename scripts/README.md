@@ -1,6 +1,19 @@
-# Event Fetcher Scripts
+# Event Scripts
 
-Automated scripts to fetch new tech events, hackathons, and CFPs.
+Automated scripts that keep the calendar current.
+
+| Script | What it does | Schedule |
+| --- | --- | --- |
+| `fetch-events.js` | Discovers new events from the sources below | Weekly (Sun 20:00 UTC) |
+| `refresh-events.js` | Re-checks events whose dates are TBD/TBA or still a placeholder | Daily (05:00 UTC) |
+| `archive-events.js` | Moves finished events to the Archive tab | Daily (05:00 UTC) |
+
+`refresh-events.js` and `archive-events.js` run in that order inside the same
+workflow, so an event whose real dates turn out to be in the past is resolved
+and archived in one pass. Shared logic lives in `lib/`:
+
+- `lib/event-dates.js` - date parsing, TBD detection, "is this event over?"
+- `lib/data-file.js` - reading and re-serialising `js/data.js`
 
 ## Sources
 
@@ -31,13 +44,30 @@ npm run fetch
 npm run test
 ```
 
+### Archiving past events
+
+```bash
+npm run archive              # move finished events to the archive
+node archive-events.js --dry-run
+```
+
+### Refreshing TBD / TBA events
+
+```bash
+npm run refresh              # stored-text pass, then fetch source pages
+node refresh-events.js --offline    # skip all network calls
+node refresh-events.js --dry-run    # report only
+node refresh-events.js --limit=25   # cap how many pages are fetched
+```
+
 ### GitHub Actions (Automated)
 
-The GitHub Action runs daily at 6:00 AM UTC. It:
-1. Fetches events from all sources
-2. Filters out duplicates (by event ID)
-3. Adds new events with a `NEW` tag
-4. Auto-commits changes to the repository
+**Update Events Calendar** (weekly) fetches from all sources, filters out
+duplicates by event ID, and opens a PR adding the new events with a `NEW` tag.
+
+**Refresh & Archive Events** (daily) resolves TBD dates, archives everything
+that has finished, and opens a PR. Both workflows share a `events-data`
+concurrency group so they never rewrite `js/data.js` at the same time.
 
 ## NEW Tag System
 
@@ -57,6 +87,29 @@ Edit `fetch-events.js` to:
 - Add new event sources
 - Adjust scraping selectors
 - Change the NEW tag duration
+
+## Unknown dates (TBD / TBA)
+
+Sources regularly list an event before its dates are set. The fetcher records
+those as `datesTBD: true` with a `"2026 TBD"` badge instead of inventing a
+date - a fabricated date renders as a real one on the card and would never
+archive.
+
+`refresh-events.js` revisits every such event daily and tries, in order:
+
+1. A date range in the description we already stored, e.g.
+   `... [Berlin, Germany] [Oct 14, 2026 - Oct 18, 2026]`
+2. schema.org `Event` JSON-LD on the event's own page
+3. A WikiCFP "When / Submission Deadline" table
+4. A date range in the page's visible text
+
+Anything still unresolved keeps whatever granularity is known: a real month
+with an unconfirmed day stays `Dec TBA` (and still archives once that date
+passes), while a pure placeholder stays `2026 TBD` and is only archived once
+that year is over.
+
+The frontend also treats any event whose date has passed as archived at render
+time, so the calendar stays correct even between workflow runs.
 
 ## Event Format
 
