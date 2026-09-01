@@ -239,8 +239,8 @@ const EVENTS_DATA = {
         countdownTarget: "start"
       },
       dateDisplay: {
-        month: "Aug",
-        day: "31 - Sep 30"
+        month: "Sep",
+        day: "1-30"
       },
       eventType: "Competition",
       isUrgent: false,
