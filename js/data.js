@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 52,
+    totalEvents: 49,
     totalPrizes: "$2M+",
     berlinEvents: 4,
-    cfpCount: 39
+    cfpCount: 36
   },
 
   // Filter definitions for each page
@@ -525,7 +525,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-03"
+      datesCheckedAt: "2026-09-04"
     },
 {
       id: "ijcai",
@@ -2535,7 +2535,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-03"
+      datesCheckedAt: "2026-09-04"
     },
 {
       id: "algolia-agent-studio",
@@ -13174,7 +13174,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-acm-aamlds-2026---2026-international-conference-on",
@@ -14827,7 +14828,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-scai-2026---15th-international-conference-on-soft-",
@@ -14930,7 +14932,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-pic-2026---the-10th-ieee-international-conference-",
@@ -15135,7 +15138,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-09-03"
+      datesCheckedAt: "2026-09-04"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
