@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 49,
+    totalEvents: 317,
     totalPrizes: "$2M+",
     berlinEvents: 4,
     cfpCount: 36
@@ -15243,6 +15243,912 @@ const EVENTS_DATA = {
       datesResolvedFrom: "wikicfp",
       datesCheckedAt: "2026-08-31",
       isArchived: true
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-09-06)
+    // ========================================
+    {
+      id: "devpost-30872",
+      title: "Zoftware Hireathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-09T00:00:00.000Z",
+        end: "2026-09-09T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "9" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$300", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://zoftware-hireathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://zoftware-hireathon.devpost.com/",
+        website: "https://zoftware-hireathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31260",
+      title: "Codebox Hacks Makeup",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-07T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "7" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://codebox-hacks-makeup.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://codebox-hacks-makeup.devpost.com/",
+        website: "https://codebox-hacks-makeup.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31216",
+      title: "UPAI-Hackdays",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-07T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "7" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://upai-hackdays.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://upai-hackdays.devpost.com/",
+        website: "https://upai-hackdays.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30818",
+      title: "Build with Gemini - Gen Recruiter",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-10T00:00:00.000Z",
+        end: "2026-09-10T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "10" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://gen-recruiter-google-gemini.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://gen-recruiter-google-gemini.devpost.com/",
+        website: "https://gen-recruiter-google-gemini.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31238",
+      title: "Shared OS Hackathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-09T00:00:00.000Z",
+        end: "2026-09-09T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "9" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$5,500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://shared-os-hackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://shared-os-hackathon.devpost.com/",
+        website: "https://shared-os-hackathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31259",
+      title: "Gen Agra",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-07T00:00:00.000Z",
+        end: "2026-09-07T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "7" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "₹ 0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://gen-agra.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://gen-agra.devpost.com/",
+        website: "https://gen-agra.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31074",
+      title: "Hack CMU",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-11T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "11" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hack-cmu-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hack-cmu-2026.devpost.com/",
+        website: "https://hack-cmu-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31242",
+      title: "internal hackathon | Elevate Ecosystem",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-11T00:00:00.000Z",
+        end: "2026-09-11T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "11" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://internal-ee-hackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://internal-ee-hackathon.devpost.com/",
+        website: "https://internal-ee-hackathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30949",
+      title: "SaugaHacks",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-12T00:00:00.000Z",
+        end: "2026-09-12T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "12" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://saugahacks-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://saugahacks-2026.devpost.com/",
+        website: "https://saugahacks-2026.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-icmlt--ei-2027---2027-12th-international-conferenc",
+      title: "ICMLT--EI 2027 : 2027 12th International Conference on Machine Learning Technologies (ICMLT 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-05-21T00:00:00.000Z",
+        end: "2027-05-23T00:00:00.000Z",
+        deadline: "2026-12-10T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Dec", day: "10" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 12th International Conference on Machine Learning Technologies (ICMLT 2027) [Stockholm, Sweden] [May 21, 2027 - May 23, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203039&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203039&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203039&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-icaigc-2027---2027-ieee-international-conference-o",
+      title: "ICAIGC 2027 : 2027 IEEE International Conference on Artificial Intelligence and Generated Content (ICAIGC 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-08-14T00:00:00.000Z",
+        end: "2027-08-16T00:00:00.000Z",
+        deadline: "2027-02-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 IEEE International Conference on Artificial Intelligence and Generated Content (ICAIGC 2027) [Melaka, Malaysia] [Aug 14, 2027 - Aug 16, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203037&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203037&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203037&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-icaiit-2027---international-conference-on-applied-",
+      title: "ICAIIT 2027 : International Conference on Applied Innovations in IT (ICAIIT)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-03-11T00:00:00.000Z",
+        end: "2027-03-11T00:00:00.000Z",
+        deadline: "2027-01-10T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Jan", day: "10" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Applied Innovations in IT (ICAIIT) [Koethen, Germany] [Mar 11, 2027 - Mar 11, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202996&copyownerid=176754" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202996&copyownerid=176754",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202996&copyownerid=176754"
+      }
+    },
+    {
+      id: "wikicfp-icaiit-2026---international-conference-on-applied-",
+      title: "ICAIIT 2026 : International Conference on Applied Innovations in IT",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-29T00:00:00.000Z",
+        end: "2026-09-29T00:00:00.000Z",
+        deadline: "2026-09-29T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Sep", day: "29" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Applied Innovations in IT",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754"
+      }
+    },
+    {
+      id: "wikicfp-aiam-2026---2026-8th-international-conference-on-a",
+      title: "AIAM 2026 : 2026 8th International Conference on Artificial Intelligence and Advanced Manufacturing",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-29T00:00:00.000Z",
+        end: "2026-10-31T00:00:00.000Z",
+        deadline: "2026-09-15T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Sep", day: "15" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 8th International Conference on Artificial Intelligence and Advanced Manufacturing [Frankfurt, Germany] [Oct 29, 2026 - Oct 31, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202956&copyownerid=197560" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202956&copyownerid=197560",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202956&copyownerid=197560"
+      }
+    },
+    {
+      id: "wikicfp-ainmd-2026---2026-international-conference-on-arti",
+      title: "AINMD 2026 : 2026 International Conference on Artificial Intelligence and New Materials Development",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-12-18T00:00:00.000Z",
+        end: "2026-12-20T00:00:00.000Z",
+        deadline: "2026-10-14T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "14" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 International Conference on Artificial Intelligence and New Materials Development [Kuala Lumpur, Malaysia] [Dec 18, 2026 - Dec 20, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202953&copyownerid=182680" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202953&copyownerid=182680",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202953&copyownerid=182680"
+      }
+    },
+    {
+      id: "wikicfp-9th-accml-2027---9th-workshop-on-accelerated-machi",
+      title: "9th AccML 2027 : 9th Workshop on Accelerated Machine Learning (AccML)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-01-19T00:00:00.000Z",
+        end: "2027-01-19T00:00:00.000Z",
+        deadline: "2026-11-13T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Nov", day: "13" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "9th Workshop on Accelerated Machine Learning (AccML) [Glasgow, United Kingdom] [Jan 19, 2027 - Jan 19, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202913&copyownerid=200180" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202913&copyownerid=200180",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202913&copyownerid=200180"
+      }
+    },
+    {
+      id: "wikicfp-aiie--ei-2027---2027-international-conference-on-a",
+      title: "AIIE--EI 2027 : 2027 International Conference on Artificial Intelligence and Intelligent Education (AIIE 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-10-15T00:00:00.000Z",
+        end: "2027-10-17T00:00:00.000Z",
+        deadline: "2027-05-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "May", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 International Conference on Artificial Intelligence and Intelligent Education (AIIE 2027) [Guangzhou, China] [Oct 15, 2027 - Oct 17, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202896&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202896&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202896&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-ieee-seai-2027---ieee--2027-7th-international-conf",
+      title: "IEEE SEAI 2027 : IEEE--2027 7th International Conference on Software Engineering and Artificial Intelligence (SEAI 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-06-18T00:00:00.000Z",
+        end: "2027-06-20T00:00:00.000Z",
+        deadline: "2027-01-10T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Jan", day: "10" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "IEEE--2027 7th International Conference on Software Engineering and Artificial Intelligence (SEAI 2027) [Quanzhou, China] [Jun 18, 2027 - Jun 20, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202773&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202773&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202773&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-aiaa-2026---16th-international-conference-on-artif",
+      title: "AIAA 2026 : 16th International Conference on Artificial Intelligence, Soft Computing and Applications",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-27T00:00:00.000Z",
+        end: "2026-11-28T00:00:00.000Z",
+        deadline: "2026-09-06T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Sep", day: "6" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "16th International Conference on Artificial Intelligence, Soft Computing and Applications [Zurich, Switzerland] [Nov 27, 2026 - Nov 28, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202738&copyownerid=33993" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202738&copyownerid=33993",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202738&copyownerid=33993"
+      }
+    },
+    {
+      id: "wikicfp-icict-2027---12th-international-congress-on-inform",
+      title: "ICICT 2027 : 12th International Congress on Information and Communication Technology",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-02-23T00:00:00.000Z",
+        end: "2027-02-26T00:00:00.000Z",
+        deadline: "2026-09-11T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Sep", day: "11" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "12th International Congress on Information and Communication Technology [London, UK] [Feb 23, 2027 - Feb 26, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202736&copyownerid=200014" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202736&copyownerid=200014",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202736&copyownerid=200014"
+      }
+    },
+    {
+      id: "wikicfp-ai-for-chip-design-at-neurips-2026---ai-for-chip-d",
+      title: "AI for Chip Design at NeurIPS 2026 : AI for Chip Design Workshop at NeurIPS 2026",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-12-12T00:00:00.000Z",
+        end: "2026-12-12T00:00:00.000Z",
+        deadline: "2026-08-30T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Aug", day: "30" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "AI for Chip Design Workshop at NeurIPS 2026 [Paris, France] [Dec 12, 2026 - Dec 12, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202670&copyownerid=190618" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202670&copyownerid=190618",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202670&copyownerid=190618"
+      }
+    },
+    {
+      id: "wikicfp-sylen-2027---sylen-annual-conference-2027",
+      title: "SYLEN 2027 : SYLEN Annual Conference 2027",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-02-16T00:00:00.000Z",
+        end: "2027-02-16T00:00:00.000Z",
+        deadline: "2026-11-14T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Nov", day: "14" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-06",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "SYLEN Annual Conference 2027 [San Jose, USA] [Feb 16, 2027 - Feb 16, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202652&copyownerid=199951" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202652&copyownerid=199951",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202652&copyownerid=199951"
+      }
     }
   ]
 };
