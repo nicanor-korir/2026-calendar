@@ -5,9 +5,9 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 47,
+    totalEvents: 46,
     totalPrizes: "$2M+",
-    berlinEvents: 4,
+    berlinEvents: 3,
     cfpCount: 34
   },
 
@@ -525,7 +525,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-08"
+      datesCheckedAt: "2026-09-09"
     },
 {
       id: "ijcai",
@@ -1074,7 +1074,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.ifa-berlin.com/",
         website: "https://www.ifa-berlin.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "genai-summit",
@@ -2535,7 +2536,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-08"
+      datesCheckedAt: "2026-09-09"
     },
 {
       id: "algolia-agent-studio",
@@ -15140,7 +15141,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-09-08"
+      datesCheckedAt: "2026-09-09"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
