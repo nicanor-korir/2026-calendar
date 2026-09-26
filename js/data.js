@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 53,
+    totalEvents: 48,
     totalPrizes: "$2M+",
     berlinEvents: 1,
     cfpCount: 40
@@ -525,7 +525,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-25"
+      datesCheckedAt: "2026-09-26"
     },
 {
       id: "ijcai",
@@ -2540,7 +2540,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-25"
+      datesCheckedAt: "2026-09-26"
     },
 {
       id: "algolia-agent-studio",
@@ -15155,7 +15155,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-09-25"
+      datesCheckedAt: "2026-09-26"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
@@ -15470,7 +15470,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cyber-hawk-hackathon.devpost.com/",
         website: "https://cyber-hawk-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-26125",
@@ -15522,7 +15523,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://showerhacks.devpost.com/",
         website: "https://showerhacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-31117",
@@ -15574,7 +15576,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://sherubtse-hackathon-2026.devpost.com/",
         website: "https://sherubtse-hackathon-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-31401",
@@ -15626,7 +15629,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://promptothon-2026-ai-edition.devpost.com/",
         website: "https://promptothon-2026-ai-edition.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-31440",
@@ -15678,7 +15682,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://owlhacks-2026.devpost.com/",
         website: "https://owlhacks-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30421",
