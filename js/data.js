@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 53,
+    totalEvents: 337,
     totalPrizes: "$2M+",
     berlinEvents: 1,
     cfpCount: 40
@@ -16715,6 +16715,543 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754"
+      }
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-09-27)
+    // ========================================
+    {
+      id: "devpost-31262",
+      title: "CCT IT CLUB X INOVEXHQ HACK DAYS",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-01T00:00:00.000Z",
+        end: "2026-10-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "1" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://cct-it-club-inovexhq-hack-days.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://cct-it-club-inovexhq-hack-days.devpost.com/",
+        website: "https://cct-it-club-inovexhq-hack-days.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31311",
+      title: "Planet Resilience: Innovation for Sustainable Impact Hackathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-09-28T00:00:00.000Z",
+        end: "2026-10-01T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Sep", day: "28 - Oct 1" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$1,700", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://uob-suss-planet-resilience.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://uob-suss-planet-resilience.devpost.com/",
+        website: "https://uob-suss-planet-resilience.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31427",
+      title: "Kurukshetra CTF",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-03T00:00:00.000Z",
+        end: "2026-10-03T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "3" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "₹ 20,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://kurukshetractf.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://kurukshetractf.devpost.com/",
+        website: "https://kurukshetractf.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30872",
+      title: "Zoftware Hireathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-03T00:00:00.000Z",
+        end: "2026-10-03T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "3" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://zoftware-hireathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://zoftware-hireathon.devpost.com/",
+        website: "https://zoftware-hireathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31182",
+      title: "Gear Up Hacks 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-03T00:00:00.000Z",
+        end: "2026-10-03T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "3" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://gear-up-hacks-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://gear-up-hacks-2026.devpost.com/",
+        website: "https://gear-up-hacks-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31513",
+      title: "CSIT RE:Uni Hackathon 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-02T00:00:00.000Z",
+        end: "2026-10-02T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "2" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$1,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://csit-re-uni-hackathon-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://csit-re-uni-hackathon-2026.devpost.com/",
+        website: "https://csit-re-uni-hackathon-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30494",
+      title: "Dublin Hacx",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-03T00:00:00.000Z",
+        end: "2026-10-03T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "3" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$2,250", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://dublin-hacx.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://dublin-hacx.devpost.com/",
+        website: "https://dublin-hacx.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-28200",
+      title: "Gator Quant Hacks",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-02T00:00:00.000Z",
+        end: "2026-10-02T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "2" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://gqhacks.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://gqhacks.devpost.com/",
+        website: "https://gqhacks.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31053",
+      title: "Hack Dearborn: Conjure Reality",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-03T00:00:00.000Z",
+        end: "2026-10-03T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "3" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hack-dearborn-5.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hack-dearborn-5.devpost.com/",
+        website: "https://hack-dearborn-5.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-plans-2027---ieee-ion-position-location-and-naviga",
+      title: "PLANS 2027 : IEEE/ION Position Location and Navigation Symposium",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-04-12T00:00:00.000Z",
+        end: "2027-04-15T00:00:00.000Z",
+        deadline: "2027-02-01T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "1" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "IEEE/ION Position Location and Navigation Symposium [Portland, Oregon, USA] [Apr 12, 2027 - Apr 15, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203440&copyownerid=181006" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203440&copyownerid=181006",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203440&copyownerid=181006"
+      }
+    },
+    {
+      id: "wikicfp-aiim-2026---2026-6th-international-symposium-on-ar",
+      title: "AIIM 2026 : 2026 6th International Symposium on Artificial Intelligence and Intelligent Manufacturing",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-27T00:00:00.000Z",
+        end: "2026-11-29T00:00:00.000Z",
+        deadline: "2026-10-03T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "3" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 6th International Symposium on Artificial Intelligence and Intelligent Manufacturing  [Guangzhou, China] [Nov 27, 2026 - Nov 29, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203424&copyownerid=163220" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203424&copyownerid=163220",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203424&copyownerid=163220"
+      }
+    },
+    {
+      id: "wikicfp-flairs-40-embodied-ai-special-track-2027---flairs-",
+      title: "FLAIRS-40 Embodied AI Special Track 2027 : FLAIRS-40 Special Track: Embodied AI Agents, Robotics, and IoT",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-05-24T00:00:00.000Z",
+        end: "2027-05-27T00:00:00.000Z",
+        deadline: "2027-02-01T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "1" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "FLAIRS-40 Special Track: Embodied AI Agents, Robotics, and IoT [St. Pete Beach, Florida, USA] [May 24, 2027 - May 27, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203402&copyownerid=200520" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203402&copyownerid=200520",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203402&copyownerid=200520"
+      }
+    },
+    {
+      id: "wikicfp-aiet--ei-2027---2027-the-8th-international-confere",
+      title: "AIET--EI 2027 : 2027 the 8th International Conference on Artificial Intelligence in Education Technology (AIET 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-07-28T00:00:00.000Z",
+        end: "2027-07-30T00:00:00.000Z",
+        deadline: "2027-02-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-09-27",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 the 8th International Conference on Artificial Intelligence in Education Technology (AIET 2027) [Cologne, Germany] [Jul 28, 2027 - Jul 30, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203382&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203382&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203382&copyownerid=13881"
       }
     }
   ]
