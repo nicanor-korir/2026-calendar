@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 53,
+    totalEvents: 45,
     totalPrizes: "$2M+",
     berlinEvents: 1,
-    cfpCount: 40
+    cfpCount: 37
   },
 
   // Filter definitions for each page
@@ -525,7 +525,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-25"
+      datesCheckedAt: "2026-09-30"
     },
 {
       id: "ijcai",
@@ -2540,7 +2540,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-25"
+      datesCheckedAt: "2026-09-30"
     },
 {
       id: "algolia-agent-studio",
@@ -10546,7 +10546,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-icmlc-2027---2027-19th-international-conference-on",
@@ -15155,7 +15156,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-09-25"
+      datesCheckedAt: "2026-09-30"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
@@ -15470,7 +15471,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://cyber-hawk-hackathon.devpost.com/",
         website: "https://cyber-hawk-hackathon.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-26125",
@@ -15522,7 +15524,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://showerhacks.devpost.com/",
         website: "https://showerhacks.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-31117",
@@ -15574,7 +15577,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://sherubtse-hackathon-2026.devpost.com/",
         website: "https://sherubtse-hackathon-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-31401",
@@ -15626,7 +15630,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://promptothon-2026-ai-edition.devpost.com/",
         website: "https://promptothon-2026-ai-edition.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-31440",
@@ -15678,7 +15683,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://owlhacks-2026.devpost.com/",
         website: "https://owlhacks-2026.devpost.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "devpost-30421",
@@ -16323,7 +16329,8 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203135&copyownerid=163220",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203135&copyownerid=163220"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wikicfp-scsn-ai-2027---15th-international-workshop-on-sema",
@@ -16715,7 +16722,8 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754"
-      }
+      },
+      isArchived: true
     }
   ]
 };
