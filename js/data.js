@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 45,
+    totalEvents: 40,
     totalPrizes: "$2M+",
     berlinEvents: 1,
-    cfpCount: 37
+    cfpCount: 33
   },
 
   // Filter definitions for each page
@@ -268,7 +268,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://www.hultprize.org/compete/",
         website: "https://www.hultprize.org/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "gdsc-solution",
@@ -525,7 +526,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-30"
+      datesCheckedAt: "2026-10-01"
     },
 {
       id: "ijcai",
@@ -2540,7 +2541,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-09-30"
+      datesCheckedAt: "2026-10-01"
     },
 {
       id: "algolia-agent-studio",
@@ -4882,7 +4883,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-mlic-2026---2026-3rd-international-conference-on-m",
@@ -4985,7 +4987,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ds-2026---discovery-science",
@@ -12103,7 +12106,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-humsec-esorics-2026---workshop-on-human-targeted-c",
@@ -15156,7 +15160,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-09-30"
+      datesCheckedAt: "2026-10-01"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
@@ -16526,7 +16530,8 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203115&copyownerid=99363",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203115&copyownerid=99363"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wikicfp-icmlt--ei-2027---2027-12th-international-conferenc",
