@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 40,
+    totalEvents: 348,
     totalPrizes: "$2M+",
     berlinEvents: 1,
     cfpCount: 33
@@ -16729,6 +16729,994 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754"
       },
       isArchived: true
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-10-11)
+    // ========================================
+    {
+      id: "devpost-31640",
+      title: "HacKITSnova 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-15T00:00:00.000Z",
+        end: "2026-10-15T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "15" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "₹ 14,998", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hackitsnova-2026-31640.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hackitsnova-2026-31640.devpost.com/",
+        website: "https://hackitsnova-2026-31640.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31520",
+      title: "RESPAWN",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-12T00:00:00.000Z",
+        end: "2026-10-12T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "12" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "₹ 15,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://respawn.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://respawn.devpost.com/",
+        website: "https://respawn.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31393",
+      title: "Daytona HackSprint w/ Arize AI - NYC, October 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-16T00:00:00.000Z",
+        end: "2026-10-16T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "16" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$7,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://daytona-hacksprint-nyc.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://daytona-hacksprint-nyc.devpost.com/",
+        website: "https://daytona-hacksprint-nyc.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31658",
+      title: "AI At Work - Hack the Everyday",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-16T00:00:00.000Z",
+        end: "2026-10-16T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "16" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://ai-at-work-hack-the-everyday.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://ai-at-work-hack-the-everyday.devpost.com/",
+        website: "https://ai-at-work-hack-the-everyday.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31498",
+      title: "MLH Hacktoberfest Hack Day Teens Delhi X ElevenLabs",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-17T00:00:00.000Z",
+        end: "2026-10-17T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "17" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hacktoberfest-teens.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hacktoberfest-teens.devpost.com/",
+        website: "https://hacktoberfest-teens.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31616",
+      title: "Zoftware AgentHack",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-17T00:00:00.000Z",
+        end: "2026-10-17T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "17" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://zoftware-agenthack.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://zoftware-agenthack.devpost.com/",
+        website: "https://zoftware-agenthack.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31684",
+      title: "NTU x ST Engineering Hackathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-12T00:00:00.000Z",
+        end: "2026-10-12T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "12" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$2,500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://ntu-x-st-engineering-hackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://ntu-x-st-engineering-hackathon.devpost.com/",
+        website: "https://ntu-x-st-engineering-hackathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-30568",
+      title: "Build-A-Thon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-16T00:00:00.000Z",
+        end: "2026-10-16T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "16" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://build-a-thon-30568.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://build-a-thon-30568.devpost.com/",
+        website: "https://build-a-thon-30568.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31152",
+      title: "Cornell Six Sigma Hackathon",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-16T00:00:00.000Z",
+        end: "2026-10-16T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Oct", day: "16" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://six-sigma-hackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://six-sigma-hackathon.devpost.com/",
+        website: "https://six-sigma-hackathon.devpost.com/"
+      }
+    },
+    {
+      id: "wikicfp-rsae--ei-2027---2027-8th-international-conference-",
+      title: "RSAE--EI 2027 : 2027 8th International Conference on Robotics Systems and Automation Engineering (RSAE 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-07-08T00:00:00.000Z",
+        end: "2027-07-10T00:00:00.000Z",
+        deadline: "2027-02-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 8th International Conference on Robotics Systems and Automation Engineering (RSAE 2027) [Bangkok, Thailand] [Jul 8, 2027 - Jul 10, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203678&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203678&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203678&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-andaluz-ia-2026---andaluz-ia-forum",
+      title: "Andaluz.IA 2026 : Andaluz.IA Forum",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-12-18T00:00:00.000Z",
+        end: "2026-12-18T00:00:00.000Z",
+        deadline: "2026-10-19T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "19" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Andaluz.IA Forum [Málaga, Spain] [Dec 18, 2026 - Dec 18, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203627&copyownerid=197523" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203627&copyownerid=197523",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203627&copyownerid=197523"
+      }
+    },
+    {
+      id: "wikicfp-ccsit-2026---16th-international-conference-on-comp",
+      title: "CCSIT 2026 : 16th International Conference on Computer Science and Information Technology",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-21T00:00:00.000Z",
+        end: "2026-11-22T00:00:00.000Z",
+        deadline: "2026-10-10T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "10" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "16th International Conference on Computer Science and Information Technology [London, United Kingdom] [Nov 21, 2026 - Nov 22, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203625&copyownerid=33993" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203625&copyownerid=33993",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203625&copyownerid=33993"
+      }
+    },
+    {
+      id: "wikicfp-wllfm-2026---fourth-workshop-on-large-language-and",
+      title: "WLLFM 2026 : Fourth Workshop on Large Language and Foundation Models (WLLFM 2026)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-12-14T00:00:00.000Z",
+        end: "2026-12-17T00:00:00.000Z",
+        deadline: "2026-10-26T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "26" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Fourth Workshop on Large Language and Foundation Models (WLLFM 2026) [Phoenix, AZ, ] [Dec 14, 2026 - Dec 17, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203529&copyownerid=200606" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203529&copyownerid=200606",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203529&copyownerid=200606"
+      }
+    },
+    {
+      id: "wikicfp-wllfm-2026---fourth-workshop-on-large-language-and",
+      title: "WLLFM 2026 : Fourth Workshop on Large Language and Foundation Models (WLLFM 2026)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-12-14T00:00:00.000Z",
+        end: "2026-12-17T00:00:00.000Z",
+        deadline: "2026-10-26T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "26" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Fourth Workshop on Large Language and Foundation Models (WLLFM 2026) [Phoenix, AZ, ] [Dec 14, 2026 - Dec 17, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203528&copyownerid=200606" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203528&copyownerid=200606",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203528&copyownerid=200606"
+      }
+    },
+    {
+      id: "wikicfp-wcse--ei-2027---2027-the-17th-international-worksh",
+      title: "WCSE--EI 2027 : 2027 The 17th International Workshop on Computer Science and Engineering (WCSE 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-06-25T00:00:00.000Z",
+        end: "2027-06-27T00:00:00.000Z",
+        deadline: "2027-01-30T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Jan", day: "30" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 The 17th International Workshop on Computer Science and Engineering (WCSE 2027) [Seoul, South Korea] [Jun 25, 2027 - Jun 27, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203509&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203509&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203509&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-bdci-2027---2027-the-7th-international-conference-",
+      title: "BDCI 2027 : 2027 The 7th International Conference on Big Data and Computational Intelligence (BDCI 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-06-25T00:00:00.000Z",
+        end: "2027-06-27T00:00:00.000Z",
+        deadline: "2027-01-30T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Jan", day: "30" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 The 7th International Conference on Big Data and Computational Intelligence (BDCI 2027) [Seoul, South Korea] [Jun 25, 2027 - Jun 27, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203500&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203500&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203500&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-aivr-2027---springer--2027-11th-international-conf",
+      title: "AIVR 2027 : Springer--2027 11th International Conference on Artificial Intelligence and Virtual Reality (AIVR 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-07-10T00:00:00.000Z",
+        end: "2027-07-13T00:00:00.000Z",
+        deadline: "2027-02-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "Springer--2027 11th International Conference on Artificial Intelligence and Virtual Reality (AIVR 2027) [Kobe, Japan] [Jul 10, 2027 - Jul 13, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203494&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203494&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203494&copyownerid=13881"
+      }
+    },
+    {
+      id: "wikicfp-pakdd-2027---31st-pacific-asia-conference-on-knowl",
+      title: "PAKDD 2027 : 31st Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-06-29T00:00:00.000Z",
+        end: "2027-07-02T00:00:00.000Z",
+        deadline: "2026-11-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Nov", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "31st Pacific-Asia Conference on Knowledge Discovery and Data Mining [Wellington, New Zealand] [Jun 29, 2027 - Jul 2, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203483&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203483&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203483&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-icdm-2027---international-conference-on-data-minin",
+      title: "ICDM 2027 : International Conference on Data Mining",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-11-15T00:00:00.000Z",
+        end: "2027-11-18T00:00:00.000Z",
+        deadline: "2027-06-06T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Jun", day: "6" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "International Conference on Data Mining [Brisbane, Australia] [Nov 15, 2027 - Nov 18, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203482&copyownerid=13149" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203482&copyownerid=13149",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203482&copyownerid=13149"
+      }
+    },
+    {
+      id: "wikicfp-icait-2026---15th-international-conference-on-adva",
+      title: "ICAIT 2026 : 15th International Conference on Advanced Computer Science and Information Technology",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-10-24T00:00:00.000Z",
+        end: "2026-10-25T00:00:00.000Z",
+        deadline: "2026-10-10T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "10" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "15th International Conference on Advanced Computer Science and Information Technology [Vienna, Austria] [Oct 24, 2026 - Oct 25, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203478&copyownerid=33993" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203478&copyownerid=33993",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203478&copyownerid=33993"
+      }
+    },
+    {
+      id: "wikicfp-plans-2027---ieee-ion-position-location-and-naviga",
+      title: "PLANS 2027 : IEEE/ION Position Location and Navigation Symposium",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-04-12T00:00:00.000Z",
+        end: "2027-04-15T00:00:00.000Z",
+        deadline: "2027-02-01T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "1" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "IEEE/ION Position Location and Navigation Symposium [Portland, Oregon, USA] [Apr 12, 2027 - Apr 15, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203440&copyownerid=181006" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203440&copyownerid=181006",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203440&copyownerid=181006"
+      }
+    },
+    {
+      id: "wikicfp-aiim-2026---2026-6th-international-symposium-on-ar",
+      title: "AIIM 2026 : 2026 6th International Symposium on Artificial Intelligence and Intelligent Manufacturing",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-27T00:00:00.000Z",
+        end: "2026-11-29T00:00:00.000Z",
+        deadline: "2026-10-13T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Oct", day: "13" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2026 6th International Symposium on Artificial Intelligence and Intelligent Manufacturing  [Guangzhou, China] [Nov 27, 2026 - Nov 29, 2026]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203424&copyownerid=163220" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203424&copyownerid=163220",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203424&copyownerid=163220"
+      }
+    },
+    {
+      id: "wikicfp-flairs-40-embodied-ai-special-track-2027---flairs-",
+      title: "FLAIRS-40 Embodied AI Special Track 2027 : FLAIRS-40 Special Track: Embodied AI Agents, Robotics, and IoT",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-05-24T00:00:00.000Z",
+        end: "2027-05-27T00:00:00.000Z",
+        deadline: "2027-02-01T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "1" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "FLAIRS-40 Special Track: Embodied AI Agents, Robotics, and IoT [St. Pete Beach, Florida, USA] [May 24, 2027 - May 27, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203402&copyownerid=200520" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203402&copyownerid=200520",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203402&copyownerid=200520"
+      }
+    },
+    {
+      id: "wikicfp-aiet--ei-2027---2027-the-8th-international-confere",
+      title: "AIET--EI 2027 : 2027 the 8th International Conference on Artificial Intelligence in Education Technology (AIET 2027)",
+      organizer: "wikicfp",
+      icon: "📄",
+      page: "cfp",
+      category: ["cfp"],
+      type: ["ml"],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "wikicfp", color: "default" }
+      ],
+      dates: {
+        start: "2027-07-28T00:00:00.000Z",
+        end: "2027-07-30T00:00:00.000Z",
+        deadline: "2027-02-20T00:00:00.000Z",
+        countdownTarget: "deadline"
+      },
+      dateDisplay: { month: "Feb", day: "20" },
+      datesTBD: false,
+      eventType: "CFP",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-10-11",
+      prize: null,
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "2027 the 8th International Conference on Artificial Intelligence in Education Technology (AIET 2027) [Cologne, Germany] [Jul 28, 2027 - Jul 30, 2027]",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203382&copyownerid=13881" }
+        ]
+      },
+      links: {
+        register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203382&copyownerid=13881",
+        website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203382&copyownerid=13881"
+      }
     }
   ]
 };
