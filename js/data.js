@@ -526,7 +526,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-10-29"
+      datesCheckedAt: "2026-10-30"
     },
 {
       id: "ijcai",
@@ -2542,7 +2542,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-10-29"
+      datesCheckedAt: "2026-10-30"
     },
 {
       id: "algolia-agent-studio",
@@ -15164,7 +15164,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-10-29"
+      datesCheckedAt: "2026-10-30"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
