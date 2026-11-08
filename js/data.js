@@ -5,7 +5,7 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 36,
+    totalEvents: 333,
     totalPrizes: "$2M+",
     berlinEvents: 1,
     cfpCount: 30
@@ -16733,6 +16733,379 @@ const EVENTS_DATA = {
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202995&copyownerid=176754"
       },
       isArchived: true
+    },
+
+    // ========================================
+    // AUTO-ADDED EVENTS (2026-11-08)
+    // ========================================
+    {
+      id: "devpost-31680",
+      title: "The Atomiq Hackathon | Qiskit Fall Fest 2026 at IEM",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-10T00:00:00.000Z",
+        end: "2026-11-10T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "10" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "₹ 10,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://atomiq-hackathon-qff-26-iem.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://atomiq-hackathon-qff-26-iem.devpost.com/",
+        website: "https://atomiq-hackathon-qff-26-iem.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31650",
+      title: "Hackperimeter",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-13T00:00:00.000Z",
+        end: "2026-11-13T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "13" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$1,000", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://hackperimeter.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://hackperimeter.devpost.com/",
+        website: "https://hackperimeter.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31926",
+      title: "WiseStart 2026 Hackathon: Tallinn",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-13T00:00:00.000Z",
+        end: "2026-11-13T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "13" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "€0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://wisestart-2026-tll.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://wisestart-2026-tll.devpost.com/",
+        website: "https://wisestart-2026-tll.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31936",
+      title: "IBM Qiskit Hackathon - Bangladesh",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-13T00:00:00.000Z",
+        end: "2026-11-13T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "13" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://ibm-qiskit-hackathon.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://ibm-qiskit-hackathon.devpost.com/",
+        website: "https://ibm-qiskit-hackathon.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31943",
+      title: "CIVIC Hack 2026",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-12T00:00:00.000Z",
+        end: "2026-11-12T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "12" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$CAD 1,500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://civic-hack-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://civic-hack-2026.devpost.com/",
+        website: "https://civic-hack-2026.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31776",
+      title: "System Public Challenge",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-14T00:00:00.000Z",
+        end: "2026-11-14T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "14" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$7,500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://system-public-challenge.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://system-public-challenge.devpost.com/",
+        website: "https://system-public-challenge.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-32058",
+      title: "Ground Truth: The Live Agents Hackathon - powered by You.com",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-14T00:00:00.000Z",
+        end: "2026-11-14T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "14" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$650", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://ground-truth-you-hack.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://ground-truth-you-hack.devpost.com/",
+        website: "https://ground-truth-you-hack.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31769",
+      title: "Code/Clash",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-14T00:00:00.000Z",
+        end: "2026-11-14T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "14" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$500", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://code-clash.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://code-clash.devpost.com/",
+        website: "https://code-clash.devpost.com/"
+      }
+    },
+    {
+      id: "devpost-31201",
+      title: "BYU-Idaho: i-Hack 2026: Reinventing the Past",
+      organizer: "devpost",
+      icon: "💻",
+      page: "hackathons",
+      category: ["hackathon"],
+      type: [],
+      tags: [
+        { text: "NEW", color: "gold" },
+        { text: "devpost", color: "default" }
+      ],
+      dates: {
+        start: "2026-11-13T00:00:00.000Z",
+        end: "2026-11-13T00:00:00.000Z",
+        deadline: null,
+        countdownTarget: "start"
+      },
+      dateDisplay: { month: "Nov", day: "13" },
+      datesTBD: false,
+      eventType: "Hackathon",
+      isUrgent: false,
+      isFeatured: false,
+      isNew: true,
+      addedDate: "2026-11-08",
+      prize: { amount: "$0", icon: "💰" },
+      location: { type: "online", city: null, country: null, display: "Online / TBA" },
+      modal: {
+        overview: "New hackathons found from devpost. Click to learn more.",
+        requirements: null,
+        keyDates: null,
+        topics: null,
+        resources: [
+          { icon: "🌐", label: "Official Website", url: "https://ihack-2026.devpost.com/" }
+        ]
+      },
+      links: {
+        register: "https://ihack-2026.devpost.com/",
+        website: "https://ihack-2026.devpost.com/"
+      }
     }
   ]
 };
