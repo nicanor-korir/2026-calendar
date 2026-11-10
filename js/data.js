@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 36,
+    totalEvents: 32,
     totalPrizes: "$2M+",
     berlinEvents: 1,
-    cfpCount: 30
+    cfpCount: 27
   },
 
   // Filter definitions for each page
@@ -526,7 +526,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-10-29"
+      datesCheckedAt: "2026-11-10"
     },
 {
       id: "ijcai",
@@ -1946,7 +1946,8 @@ const EVENTS_DATA = {
       links: {
         register: "https://websummit.com/",
         website: "https://websummit.com/"
-      }
+      },
+      isArchived: true
     },
 {
       id: "collision",
@@ -2542,7 +2543,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-10-29"
+      datesCheckedAt: "2026-11-10"
     },
 {
       id: "algolia-agent-studio",
@@ -11797,7 +11798,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ipmi-2027---information-processing-in-medical-imag",
@@ -13251,7 +13253,8 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-08-31"
+      datesCheckedAt: "2026-08-31",
+      isArchived: true
     },
 {
       id: "wikicfp-ea-2026---17th-international-conference-on-artific",
@@ -15164,7 +15167,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-10-29"
+      datesCheckedAt: "2026-11-10"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
@@ -16288,7 +16291,8 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203144&copyownerid=172489",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203144&copyownerid=172489"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wikicfp-icmml-2026---2026-4th-international-conference-on-",
