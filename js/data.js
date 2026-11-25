@@ -5,10 +5,10 @@ const EVENTS_DATA = {
   meta: {
     title: "2026 Tech Events Calendar",
     subtitle: "Your curated roadmap to impactful AI, Robotics & Startup events in 2026",
-    totalEvents: 29,
+    totalEvents: 28,
     totalPrizes: "$2M+",
     berlinEvents: 1,
-    cfpCount: 24
+    cfpCount: 23
   },
 
   // Filter definitions for each page
@@ -526,7 +526,7 @@ const EVENTS_DATA = {
         website: "https://www.developpp.de/"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-11-21"
+      datesCheckedAt: "2026-11-25"
     },
 {
       id: "ijcai",
@@ -2543,7 +2543,7 @@ const EVENTS_DATA = {
         website: "https://aws.amazon.com/ai/aileague"
       },
       datesTBD: true,
-      datesCheckedAt: "2026-11-21"
+      datesCheckedAt: "2026-11-25"
     },
 {
       id: "algolia-agent-studio",
@@ -15169,7 +15169,7 @@ const EVENTS_DATA = {
       },
       datesTBD: false,
       datesResolvedFrom: "wikicfp",
-      datesCheckedAt: "2026-11-21"
+      datesCheckedAt: "2026-11-25"
     },
 {
       id: "wikicfp-nlai-2026---7th-international-conference-on-nlp--a",
@@ -16394,7 +16394,8 @@ const EVENTS_DATA = {
       links: {
         register: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203130&copyownerid=71296",
         website: "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203130&copyownerid=71296"
-      }
+      },
+      isArchived: true
     },
 {
       id: "wikicfp-aibb-2027---the-8th-joint-international-conference",
